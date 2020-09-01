@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/000.PROJECT/1.Scenes/scOpen.unity
+    guid: d4747b41d37a9bb4781cf900aac38489
+  - enabled: 1
+    path: Assets/000.PROJECT/1.Scenes/scUi.unity
+    guid: f1dce68fef3daf2428f7867457c9873d
+  - enabled: 1
+    path: Assets/000.PROJECT/1.Scenes/scPlayUi.unity
+    guid: 77206be51f57651429cc6199631a4f39
+  - enabled: 1
+    path: Assets/000.PROJECT/1.Scenes/scSelect.unity
+    guid: 2740bd77cf8f6a947870969d873f5d94
+  - enabled: 1
+    path: Assets/000.PROJECT/1.Scenes/scStage1.unity
+    guid: f3de6a8e38e524f45a3dae8677740374
+  - enabled: 1
+    path: Assets/000.PROJECT/1.Scenes/Maps/NewTristrum.unity
+    guid: 5b0561c2e8a6cd64aa40dbee9a6ab6d0
+  - enabled: 1
+    path: Assets/000.PROJECT/1.Scenes/Maps/SilverTop.unity
+    guid: 4498a7f7cfac7cb448443530e2fd1459
+  - enabled: 1
+    path: Assets/000.PROJECT/1.Scenes/Maps/Diablo 2Phase.unity
+    guid: dfd045ca3a8d87e4faec07f85dfa7b54
+  - enabled: 1
+    path: Assets/000.PROJECT/1.Scenes/Maps/Crystal CorridorLast.unity
+    guid: 56669778e7c2a614dad21a291fffd94e
+  - enabled: 1
+    path: Assets/000.PROJECT/1.Scenes/Maps/Crystal Corridor.unity
+    guid: c86a30440a2902a4eb9be26c41ff8694
+  m_configObjects: {}

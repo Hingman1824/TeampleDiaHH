@@ -1,0 +1,712 @@
+fileFormatVersion: 2
+guid: 563a0a713dfdafd4a8b08994a5700a09
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_a4dun_spire_ColumnTop_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 723ca46e3eb85b54eb76f9284a25c40d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_a4dun_spire_Columns_A_White_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: ad268caa8b76a6f49bf722d4eafb8c9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_a4dun_spire_Corruption_Decals_A3_001Mat
+    second: {fileID: 2100000, guid: d931cdc000099d648b98114c1b36668a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 98bd365b4711e724c8cc433d6ff3d135, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_002Mat
+    second: {fileID: 2100000, guid: ca39abe9d1f0c724ab2b0efafa779da8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_a4dun_spire_Decorations_B_Gold_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: ee7ee89f663e53e4f98a7a7976d211f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_a4dun_spire_Decorations_C_Gold_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: e4102cfa137f4864c837c3fa49aeda95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_a4dun_spire_Floor_B_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 5b62ec65a1749af438089f7b2269d3dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_a4dun_spire_Floor_Corruption_alpha_A_mstr_001Mat
+    second: {fileID: 2100000, guid: f0d29cd2dc18b174d80a7e8a15b66a50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_a4dun_spire_Walls_A_White_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 6204d1f85b94b754ba4fd63e547d2891, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_a4dun_spire_Walls_A_White_A_CORRUPTED_mstr_002Mat
+    second: {fileID: 2100000, guid: a00e552b67979d448aab71ca34da31c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_invis__001Mat
+    second: {fileID: 2100000, guid: 2ec053fbc652213428a7747c4529cad8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y01_invis__002Mat
+    second: {fileID: 2100000, guid: 1fcb88fde00872344976f04cb68ccd1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_HeavenBridge9_001Mat
+    second: {fileID: 2100000, guid: b22fa1a49a05b064f87be296b1a04652, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_HeavenBridge9_002Mat
+    second: {fileID: 2100000, guid: 6bcf0a1d121abb346a0147fc528261d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_HeavenBridge9_003Mat
+    second: {fileID: 2100000, guid: 7810de5170c7a1b43b46b97fea193bd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_HeavenBridge9_004Mat
+    second: {fileID: 2100000, guid: f9958c273e48f41478cc30a03465515f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_HeavenBridge9_005Mat
+    second: {fileID: 2100000, guid: 4496f5c5ae7289b429d39e24766d57ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_Bridge_B2_001Mat
+    second: {fileID: 2100000, guid: d9bec77ac6e8f2941bade9f46e06945e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_Bridge_B2_002Mat
+    second: {fileID: 2100000, guid: b39c662defe2f9d4888f9cbbfed73846, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_Bridge_B2_003Mat
+    second: {fileID: 2100000, guid: 6f0c1f4740ee3594c9f0f0e769ad3c07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_Bridge_B2_004Mat
+    second: {fileID: 2100000, guid: e81c7760cfda8d24389e6b07a0bbfbea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_Spire_Floor_Decals_B_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: a6681dd52bb74214b852c745e87be6ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_Spire_Floor_Decals_D_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 698a0538ad683154d9f1c409a50912a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Columns_A_White_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: f4d82de2edbea5e4ba983bc5ef794e4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Columns_A_White_A_CORRUPTED_mstr_002Mat
+    second: {fileID: 2100000, guid: 2c9a23ca7071ada4e91e08824c3bbdbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Columns_A_White_A_CORRUPTED_mstr_003Mat
+    second: {fileID: 2100000, guid: 3221de2f90920584a996260911f598ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Corruption_Decals_A3_001Mat
+    second: {fileID: 2100000, guid: 111620b866964d5488dbe9312aa52fa9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Corruption_Decals_A3_002Mat
+    second: {fileID: 2100000, guid: 9a5ceff0d7315db4cacf4f7510fe6170, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 4adbd976662dfc941b1cc467e05f0f8e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_002Mat
+    second: {fileID: 2100000, guid: 8a9bc13601777684aabb1995a3044908, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Floor_B_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 04d613093d5be834887e9b4821f91e70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Floor_B_CORRUPTED_mstr_002Mat
+    second: {fileID: 2100000, guid: 556b478804422ca4fb47c7d1109f3d50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Floor_B_CORRUPTED_mstr_003Mat
+    second: {fileID: 2100000, guid: e9aa16b802938c6448be75c7d9e0ed2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Floor_Corruption_alpha_A_mstr_001Mat
+    second: {fileID: 2100000, guid: 38f3464961bd086409d182ebb6e1cb2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Floor_Corruption_alpha_D_mstr_001Mat
+    second: {fileID: 2100000, guid: bdc04fe133be00c4a8f67873aa5e4976, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_Walls_A_White_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 7a43c11fc60481b4d91e037d59ca4c80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_red_energy3_001Mat
+    second: {fileID: 2100000, guid: f31f0b951fc5c4f41a3a094354f4f531, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_a4dun_spire_red_energy_mstr_001Mat
+    second: {fileID: 2100000, guid: 2ff74c9943970d24ca9e845e174148b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_invis__001Mat
+    second: {fileID: 2100000, guid: 80310d43330c3764cb6b6cad6c738383, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_invis__002Mat
+    second: {fileID: 2100000, guid: 51563d329a6314d4b98737a8dcb0a0d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_invis__003Mat
+    second: {fileID: 2100000, guid: 51b02c8baa489f148a93060b362bb5d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y02_invis__004Mat
+    second: {fileID: 2100000, guid: fab8159da3a676a489ab31c0064d200e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_a4dun_spire_ColumnTop_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 4879a674f5d5103498ef58895da6e689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_a4dun_spire_Columns_A_White_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: e5b1c5f1658de664ca8266eb91d316c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_a4dun_spire_Corruption_Decals_A3_001Mat
+    second: {fileID: 2100000, guid: 5d4b12382367ca349a0deea25cc7aa65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: f1f54e7a77503f146853a153f97863ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_002Mat
+    second: {fileID: 2100000, guid: 2ea1a8fb72ce62f4099de0a3ce3d6bdc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_a4dun_spire_Decorations_B_Gold_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 72ac093771799974a90c2e5a40b69f17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_a4dun_spire_Decorations_C_Gold_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 3dade9af4c7f10e4c9aa4d097c5bd938, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_a4dun_spire_Floor_B_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 7f3772723ea878941b37f2e18f284186, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_a4dun_spire_Floor_Corruption_alpha_A_mstr_001Mat
+    second: {fileID: 2100000, guid: b189ca7d28c568e449199bd724084462, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_a4dun_spire_Walls_A_White_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: 53c25c25a842b9446bccbec197c86e2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_invis__001Mat
+    second: {fileID: 2100000, guid: e3f8c5e330077c54eb394b31dbd874af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x01_y03_invis__002Mat
+    second: {fileID: 2100000, guid: 1c4fdf027828e6944b7535c0b5e4decf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x02_y02_a4dun_Bridge_B2_001Mat
+    second: {fileID: 2100000, guid: 99775e478e773ad45afbfb3075788463, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x02_y02_a4dun_Garden_CorruptionFloor_Decals_A_mstr_001Mat
+    second: {fileID: 2100000, guid: 45489902076117d44816cc5acce54fc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x02_y02_a4dun_Spire_Fog_Floor_A_CORRUPTED_mstr_001Mat
+    second: {fileID: 2100000, guid: c69270e89d8057b4abb1ea496cc02926, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x02_y02_a4dun_spire_ElevatorPlatform_Corrupted_A2_001Mat
+    second: {fileID: 2100000, guid: 1e256b6fd4f75f247a0212f2355cc844, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x02_y02_a4dun_spire_ElevatorPlatform_Corrupted_A2_002Mat
+    second: {fileID: 2100000, guid: 7000f3ac9fa73594dbb8f653d2e9d177, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HC_x02_y02_a4dun_spire_Floor_Corruption_alpha_A_mstr_001Mat
+    second: {fileID: 2100000, guid: df69c92ceeef6e046a1a2d2cddb640b2, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 1
+    materialSearch: 0
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_a4dun_spire_Columns_A_White_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_a4dun_spire_ColumnTop_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_a4dun_spire_Corruption_Decals_A3_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_a4dun_spire_Decorations_B_Gold_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_a4dun_spire_Decorations_C_Gold_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_a4dun_spire_Floor_B_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_a4dun_spire_Floor_Corruption_alpha_A_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_a4dun_spire_Walls_A_White_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_a4dun_spire_Walls_A_White_A_CORRUPTED_mstr_002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_invis__001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y01_invis__002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_Bridge_B2_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_Bridge_B2_002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_Bridge_B2_003
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_Bridge_B2_004
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Columns_A_White_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Columns_A_White_A_CORRUPTED_mstr_002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Columns_A_White_A_CORRUPTED_mstr_003
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Corruption_Decals_A3_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Corruption_Decals_A3_002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Floor_B_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Floor_B_CORRUPTED_mstr_002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Floor_B_CORRUPTED_mstr_003
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Floor_Corruption_alpha_A_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Floor_Corruption_alpha_D_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_Spire_Floor_Decals_B_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_Spire_Floor_Decals_D_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_red_energy3_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_red_energy_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_a4dun_spire_Walls_A_White_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_HeavenBridge9_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_HeavenBridge9_002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_HeavenBridge9_003
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_HeavenBridge9_004
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_HeavenBridge9_005
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_invis__001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_invis__002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_invis__003
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y02_invis__004
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_a4dun_spire_Columns_A_White_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_a4dun_spire_ColumnTop_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_a4dun_spire_Corruption_Decals_A3_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_a4dun_spire_Decorations_A_Gold_A_CORRUPTED_mstr_002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_a4dun_spire_Decorations_B_Gold_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_a4dun_spire_Decorations_C_Gold_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_a4dun_spire_Floor_B_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_a4dun_spire_Floor_Corruption_alpha_A_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_a4dun_spire_Walls_A_White_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_invis__001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x01_y03_invis__002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x02_y02_a4dun_Bridge_B2_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x02_y02_a4dun_Garden_CorruptionFloor_Decals_A_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x02_y02_a4dun_spire_ElevatorPlatform_Corrupted_A2_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x02_y02_a4dun_spire_ElevatorPlatform_Corrupted_A2_002
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x02_y02_a4dun_spire_Floor_Corruption_alpha_A_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: HC_x02_y02_a4dun_Spire_Fog_Floor_A_CORRUPTED_mstr_001
+      parentName: a4dun_spire_corrupt_W_Entrance_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

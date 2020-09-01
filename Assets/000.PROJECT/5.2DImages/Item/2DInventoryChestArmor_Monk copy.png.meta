@@ -1,0 +1,944 @@
+fileFormatVersion: 2
+guid: f908fca2c53ecc044833d193f4597cfb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4841195905710021259
+    second: 2DInventoryChestArmor_Monk copy_0
+  - first:
+      213: 5980411804510590678
+    second: 2DInventoryChestArmor_Monk copy_1
+  - first:
+      213: 8523599216985657794
+    second: 2DInventoryChestArmor_Monk copy_2
+  - first:
+      213: -2014540086228088795
+    second: 2DInventoryChestArmor_Monk copy_3
+  - first:
+      213: -3171765524233864289
+    second: 2DInventoryChestArmor_Monk copy_4
+  - first:
+      213: -8125866255468238318
+    second: 2DInventoryChestArmor_Monk copy_5
+  - first:
+      213: -5889369853465301115
+    second: 2DInventoryChestArmor_Monk copy_6
+  - first:
+      213: 5468458465122666632
+    second: 2DInventoryChestArmor_Monk copy_7
+  - first:
+      213: 1593023292704988383
+    second: 2DInventoryChestArmor_Monk copy_8
+  - first:
+      213: -1982162042859359236
+    second: 2DInventoryChestArmor_Monk copy_9
+  - first:
+      213: 3429231163998099314
+    second: 2DInventoryChestArmor_Monk copy_10
+  - first:
+      213: 2868073119255929061
+    second: 2DInventoryChestArmor_Monk copy_11
+  - first:
+      213: -6406747284497503371
+    second: 2DInventoryChestArmor_Monk copy_12
+  - first:
+      213: 8786015535659622276
+    second: 2DInventoryChestArmor_Monk copy_13
+  - first:
+      213: 179500385967522816
+    second: 2DInventoryChestArmor_Monk copy_14
+  - first:
+      213: 4781184477337267259
+    second: 2DInventoryChestArmor_Monk copy_15
+  - first:
+      213: 2526526180481644827
+    second: 2DInventoryChestArmor_Monk copy_16
+  - first:
+      213: -3097599254833216364
+    second: 2DInventoryChestArmor_Monk copy_17
+  - first:
+      213: -3532911085842849318
+    second: 2DInventoryChestArmor_Monk copy_18
+  - first:
+      213: -7921110707931992646
+    second: 2DInventoryChestArmor_Monk copy_19
+  - first:
+      213: -2242089283031355109
+    second: 2DInventoryChestArmor_Monk copy_20
+  - first:
+      213: 3042699835314426391
+    second: 2DInventoryChestArmor_Monk copy_21
+  - first:
+      213: 4729104621219999434
+    second: 2DInventoryChestArmor_Monk copy_22
+  - first:
+      213: 9070757081979649850
+    second: 2DInventoryChestArmor_Monk copy_23
+  - first:
+      213: 4720167907738681243
+    second: 2DInventoryChestArmor_Monk copy_24
+  - first:
+      213: 3253772571251222239
+    second: 2DInventoryChestArmor_Monk copy_25
+  - first:
+      213: -2533140375398623923
+    second: 2DInventoryChestArmor_Monk copy_26
+  - first:
+      213: 5611787437648499646
+    second: 2DInventoryChestArmor_Monk copy_27
+  - first:
+      213: 1481541806243970882
+    second: 2DInventoryChestArmor_Monk copy_28
+  - first:
+      213: 3957260624367325991
+    second: 2DInventoryChestArmor_Monk copy_29
+  - first:
+      213: 1181211057845913623
+    second: 2DInventoryChestArmor_Monk copy_30
+  - first:
+      213: -2644196978349726238
+    second: 2DInventoryChestArmor_Monk copy_31
+  - first:
+      213: 2883018911109285658
+    second: 2DInventoryChestArmor_Monk copy_32
+  - first:
+      213: 5817365027075505124
+    second: 2DInventoryChestArmor_Monk copy_33
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 380
+        width: 77
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575241839fd90dcb0800000000000000
+      internalID: -4841195905710021259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 388
+        width: 67
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d61862c9d0bef250800000000000000
+      internalID: 5980411804510590678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_2
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 382
+        width: 78
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c15a30f358e94670800000000000000
+      internalID: 8523599216985657794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_3
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 380
+        width: 76
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528079e077aea04e0800000000000000
+      internalID: -2014540086228088795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_4
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 376
+        width: 77
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bb5397f00abf3d0800000000000000
+      internalID: -3171765524233864289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_5
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 372
+        width: 78
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a6b7e71bf1b3f80800000000000000
+      internalID: -8125866255468238318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_6
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 403
+        width: 60
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f6e4d4251c44ea0800000000000000
+      internalID: -5889369853465301115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_7
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 368
+        width: 61
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8884d9a300ed3eb40800000000000000
+      internalID: 5468458465122666632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_8
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 380
+        width: 74
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc9a989e3e8b1610800000000000000
+      internalID: 1593023292704988383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_9
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 380
+        width: 78
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3fa1cbf12fd74e0800000000000000
+      internalID: -1982162042859359236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_10
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 378
+        width: 68
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2775ec62393179f20800000000000000
+      internalID: 3429231163998099314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_11
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 376
+        width: 78
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0a8176e417dc720800000000000000
+      internalID: 2868073119255929061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 204
+        width: 80
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57be3d50a49a617a0800000000000000
+      internalID: -6406747284497503371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_13
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 212
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f1e0254923ee970800000000000000
+      internalID: 8786015535659622276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_14
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 212
+        width: 77
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004c3a666a6bd7200800000000000000
+      internalID: 179500385967522816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_15
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 204
+        width: 82
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3cac4943fd2a5240800000000000000
+      internalID: 4781184477337267259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_16
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 206
+        width: 78
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19355fcc26001320800000000000000
+      internalID: 2526526180481644827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_17
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 215
+        width: 58
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494c627b3ed1305d0800000000000000
+      internalID: -3097599254833216364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_18
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 204
+        width: 81
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad12c49e51498fec0800000000000000
+      internalID: -3532911085842849318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_19
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 200
+        width: 74
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdab2b67cf821290800000000000000
+      internalID: -7921110707931992646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_20
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 204
+        width: 80
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11b43a1daf72e0e0800000000000000
+      internalID: -2242089283031355109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_21
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 212
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7125e0a1167d93a20800000000000000
+      internalID: 3042699835314426391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_22
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 212
+        width: 78
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acee97dd89721a140800000000000000
+      internalID: 4729104621219999434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 80
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f7143d18dc1ed70800000000000000
+      internalID: 9070757081979649850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_24
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 43
+        width: 70
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f76fc14b7618140800000000000000
+      internalID: 4720167907738681243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_25
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 44
+        width: 79
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6a6511ae8b72d20800000000000000
+      internalID: 3253772571251222239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_26
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 45
+        width: 81
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d455a2eef3a78dcd0800000000000000
+      internalID: -2533140375398623923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_27
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 48
+        width: 80
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3d90821f211ed40800000000000000
+      internalID: 5611787437648499646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_28
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 48
+        width: 76
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fff095c6e7f8410800000000000000
+      internalID: 1481541806243970882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_29
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 40
+        width: 81
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7231e0742930be630800000000000000
+      internalID: 3957260624367325991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_30
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 40
+        width: 78
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7184ba3e231846010800000000000000
+      internalID: 1181211057845913623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_31
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 40
+        width: 80
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5ad459bdced4bd0800000000000000
+      internalID: -2644196978349726238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_32
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 44
+        width: 81
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17076dbc6a820820800000000000000
+      internalID: 2883018911109285658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2DInventoryChestArmor_Monk copy_33
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 207
+        width: 81
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebbd9f9bae6bb050800000000000000
+      internalID: 5817365027075505124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 69d58555401581a4eaf9909540d16bfa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,968 @@
+fileFormatVersion: 2
+guid: 72ae2bcccf78461488aeb9f78bd5eab3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2899430087924318308
+    second: Portion_0
+  - first:
+      213: -6148074627582287594
+    second: Portion_1
+  - first:
+      213: -5745470748433268312
+    second: Portion_2
+  - first:
+      213: 1260644306605827534
+    second: Portion_3
+  - first:
+      213: 7066869112258497060
+    second: Portion_4
+  - first:
+      213: -4037332140951283119
+    second: Portion_5
+  - first:
+      213: -5571006127112749717
+    second: Portion_6
+  - first:
+      213: 1471806436098586639
+    second: Portion_7
+  - first:
+      213: 244751111807222939
+    second: Portion_8
+  - first:
+      213: 6800347943189349635
+    second: Portion_9
+  - first:
+      213: -1154515156000858612
+    second: Portion_10
+  - first:
+      213: -3150370636925642863
+    second: Portion_11
+  - first:
+      213: -4959221425963932247
+    second: Portion_12
+  - first:
+      213: -2161874494825362299
+    second: Portion_13
+  - first:
+      213: -7793898681598152731
+    second: Portion_14
+  - first:
+      213: -8357451962270462976
+    second: Portion_15
+  - first:
+      213: -7725224704463669356
+    second: Portion_16
+  - first:
+      213: -7480067799062990976
+    second: Portion_17
+  - first:
+      213: -6567414649152910748
+    second: Portion_18
+  - first:
+      213: 3120659421056149480
+    second: Portion_19
+  - first:
+      213: 2790539604860877105
+    second: Portion_20
+  - first:
+      213: 767987878002629653
+    second: Portion_21
+  - first:
+      213: -4179070154254320536
+    second: Portion_22
+  - first:
+      213: -7308913514928236062
+    second: Portion_23
+  - first:
+      213: 2053926162286793321
+    second: Portion_24
+  - first:
+      213: 2919807448277032733
+    second: Portion_25
+  - first:
+      213: 1905529660260913831
+    second: Portion_26
+  - first:
+      213: 4753861556152816161
+    second: Portion_27
+  - first:
+      213: 9064897992568249319
+    second: Portion_28
+  - first:
+      213: 1817355484176267761
+    second: Portion_29
+  - first:
+      213: -5305953097614087903
+    second: Portion_30
+  - first:
+      213: -8458536865056045144
+    second: Portion_31
+  - first:
+      213: -1468891566291159058
+    second: Portion_32
+  - first:
+      213: -3830926554022950038
+    second: Portion_33
+  - first:
+      213: -5005349032006663023
+    second: Portion_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Portion_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 70
+        width: 55
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ff03662b723c7d0800000000000000
+      internalID: -2899430087924318308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 61
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611ad5a33b6adaaa0800000000000000
+      internalID: -6148074627582287594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 70
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1cc3c8bccf340b0800000000000000
+      internalID: -5745470748433268312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 64
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5eb535155be7110800000000000000
+      internalID: 1260644306605827534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 64
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42a09560400921260800000000000000
+      internalID: 7066869112258497060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ad45afec388f7c0800000000000000
+      internalID: -4037332140951283119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_6
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 68
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d7bef917fcfa2b0800000000000000
+      internalID: -5571006127112749717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_7
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 64
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f083ac9d728ec6410800000000000000
+      internalID: 1471806436098586639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_8
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 64
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94c6a5e6d7856300800000000000000
+      internalID: 244751111807222939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_9
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 64
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3050cdeac60bf5e50800000000000000
+      internalID: 6800347943189349635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_10
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e93ce15965affe0800000000000000
+      internalID: -1154515156000858612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_11
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 64
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197d93bd892a744d0800000000000000
+      internalID: -3150370636925642863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_12
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 66
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a5e9ee536e4d2bb0800000000000000
+      internalID: -4959221425963932247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_13
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 64
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c05fed99a7ff1e0800000000000000
+      internalID: -2161874494825362299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_14
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 64
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5efe4f3617286d390800000000000000
+      internalID: -7793898681598152731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_15
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 66
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c4a7158bd540c80800000000000000
+      internalID: -8357451962270462976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_16
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 64
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497fe50bf0d7ac490800000000000000
+      internalID: -7725224704463669356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_17
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 70
+        width: 51
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f2305c7f5713890800000000000000
+      internalID: -7480067799062990976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_18
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 64
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46a4b881c2bdbd4a0800000000000000
+      internalID: -6567414649152910748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_19
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 64
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e72701a53fce4b20800000000000000
+      internalID: 3120659421056149480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_20
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13934675cfcf9b620800000000000000
+      internalID: 2790539604860877105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_21
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 70
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c1724f7e078aa00800000000000000
+      internalID: 767987878002629653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_22
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 70
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cfb3c16d5f006c0800000000000000
+      internalID: -4179070154254320536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_23
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 67
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e996a8e1e5819a90800000000000000
+      internalID: -7308913514928236062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_24
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 67
+        width: 65
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9625cf166f2018c10800000000000000
+      internalID: 2053926162286793321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_25
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f9717876d358820800000000000000
+      internalID: 2919807448277032733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_26
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 64
+        width: 58
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a292dc412dc17a10800000000000000
+      internalID: 1905529660260913831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_27
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 67
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122dfd5f5eb19f140800000000000000
+      internalID: 4753861556152816161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_28
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 64
+        width: 62
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb9e2442bcfccd70800000000000000
+      internalID: 9064897992568249319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_29
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 64
+        width: 66
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f93fe02f2b883910800000000000000
+      internalID: 1817355484176267761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_30
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 67
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12924d515c77d56b0800000000000000
+      internalID: -5305953097614087903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_31
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 70
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7c9c6598d3d9a80800000000000000
+      internalID: -8458536865056045144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_32
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 64
+        width: 65
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7f5a927e27d9be0800000000000000
+      internalID: -1468891566291159058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_33
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bc9d2a890d5dac0800000000000000
+      internalID: -3830926554022950038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portion_34
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 3
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194c56a239d698ab0800000000000000
+      internalID: -5005349032006663023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 671d179637b4c7b4e8d22877a15afb8d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

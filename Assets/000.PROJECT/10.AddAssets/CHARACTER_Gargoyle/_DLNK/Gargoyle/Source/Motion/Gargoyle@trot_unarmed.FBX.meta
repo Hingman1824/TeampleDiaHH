@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: ff4ed5e1483820c43a295488ff38af71
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Gargoyle
+    100002: Gargoyle1Bone02
+    100004: Gargoyle1Bone02 1
+    100006: Gargoyle1Bone02 2
+    100008: Gargoyle1Bone02 3
+    100010: Gargoyle1Bone02Bone01
+    100012: Gargoyle1Bone02Bone01 1
+    100014: Gargoyle1Bone02Bone01 2
+    100016: Gargoyle1Bone02Bone01 3
+    100018: Gargoyle1Bone02Bone01 4
+    100020: Gargoyle1Bone02Bone01 5
+    100022: Gargoyle1Bone03
+    100024: Gargoyle1Bone03 1
+    100026: //RootNode
+    100028: GargoyleHead
+    100030: GargoyleJaw
+    100032: GargoyleLAnkle
+    100034: GargoyleLArm1
+    100036: GargoyleLArm1 1
+    100038: GargoyleLArmCollarbone
+    100040: GargoyleLArmDigit11
+    100042: GargoyleLArmDigit12
+    100044: GargoyleLArmDigit13
+    100046: GargoyleLArmDigit21
+    100048: GargoyleLArmDigit22
+    100050: GargoyleLArmDigit23
+    100052: GargoyleLArmDigit31
+    100054: GargoyleLArmDigit32
+    100056: GargoyleLArmDigit33
+    100058: GargoyleLArmDigit41
+    100060: GargoyleLArmDigit42
+    100062: GargoyleLArmDigit43
+    100064: GargoyleLArmPalm
+    100066: GargoyleLCalf
+    100068: GargoyleLPlatform
+    100070: GargoyleLThigh
+    100072: GargoyleLToe
+    100074: GargoyleLWing1
+    100076: GargoyleLWing2
+    100078: GargoyleLWingCollarbone
+    100080: GargoyleLWingDigit11
+    100082: GargoyleLWingDigit12
+    100084: GargoyleLWingDigit13
+    100086: GargoyleLWingDigit21
+    100088: GargoyleLWingDigit22
+    100090: GargoyleLWingDigit23
+    100092: GargoyleLWingDigit31
+    100094: GargoyleLWingDigit32
+    100096: GargoyleLWingDigit33
+    100098: GargoyleLWingPalm
+    100100: GargoyleNeck1
+    100102: GargoyleNeck2
+    100104: GargoylePelvis
+    100106: GargoyleRArm1
+    100108: GargoyleRArm1 1
+    100110: GargoyleRArmCollarbone
+    100112: GargoyleRArmDigit11
+    100114: GargoyleRArmDigit12
+    100116: GargoyleRArmDigit13
+    100118: GargoyleRArmDigit21
+    100120: GargoyleRArmDigit22
+    100122: GargoyleRArmDigit23
+    100124: GargoyleRArmDigit31
+    100126: GargoyleRArmDigit32
+    100128: GargoyleRArmDigit33
+    100130: GargoyleRArmDigit41
+    100132: GargoyleRArmDigit42
+    100134: GargoyleRArmDigit43
+    100136: GargoyleRArmPalm
+    100138: GargoyleRibcage
+    100140: GargoyleRibcageBone01
+    100142: GargoyleRLegAnkle
+    100144: GargoyleRLegCalf
+    100146: GargoyleRLegPlatform
+    100148: GargoyleRLegThigh
+    100150: GargoyleRLegToe
+    100152: GargoyleRWing1
+    100154: GargoyleRWing2
+    100156: GargoyleRWingCollarbone
+    100158: GargoyleRWingDigit11
+    100160: GargoyleRWingDigit12
+    100162: GargoyleRWingDigit13
+    100164: GargoyleRWingDigit21
+    100166: GargoyleRWingDigit22
+    100168: GargoyleRWingDigit23
+    100170: GargoyleRWingDigit31
+    100172: GargoyleRWingDigit32
+    100174: GargoyleRWingDigit33
+    100176: GargoyleRWingPalm
+    100178: GargoyleSpine1
+    100180: GargoyleSpine2
+    100182: GargoyleSpine3
+    100184: GargoyleTail1
+    100186: GargoyleTail2
+    100188: GargoyleTail3
+    100190: GargoyleTail4
+    100192: GargoyleTail5
+    100194: Group1
+    100196: WeaponProp
+    400000: Gargoyle
+    400002: Gargoyle1Bone02
+    400004: Gargoyle1Bone02 1
+    400006: Gargoyle1Bone02 2
+    400008: Gargoyle1Bone02 3
+    400010: Gargoyle1Bone02Bone01
+    400012: Gargoyle1Bone02Bone01 1
+    400014: Gargoyle1Bone02Bone01 2
+    400016: Gargoyle1Bone02Bone01 3
+    400018: Gargoyle1Bone02Bone01 4
+    400020: Gargoyle1Bone02Bone01 5
+    400022: Gargoyle1Bone03
+    400024: Gargoyle1Bone03 1
+    400026: //RootNode
+    400028: GargoyleHead
+    400030: GargoyleJaw
+    400032: GargoyleLAnkle
+    400034: GargoyleLArm1
+    400036: GargoyleLArm1 1
+    400038: GargoyleLArmCollarbone
+    400040: GargoyleLArmDigit11
+    400042: GargoyleLArmDigit12
+    400044: GargoyleLArmDigit13
+    400046: GargoyleLArmDigit21
+    400048: GargoyleLArmDigit22
+    400050: GargoyleLArmDigit23
+    400052: GargoyleLArmDigit31
+    400054: GargoyleLArmDigit32
+    400056: GargoyleLArmDigit33
+    400058: GargoyleLArmDigit41
+    400060: GargoyleLArmDigit42
+    400062: GargoyleLArmDigit43
+    400064: GargoyleLArmPalm
+    400066: GargoyleLCalf
+    400068: GargoyleLPlatform
+    400070: GargoyleLThigh
+    400072: GargoyleLToe
+    400074: GargoyleLWing1
+    400076: GargoyleLWing2
+    400078: GargoyleLWingCollarbone
+    400080: GargoyleLWingDigit11
+    400082: GargoyleLWingDigit12
+    400084: GargoyleLWingDigit13
+    400086: GargoyleLWingDigit21
+    400088: GargoyleLWingDigit22
+    400090: GargoyleLWingDigit23
+    400092: GargoyleLWingDigit31
+    400094: GargoyleLWingDigit32
+    400096: GargoyleLWingDigit33
+    400098: GargoyleLWingPalm
+    400100: GargoyleNeck1
+    400102: GargoyleNeck2
+    400104: GargoylePelvis
+    400106: GargoyleRArm1
+    400108: GargoyleRArm1 1
+    400110: GargoyleRArmCollarbone
+    400112: GargoyleRArmDigit11
+    400114: GargoyleRArmDigit12
+    400116: GargoyleRArmDigit13
+    400118: GargoyleRArmDigit21
+    400120: GargoyleRArmDigit22
+    400122: GargoyleRArmDigit23
+    400124: GargoyleRArmDigit31
+    400126: GargoyleRArmDigit32
+    400128: GargoyleRArmDigit33
+    400130: GargoyleRArmDigit41
+    400132: GargoyleRArmDigit42
+    400134: GargoyleRArmDigit43
+    400136: GargoyleRArmPalm
+    400138: GargoyleRibcage
+    400140: GargoyleRibcageBone01
+    400142: GargoyleRLegAnkle
+    400144: GargoyleRLegCalf
+    400146: GargoyleRLegPlatform
+    400148: GargoyleRLegThigh
+    400150: GargoyleRLegToe
+    400152: GargoyleRWing1
+    400154: GargoyleRWing2
+    400156: GargoyleRWingCollarbone
+    400158: GargoyleRWingDigit11
+    400160: GargoyleRWingDigit12
+    400162: GargoyleRWingDigit13
+    400164: GargoyleRWingDigit21
+    400166: GargoyleRWingDigit22
+    400168: GargoyleRWingDigit23
+    400170: GargoyleRWingDigit31
+    400172: GargoyleRWingDigit32
+    400174: GargoyleRWingDigit33
+    400176: GargoyleRWingPalm
+    400178: GargoyleSpine1
+    400180: GargoyleSpine2
+    400182: GargoyleSpine3
+    400184: GargoyleTail1
+    400186: GargoyleTail2
+    400188: GargoyleTail3
+    400190: GargoyleTail4
+    400192: GargoyleTail5
+    400194: Group1
+    400196: WeaponProp
+    4300000: Group1
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Group1
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0299999993
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

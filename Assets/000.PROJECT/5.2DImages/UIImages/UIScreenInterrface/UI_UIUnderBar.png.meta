@@ -1,0 +1,1040 @@
+fileFormatVersion: 2
+guid: 03afbdb6129cc454795a8da08881637a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3185245375419136427
+    second: UI_UIUnderBar_ExpBar
+  - first:
+      213: -8280386596787854371
+    second: UI_UIUnderBar_ExpBar2
+  - first:
+      213: -9146043705795474492
+    second: UI_UIUnderBar_2
+  - first:
+      213: 6663864444809222284
+    second: UI_UIUnderBar_3
+  - first:
+      213: -5648529376737016117
+    second: UI_UIUnderBar_4
+  - first:
+      213: -3854040506305301071
+    second: UI_UIUnderBar_5
+  - first:
+      213: -2234273137960254716
+    second: UI_UIUnderBar_6
+  - first:
+      213: 5479514417590790627
+    second: UI_UIUnderBar_7
+  - first:
+      213: -3044921832672309049
+    second: UI_UIUnderBar_8
+  - first:
+      213: -6218729907489609796
+    second: UI_UIUnderBar_9
+  - first:
+      213: -7460965577329410144
+    second: UI_UIUnderBar_10
+  - first:
+      213: -1661997194970258746
+    second: UI_UIUnderBar_11
+  - first:
+      213: 9204732127127415506
+    second: UI_UIUnderBar_12
+  - first:
+      213: 690554322314746257
+    second: UI_UIUnderBar_13
+  - first:
+      213: -2947468826079026091
+    second: UI_UIUnderBar_14
+  - first:
+      213: -7305382384806355863
+    second: UI_UIUnderBar_15
+  - first:
+      213: -6120692595492974800
+    second: UI_UIUnderBar_16
+  - first:
+      213: -4156081131003097947
+    second: UI_UIUnderBar_17
+  - first:
+      213: -8999277943831215478
+    second: UI_UIUnderBar_18
+  - first:
+      213: -2196494630964036109
+    second: UI_UIUnderBar_19
+  - first:
+      213: -5975334453292518923
+    second: UI_UIUnderBar_20
+  - first:
+      213: -801855842711301351
+    second: UI_UIUnderBar_21
+  - first:
+      213: -8181576421962120217
+    second: UI_UIUnderBar_22
+  - first:
+      213: -1538538831134188285
+    second: UI_UIUnderBar_23
+  - first:
+      213: 1291760826091525694
+    second: UI_UIUnderBar_24
+  - first:
+      213: 6776552943594271466
+    second: UI_UIUnderBar_25
+  - first:
+      213: 1789325734469886957
+    second: UI_UIUnderBar_26
+  - first:
+      213: -7160771153143641140
+    second: UI_UIUnderBar_27
+  - first:
+      213: -6273373044902975376
+    second: UI_UIUnderBar_28
+  - first:
+      213: -8231813628735906184
+    second: UI_UIUnderBar_29
+  - first:
+      213: -5605200817617390587
+    second: UI_UIUnderBar_30
+  - first:
+      213: 2877741264183471015
+    second: UI_UIUnderBar_31
+  - first:
+      213: 8060299555687390340
+    second: UI_UIUnderBar_32
+  - first:
+      213: -5344355965989395108
+    second: UI_UIUnderBar_33
+  - first:
+      213: 559986093656814101
+    second: UI_UIUnderBar_Portal
+  - first:
+      213: -6702232461108387688
+    second: UI_UIUnderBar_Portal2
+  - first:
+      213: 1337852865145476540
+    second: UI_UIUnderBar_Portal3
+  - first:
+      213: 2974089008155845344
+    second: UI_UIUnderBar_Portal4
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_UIUnderBar_ExpBar
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 110
+        width: 746
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556cfab053cbbc3d0800000000000000
+      internalID: -3185245375419136427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_ExpBar2
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 110
+        width: 746
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd3ed87f248261d80800000000000000
+      internalID: -8280386596787854371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_2
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 82
+        width: 294
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb0dd715b9b21180800000000000000
+      internalID: -9146043705795474492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 33
+        width: 24
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c889538e76dca7c50800000000000000
+      internalID: 6663864444809222284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_4
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 32
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc64b3485746c91b0800000000000000
+      internalID: -5648529376737016117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 28
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5b4bf3492b38ac0800000000000000
+      internalID: -3854040506305301071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_6
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 33
+        width: 24
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4038ea03b644ef0e0800000000000000
+      internalID: -2234273137960254716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_7
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 32
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e96122c4552b0c40800000000000000
+      internalID: 5479514417590790627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_8
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 28
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c05cb2d9b34eb5d0800000000000000
+      internalID: -3044921832672309049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_9
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 32
+        width: 24
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7ebfde812a2b9a0800000000000000
+      internalID: -6218729907489609796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_10
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 32
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0affcd95653557890800000000000000
+      internalID: -7460965577329410144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_11
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 28
+        width: 31
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c22a185b566fe8e0800000000000000
+      internalID: -1661997194970258746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_12
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 33
+        width: 24
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da2e02d917cdbf70800000000000000
+      internalID: 9204732127127415506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_13
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 32
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1995ea75f77559900800000000000000
+      internalID: 690554322314746257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_14
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 28
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554a50318bc7817d0800000000000000
+      internalID: -2947468826079026091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_15
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 28
+        width: 30
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c98353d611e9a90800000000000000
+      internalID: -7305382384806355863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_16
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 33
+        width: 24
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f0742638eee0ba0800000000000000
+      internalID: -6120692595492974800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_17
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 22
+        width: 46
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac4bd03b32a256c0800000000000000
+      internalID: -4156081131003097947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_18
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 33
+        width: 61
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a82ceeae3642c1380800000000000000
+      internalID: -8999277943831215478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_19
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 33
+        width: 24
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fdf55a45cb7481e0800000000000000
+      internalID: -2196494630964036109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_20
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 22
+        width: 46
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1b85139f8531da0800000000000000
+      internalID: -5975334453292518923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_21
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 35
+        width: 21
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9131f160c5c3fd4f0800000000000000
+      internalID: -801855842711301351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_22
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 32
+        width: 24
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e38c329793357e80800000000000000
+      internalID: -8181576421962120217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_23
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 22
+        width: 46
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d1a19a51306aae0800000000000000
+      internalID: -1538538831134188285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_24
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 34
+        width: 22
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3653f590a14de110800000000000000
+      internalID: 1291760826091525694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_25
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 33
+        width: 24
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2709c9ff62b0e50800000000000000
+      internalID: 6776552943594271466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_26
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 22
+        width: 46
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3ea867646f4d810800000000000000
+      internalID: 1789325734469886957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_27
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 35
+        width: 22
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb420b5394df9c90800000000000000
+      internalID: -7160771153143641140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_28
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 32
+        width: 24
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0782c03147080f8a0800000000000000
+      internalID: -6273373044902975376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_29
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 22
+        width: 46
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e1af16e19b2cd80800000000000000
+      internalID: -8231813628735906184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_30
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 34
+        width: 22
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504bf23dd835632b0800000000000000
+      internalID: -5605200817617390587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_31
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 32
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aba32fce6acfe720800000000000000
+      internalID: 2877741264183471015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_32
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 32
+        width: 24
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c5cf79dbfebdf60800000000000000
+      internalID: 8060299555687390340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_33
+      rect:
+        serializedVersion: 2
+        x: 1492
+        y: 35
+        width: 21
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5566f5809805d5b0800000000000000
+      internalID: -5344355965989395108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_Portal
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 33
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512b29f926875c700800000000000000
+      internalID: 559986093656814101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_Portal2
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 32
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890ea892613ecf2a0800000000000000
+      internalID: -6702232461108387688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_Portal3
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 31
+        width: 35
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb51cb4b712019210800000000000000
+      internalID: 1337852865145476540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_UIUnderBar_Portal4
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 23
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2e58d0236164920800000000000000
+      internalID: 2974089008155845344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8adc4ee78a16f87479e99502a441c0d3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

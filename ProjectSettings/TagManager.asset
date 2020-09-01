@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - RoomList
+  - SoundManager
+  - SoundCanvas
+  - MiniMapManager
+  - Loading
+  - PlayerSpawnPoint
+  - BabaWeapon
+  - Arrow
+  - ArrowPoint
+  - Attack
+  - Enemy
+  - Ground
+  - Belt
+  - Pants
+  - Foot
+  - RRing
+  - LRing
+  - Body
+  - UIPanel
+  - Glove
+  - EquipmentSpace
+  - Hat
+  - LHand
+  - Inventory
+  - RHand
+  - ShopManager
+  - InvenItem
+  - DropItem
+  - EquipmentMng
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - items
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
