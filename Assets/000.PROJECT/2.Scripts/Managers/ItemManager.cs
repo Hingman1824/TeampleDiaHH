@@ -142,18 +142,18 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
         uiPanel = GameObject.Find("UIPanel").transform;
         isEquipment = false;
         rectTr = GetComponent<RectTransform>();
-        equipmentManager = GameObject.FindObjectOfType<EquipmentManager>();
+        equipmentManager = GameObject.FindGameObjectWithTag("EquipmentMng").GetComponent<EquipmentManager>();
 
         soundManager = GameObject.FindObjectOfType<SoundManager>();
         isMouseTracking = false;
         itemManager = this;
         inventoryTr = uiPanel.Find("InvenImg").transform;
-        UIInfoDataInit();
+        //UIInfoDataInit();
         shopManager = uiPanel.Find("SellerImg").GetComponent<ShopManager>();
         acceptedManager = GameObject.Find("AcceptedManager").GetComponent<AcceptedManager>();
         itemImage = transform.GetChild(0).GetComponent<Image>();
         itemImageBack = GetComponent<Image>();
-        itemCreater = GameObject.Find("ItemCreator").GetComponent<ItemCreateManager>();
+        itemCreater = GameObject.Find("ItemCreateManager").GetComponent<ItemCreateManager>();
     }
 
     private void Start()
