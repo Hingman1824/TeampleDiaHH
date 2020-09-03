@@ -22,7 +22,13 @@ public class MapPortalMove : MonoBehaviour
         loading = FindObjectOfType<LoadingScript>();
         mapName = FindObjectOfType<MiniMapCamera>();
     }
-
+    private void Update()
+    {
+        if (CheckObjectInCamera(this.gameObject))
+        {
+            this.gameObject.transform.Rotate(Vector3.left * Time.deltaTime *5);
+        }
+    }
     void OnTriggerEnter(Collider other) //문에 닿으면
     {
         if (other.tag == "Player") //플레이어가 문에 닿았을 때
@@ -69,5 +75,15 @@ public class MapPortalMove : MonoBehaviour
 
             other.gameObject.transform.position = PortalPoint.position; //플레이어의 위치를 변경 //마커는 플레이어의 위치를 따라감
         }
+    }
+    public bool CheckObjectInCamera(GameObject _target) //카메라로 바라보는 화면에 오브젝트가 보여지는지 알수 있는 함수.
+    {
+        Vector3 screenPoint = Camera.main.WorldToViewportPoint(_target.transform.position);
+        bool onScreen = screenPoint.z > 0 &&
+                        screenPoint.x > 0 &&
+                        screenPoint.x < 1 &&
+                        screenPoint.y > 0 &&
+                        screenPoint.y < 1;
+        return onScreen;
     }
 }

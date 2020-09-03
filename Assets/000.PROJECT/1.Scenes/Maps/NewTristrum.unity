@@ -11290,8 +11290,8 @@ GameObject:
   - component: {fileID: 1092806938}
   - component: {fileID: 1092806942}
   - component: {fileID: 1092806941}
-  - component: {fileID: 1092806940}
   - component: {fileID: 1092806939}
+  - component: {fileID: 1092806940}
   m_Layer: 0
   m_Name: Portal
   m_TagString: Untagged
@@ -11307,7 +11307,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092806937}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.41, y: 4.88, z: 2.91}
+  m_LocalPosition: {x: 11.41, y: 3.5, z: 2.91}
   m_LocalScale: {x: 0.3, y: 0.48, z: 0.54}
   m_Children: []
   m_Father: {fileID: 1397165505508613868}
@@ -11332,20 +11332,19 @@ MonoBehaviour:
   midCam: {fileID: 2563883026251536013}
   zeroCam: {fileID: 2563883025558429955}
   mapNum: 4
---- !u!136 &1092806940
-CapsuleCollider:
+--- !u!65 &1092806940
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092806937}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 2
+  m_Size: {x: 0.0000029400724, y: 8.995189, z: 7.652605}
+  m_Center: {x: -0.000008585029, y: -1.8071802, z: 0.25904712}
 --- !u!23 &1092806941
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16611,6 +16610,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 204433af4249a9840a7b34f81883fe13,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3e5d8f4f13aa50042b032606bd9c914a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 204433af4249a9840a7b34f81883fe13, type: 3}
 --- !u!4 &2018762903 stripped

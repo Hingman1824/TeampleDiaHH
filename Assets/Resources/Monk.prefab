@@ -80,6 +80,7 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   expText: {fileID: 0}
   playerName: {fileID: 0}
+  Level: 70
   isMantraOfEvasion: 0
   isCycloneStrike: 0
   isDashingStrike: 0
@@ -159,12 +160,12 @@ MonoBehaviour:
     \uC5C6\uB294 \uBAA8\uC158\uC774\uC5EC\uB3C4 \uCC44\uC6CC\uB193\uC744\uAC83\n\uCD94\uAC00
     \uC694\uC18C \uC788\uC744\uC2DC \uAF2D \uBA54\uBAA8 \uD574\uC8FC\uC138\uC694."
   anims:
-    idle1: {fileID: 7400000, guid: 7885bde21480e9248b820e3f2ff84df3, type: 2}
-    move: {fileID: 7400000, guid: 5a44f7157176945439da3d17680d35d1, type: 2}
+    idle1: {fileID: 7400002, guid: 7f02c16c3050e3d4eaac8cb103001d00, type: 3}
+    move: {fileID: 7400016, guid: 7f02c16c3050e3d4eaac8cb103001d00, type: 3}
     attack: {fileID: 7400000, guid: 948add160ae471c48a6049af9fe45db4, type: 2}
     skill1: {fileID: 7400000, guid: c24781cb2530ee64fa00fee0bb2adf67, type: 2}
     skill2: {fileID: 7400000, guid: 24cf3354472b0be41bc050c6d2edc37d, type: 2}
-    skill3: {fileID: 7400000, guid: dc603b3c8b722014f8990988f8b68de4, type: 2}
+    skill3: {fileID: 7400062, guid: 7f02c16c3050e3d4eaac8cb103001d00, type: 3}
     hit: {fileID: 0}
     die: {fileID: 7400000, guid: 02aa13ee89310fc44b3b4239e2d622db, type: 2}
   current: 1
