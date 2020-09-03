@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using Enemy;
+using UnityEngine.AI;
 
 [System.Serializable]
 public class Anim
@@ -47,11 +48,13 @@ public class Monster : MonsterManager
     private Animation _anim; //자신의 애니메이션 컴포넌트
     private int animn;
 
-    private GameObject[] players; //플레이어 (배열선언 파티원들도 찾기위해)
-    private Transform playerTarget;
-    private float dist1;
+    public GameObject[] players; //플레이어 (배열선언 파티원들도 찾기위해)
+    public Transform playerTarget;
+    public float dist1;
 
     private Rigidbody monRb;
+    //
+    private NavMeshAgent nvAgent;
 
     public enum MODE_STATE { idle = 1, move, attack, die }; //현재 상태정보 저장
     public enum MODE_KIND { Skeleton, Gargoyle, Arachne, Diablo};
@@ -73,9 +76,10 @@ public class Monster : MonsterManager
 
     void Awake()
     {
-        players = GameObject.FindGameObjectsWithTag("Player"); //태그로 모든 플레이어를 찾음
         _anim = GetComponent<Animation>();
-        monRb = GetComponent<Rigidbody>();
+        //x`monRb = GetComponent<Rigidbody>();
+
+        nvAgent = GetComponent<NavMeshAgent>();
 
         //  네트워크 추가w
         pv = GetComponent<PhotonView>();
@@ -124,9 +128,9 @@ public class Monster : MonsterManager
                 if (dist1 > 10f && dist1 < 500f) //플레이어와의 거리가 3이상이면 500이하 일 때
                 {
                     transform.LookAt(playerTarget); //플레이어를 바라보고
-                                                    //monRb.AddForce((playerTarget.position-transform.position) * moveSpeed);
-                    monRb.velocity = (playerTarget.position - transform.position) * (Time.deltaTime * moveSpeed); //벽에 막히면 그대로 있음.
-                                                                                                                  //transform.Translate(transform.forward * (Time.deltaTime * moveSpeed), Space.World); //플레이어를 향해 이동
+                    nvAgent.SetDestination(playerTarget.position);
+                    //monRb.velocity = (playerTarget.position - transform.position) * (Time.deltaTime * moveSpeed); //벽에 막히면 그대로 있음.
+
                     animn = 1; //애니메이션 변경
                 }
                 else if (dist1 < 10f) //플레이어와 거리가 3이하이면 공격애니메이션 재생
@@ -214,6 +218,9 @@ public class Monster : MonsterManager
 
     IEnumerator targetSetting() //가까운 플레이어를 찾는 함수
     {
+        yield return new WaitForSeconds(0.5f); //0.5초 뒤에 몬스터는 생성되고
+        players = GameObject.FindGameObjectsWithTag("Player"); //태그로 모든 플레이어를 찾음
+
         while (true) //반복으로 매번 가까운 플레이어를 찾아감
         {
             yield return new WaitForSeconds(0.3f);

@@ -377,9 +377,9 @@ GameObject:
   - component: {fileID: 3306475517266215097}
   - component: {fileID: 3306475517271770457}
   - component: {fileID: 8571602780965299726}
-  - component: {fileID: -1699835200862269437}
   - component: {fileID: -2713502350224283861}
   - component: {fileID: 1818759511941334093}
+  - component: {fileID: 7414043458375190430}
   m_Layer: 0
   m_Name: Gargoyle
   m_TagString: Enemy
@@ -395,7 +395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3306475517265992857}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 2.48, y: 0, z: 0}
+  m_LocalPosition: {x: 2.48, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3306475517266215099}
@@ -452,24 +452,11 @@ MonoBehaviour:
     Move: {fileID: 7400000, guid: b1f7b1156364bf843b50afd6ab456064, type: 3}
     Dead: {fileID: 7400000, guid: 88b11db7c85948049b4eef0c2c9e9d65, type: 3}
     Show: {fileID: 7400000, guid: 43eaf92edca394e469bccabcd0f07b61, type: 3}
+  players: []
+  playerTarget: {fileID: 0}
+  dist1: 0
   enemyMode: 1
   enemyKind: 1
---- !u!54 &-1699835200862269437
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3306475517265992857}
-  serializedVersion: 2
-  m_Mass: 10
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
 --- !u!136 &-2713502350224283861
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -479,7 +466,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 3306475517265992857}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5410164
   m_Height: 2.563787
   m_Direction: 1
@@ -511,6 +498,28 @@ MonoBehaviour:
   instantiationId: -1
   currentMasterID: -1
   isRuntimeInstantiated: 0
+--- !u!195 &7414043458375190430
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306475517265992857}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.38
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2.25
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &3306475517265992859
 GameObject:
   m_ObjectHideFlags: 0
