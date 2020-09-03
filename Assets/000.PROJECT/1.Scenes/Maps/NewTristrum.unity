@@ -2115,12 +2115,12 @@ PrefabInstance:
     - target: {fileID: 3067753795475235252, guid: a1d6172a05a01174ea699b1be26341a9,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -201.85
+      value: -228.3
       objectReference: {fileID: 0}
     - target: {fileID: 3067753795475235252, guid: a1d6172a05a01174ea699b1be26341a9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -160.37
+      value: -179.24
       objectReference: {fileID: 0}
     - target: {fileID: 3067753795475235252, guid: a1d6172a05a01174ea699b1be26341a9,
         type: 3}
@@ -2130,7 +2130,7 @@ PrefabInstance:
     - target: {fileID: 3067753795475235252, guid: a1d6172a05a01174ea699b1be26341a9,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 82.138535
+      value: 86.21153
       objectReference: {fileID: 0}
     - target: {fileID: 3067753795475235252, guid: a1d6172a05a01174ea699b1be26341a9,
         type: 3}
@@ -2175,7 +2175,7 @@ PrefabInstance:
     - target: {fileID: 3067753795475235253, guid: a1d6172a05a01174ea699b1be26341a9,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d6172a05a01174ea699b1be26341a9, type: 3}
@@ -9946,18 +9946,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpPotionPF: {fileID: 6108694535074867271, guid: 760e955c4ce304845a2a64b7f865c43e,
     type: 3}
-  glovePF: {fileID: 0}
-  beltPF: {fileID: 0}
-  bodyPF: {fileID: 0}
-  hatPF: {fileID: 0}
-  pantsPF: {fileID: 0}
-  footPF: {fileID: 0}
-  ringPF: {fileID: 0}
-  weapon1: {fileID: 0}
-  weapon2: {fileID: 0}
-  weapon3: {fileID: 0}
-  weapon4: {fileID: 0}
-  weapon5: {fileID: 0}
+  glovePF: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
+  beltPF: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
+  bodyPF: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
+  hatPF: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
+  pantsPF: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
+  footPF: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
+  ringPF: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
+  weapon1: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
+  weapon2: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
+  weapon3: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
+  weapon4: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
+  weapon5: {fileID: 997730179225560877, guid: 276dd812a61d9a543982b2376e51025a, type: 3}
 --- !u!4 &521034437
 Transform:
   m_ObjectHideFlags: 0
@@ -25539,7 +25539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &6559957714115672404
 MonoBehaviour:
   m_ObjectHideFlags: 0

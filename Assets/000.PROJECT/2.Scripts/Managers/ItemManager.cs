@@ -257,7 +257,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
         GameObject _temp = temp.transform.Find("InvenImg").gameObject;
 
         uiInfo = _temp.transform.Find("Info").gameObject;
-        equipmentInfo = _temp.transform.Find("EquipMentInfo").gameObject;
+        equipmentInfo = _temp.transform.Find("EquipmentInfo").gameObject;
 
         uiName = uiInfo.transform.Find("Name").GetComponent<Text>();
         uiRarity = uiInfo.transform.Find("rarity").GetComponent<Text>();
