@@ -2215,9 +2215,9 @@ MonoBehaviour:
   xPosition: 0
   yPosition: 0
   itemKind: 0
-  itemName: 
-  rarity: 0
-  needLevel: 0
+  itemName: "\uC778\uB098\uC758 \uAD11\uB300\uD55C \uC601\uC5ED"
+  rarity: 3
+  needLevel: 30
   damage: 300
   defense: 0
   equipmentManager: {fileID: 0}
@@ -2573,22 +2573,22 @@ PrefabInstance:
     - target: {fileID: 6108694535074867320, guid: 760e955c4ce304845a2a64b7f865c43e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -29.52
+      value: -23.471
       objectReference: {fileID: 0}
     - target: {fileID: 6108694535074867320, guid: 760e955c4ce304845a2a64b7f865c43e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -30.36
+      value: -204.87
       objectReference: {fileID: 0}
     - target: {fileID: 6108694535074867320, guid: 760e955c4ce304845a2a64b7f865c43e,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 40.963623
+      value: 46.940796
       objectReference: {fileID: 0}
     - target: {fileID: 6108694535074867320, guid: 760e955c4ce304845a2a64b7f865c43e,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 39.27307
+      value: 43.44998
       objectReference: {fileID: 0}
     - target: {fileID: 6108694535074867320, guid: 760e955c4ce304845a2a64b7f865c43e,
         type: 3}
