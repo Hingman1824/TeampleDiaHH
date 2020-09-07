@@ -23,6 +23,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     public bool isRot = false;
     public float playerRot = 10;
     public Animator anim;
+    public SmoothFollow smooth;
 
     public PhotonManager pm;
     public PhotonView pv;
@@ -30,7 +31,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     public Transform camPivot;
     public Vector3 currPos = Vector3.zero;
     public Quaternion currRot = Quaternion.identity;
-    Monster monster;
+    //public Monster monster;
 
     public Image expBar;
     public Image hpBar;
@@ -48,7 +49,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     void Awake()
     {
         pm = FindObjectOfType<PhotonManager>();
-        monster = FindObjectOfType<Monster>();
+        
     }
 
     private void Start()
@@ -57,7 +58,8 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         hpBar = GameObject.Find("Hp").GetComponent<Image>();
         expText = GameObject.Find("ExpText").GetComponent<Text>();
         playerName = GameObject.Find("PlayerNickName").GetComponent<Text>();
-
+        smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
+       // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
 
         playerName.text = PhotonNetwork.player.NickName;
     }
@@ -91,6 +93,19 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
             Hp = value;
         }
     }
+
+    public void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.tag == "Enemy")
+        {
+            smooth.playerHit();
+            Hp -= 10;
+            //monster.monsterDamage;
+            hpBar.fillAmount -= 10 * 0.01f;
+            //smooth.PlayerBlood.SetActive(false);
+        }
+    }
+
     public int PlayerLevel
     {
         get
