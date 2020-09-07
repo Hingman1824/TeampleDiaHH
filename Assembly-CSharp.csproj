@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1BF601F2-C27F-95EC-B298-6883F3C642EB}</ProjectGuid>
+    <ProjectGuid>{840D7C5A-113A-A3D0-5872-7232E4F896FC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -159,6 +159,8 @@
     <Compile Include="Assets\000.PROJECT\8.Anim\Warrior Pack Bundle 2 FREE\Code\IKHands.cs" />
     <Compile Include="Assets\000.PROJECT\8.Anim\Warrior Pack Bundle 2 FREE\Code\SmoothFollow.cs" />
     <Compile Include="Assets\000.PROJECT\8.Anim\Warrior Pack Bundle 2 FREE\Code\WarriorAnimationDemoFREE.cs" />
+    <Compile Include="Assets\3y3net Assets\Strategy Kit\LiveBar\Demo Scene\SceneDemoScript.cs" />
+    <Compile Include="Assets\3y3net Assets\Strategy Kit\LiveBar\LiveBar.cs" />
     <Compile Include="Assets\AddAssets\ANI_Mecanim HeroMale 90 Animations\Mecanim HeroMale 90 Animations\Script\CharacterSetup.cs" />
     <Compile Include="Assets\AddAssets\ANI_Mecanim HeroMale 90 Animations\Mecanim HeroMale 90 Animations\Script\PlayGUI.cs" />
     <Compile Include="Assets\AddAssets\MAP_Medieval Environment\Medieval Environment\Shaders\Desaturate\DesaturateEffect.cs" />
@@ -212,6 +214,28 @@
     <Compile Include="Assets\DownLoadAsset\Flooded_Grounds\Scripts\FPSController\CharController_Motor.cs" />
     <Compile Include="Assets\DownLoadAsset\Flooded_Grounds\Scripts\FPSDisplay.cs" />
     <Compile Include="Assets\DownLoadAsset\Flooded_Grounds\Scripts\WaterFloat.cs" />
+    <Compile Include="Assets\FT_MagicEffect_Vol04\Script\FTME04_AnimationScrollTexture.cs" />
+    <Compile Include="Assets\FT_MagicEffect_Vol04\Script\FTME04_AnimationSpriteSheet.cs" />
+    <Compile Include="Assets\FT_MagicEffect_Vol04\Script\FTME04_DeadTime.cs" />
+    <Compile Include="Assets\FT_MagicEffect_Vol04\Script\FTME04_SampleSceneGUI.cs" />
+    <Compile Include="Assets\FT_MagicEffect_Vol04\Script\FTME04_StopCam.cs" />
+    <Compile Include="Assets\FT_MagicEffect_Vol04\Script\FTME04_VisibleBG.cs" />
+    <Compile Include="Assets\FightEffects\Scripts\C\Fgt_ContinuousRotation.cs" />
+    <Compile Include="Assets\FightEffects\Scripts\C\Fgt_DestroyThisTimed.cs" />
+    <Compile Include="Assets\FightEffects\Scripts\C\Fgt_EffectOnLegacyAnim.cs" />
+    <Compile Include="Assets\FightEffects\Scripts\C\Fgt_LegacyAnimSequencePlayer.cs" />
+    <Compile Include="Assets\FightEffects\Scripts\C\Fgt_MaterialGradient.cs" />
+    <Compile Include="Assets\GameBarCreationSystem\Scripts\ExampleGUIAspectsController.cs" />
+    <Compile Include="Assets\GameBarCreationSystem\Scripts\ExperienceSystem.cs" />
+    <Compile Include="Assets\GameBarCreationSystem\Scripts\GUIController.cs" />
+    <Compile Include="Assets\GameBarCreationSystem\Scripts\GlobeBarSystem.cs" />
+    <Compile Include="Assets\GameBarCreationSystem\Scripts\HealthSystem.cs" />
+    <Compile Include="Assets\GameBarCreationSystem\Scripts\ManaSystem.cs" />
+    <Compile Include="Assets\GameBarCreationSystem\Scripts\ScrollBarEssentials.cs" />
+    <Compile Include="Assets\GradientGUIBars\Script\ControlGUIScript.cs" />
+    <Compile Include="Assets\GradientGUIBars\Script\GUIBarScript.cs" />
+    <Compile Include="Assets\GradientGUIBars\Script\MoreButtonScript.cs" />
+    <Compile Include="Assets\GradientGUIBars\Script\MoveCameraScript.cs" />
     <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\Demo2DJumpAndRun.cs" />
     <Compile Include="Assets\Photon Unity Networking\Demos\Demo2DJumpAndRunWithPhysics\Scripts\JumpAndRunMovement.cs" />
     <Compile Include="Assets\Photon Unity Networking\Demos\DemoBoxes\ColorPerPlayer.cs" />
@@ -357,6 +381,35 @@
     <Compile Include="Assets\PhotonChatApi\ChatState.cs" />
     <Compile Include="Assets\PhotonChatApi\ChatUserStatus.cs" />
     <Compile Include="Assets\PhotonChatApi\IChatClientListener.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Demo\MyGuiV2.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Balls\AddMaterialOnHit.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Balls\AnimatorBehaviour.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Balls\LazyLoad.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Balls\LineRendererFadeInOut.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Balls\ProjectileCollisionBehaviour.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Balls\SetRandomStartPoint.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Buffs\ShieldCollisionBehaviour.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Objects\MoveOnGround.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Shots\LineRendererBehaviour.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Waves\ClothGridCollisionBehaviour.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Waves\InstanceMaterial.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\Billboard.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\CollisionActiveBehaviour.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\DeadTime.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\DistortionMobile.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\EffectSettings.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\FadeInOutLight.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\FadeInOutParticles.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\FadeInOutScale.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\FadeInOutShaderColor.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\FadeInOutShaderFloat.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\FadeInOutStatus.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\FixShaderQueue.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\InvokeInterval.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\OnStartSendCollision.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\RandomRotateOnStart.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\SetPositionOnHit.cs" />
+    <Compile Include="Assets\Realistic Effects Pack\Scripts\Share\UVTextureAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -440,11 +493,13 @@
     <None Include="Assets\Photon Unity Networking\Demos\Shared Assets\Skin\3dText.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CreaseApply.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
+    <None Include="Assets\Realistic Effects Pack\Shaders\Distortion\Free\FreeDistortionCullOff.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\RadialBlur.shader" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\Resources\TreeCreator\TreeCreatorLeavesOptimized.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\VignetteShader.shader" />
+    <None Include="Assets\Realistic Effects Pack\Shaders\GlowAdditiveSimple.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\MotionBlurClear.shader" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
@@ -488,6 +543,7 @@
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\Fog.shader" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+    <None Include="Assets\Realistic Effects Pack\Shaders\Mobile\Distortion\DistortionCullOff.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ShowAlphaChannel.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\GrayscaleEffect.shader" />
@@ -530,6 +586,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\000.PROJECT\9.Shader\FowShader.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
+    <None Include="Assets\Realistic Effects Pack\Shaders\Distortion\DistortionCullOff.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
@@ -720,10 +777,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="QSFunctions">
+      <HintPath>D:/GitHub/dia/Assets/QS/Scripts/QSFunctions.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -1080,76 +1140,76 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Monetization">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Kim_Old/Desktop/ta/Diablo3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{535EFDA0-DB13-FFCF-2A92-F8EAD4C7DE96}</Project>
+      <Project>{79E88258-1E3D-8FF6-2892-A5B80AC03354}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="sample.trade.csproj">
-      <Project>{72672424-B915-BA48-68B2-E21BA8EB5102}</Project>
+      <Project>{DD75E23B-303F-98F9-9796-D9DEA68D602A}</Project>
       <Name>sample.trade</Name>
     </ProjectReference>
     <ProjectReference Include="samples-environment.csproj">
-      <Project>{3E64012D-4839-261E-97AB-9F4BD42A3077}</Project>
+      <Project>{3D0AC8B0-1947-D93E-9D52-BF9E4C63FB77}</Project>
       <Name>samples-environment</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.standard.csproj">
-      <Project>{834C35A6-65FC-E7BE-2733-5E8970B4FBAB}</Project>
+      <Project>{7E091500-4094-15B6-6F79-738695D43AB3}</Project>
       <Name>goodcat.un-inventory.standard</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.editor.csproj">
-      <Project>{ACD285CF-F2C5-52D2-7929-EF2A47457AF2}</Project>
+      <Project>{3E942EFC-6CE0-E141-A860-0CD4A202D323}</Project>
       <Name>goodcat.un-inventory.editor</Name>
     </ProjectReference>
     <ProjectReference Include="sample.hero.csproj">
-      <Project>{6BE873D8-EB66-4578-1724-C1C98BB4ABEA}</Project>
+      <Project>{71770DBB-C0AD-B8BC-E8D5-952BFD49D18C}</Project>
       <Name>sample.hero</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.core.csproj">
-      <Project>{F402F80D-D1BE-6652-A541-B07AF11196A6}</Project>
+      <Project>{81F2F18F-2FEF-B24B-98A6-AA525585679D}</Project>
       <Name>goodcat.un-inventory.core</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.plugins.standard.csproj">
-      <Project>{304EECCA-2591-AD0C-1C29-FA03BB0A261E}</Project>
+      <Project>{78344610-FE39-82FC-C53F-CB830F2EFFD9}</Project>
       <Name>goodcat.un-inventory.plugins.standard</Name>
     </ProjectReference>
   </ItemGroup>
