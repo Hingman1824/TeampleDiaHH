@@ -11,6 +11,7 @@ public class Anim
     public AnimationClip Move; //이동
     public AnimationClip Dead; //사망
     public AnimationClip Show; //첫 등장
+    public AnimationClip Hit;
 }
 [RequireComponent(typeof(AudioSource))]
 
@@ -30,11 +31,11 @@ public class Monster : MonsterManager
     [Space(3)]
     [Header("몬스터 스탯")]
     [Tooltip("몬스터 체력")]
-    [Range(0, 9999)] public int monsterHp = 100;
+    [Range(0, 9999)] public float monsterHp = 100f;
     [Tooltip("몬스터 이동속도")]
     [Range(0, 10)] public float monsterSpeed = 1f;
     [Tooltip("몬스터 공격속도")]
-    [Range(0, 10)] public float monsterAttackSpeed = 1.3f;
+    [Range(0, 10)] public float monsterAttackSpeed = 1.5f;
     [Tooltip("몬스터 대미지")]
     [Range(0, 9999)] public float monsterDamage = 10f;
     [Space(3)]
@@ -51,17 +52,21 @@ public class Monster : MonsterManager
     public GameObject[] players; //플레이어 (배열선언 파티원들도 찾기위해)
     public Transform playerTarget;
     public float dist1;
+    public AudioClip hitSound, deadSound, Groul;
+    public GameObject bloodEff;
+    public GameObject damageTxt;
+    public GameObject explosion;
 
-    private Rigidbody monRb;
-    //
     private NavMeshAgent nvAgent;
+    private AudioSource myAudio;
+    private PlayerManager player;
 
     public enum MODE_STATE { idle = 1, move, attack, die }; //현재 상태정보 저장
-    public enum MODE_KIND { Skeleton, Gargoyle, Arachne, Diablo};
+    public enum MODE_KIND { Skeleton, Gargoyle, Arachne, Diablo };
 
     public MODE_STATE enemyMode = MODE_STATE.idle; //Enemy의 상태 셋팅
     public MODE_KIND enemyKind;  //Enemy의 종류 셋팅
-    
+
     //네트워크 관련 변수
 
     //PhotonView 컴포넌트를 할당할 레퍼런스 
@@ -76,9 +81,10 @@ public class Monster : MonsterManager
 
     void Awake()
     {
+        player = FindObjectOfType<PlayerManager>();
+        damageTxt.SetActive(false);
         _anim = GetComponent<Animation>();
-        //x`monRb = GetComponent<Rigidbody>();
-
+        myAudio = GetComponent<AudioSource>();
         nvAgent = GetComponent<NavMeshAgent>();
 
         //  네트워크 추가w
@@ -101,6 +107,7 @@ public class Monster : MonsterManager
             //일정 간격으로 주변의 가장 가까운 플레이어를 찾는 코루틴
             StartCoroutine(targetSetting()); //타겟을 찾음
 
+            myAudio.PlayOneShot(Groul);
             //애니메이션 관리
             StartCoroutine(AnimationSet());
             //StartCoroutine(StatusSet());
@@ -129,6 +136,7 @@ public class Monster : MonsterManager
                 {
                     transform.LookAt(playerTarget); //플레이어를 바라보고
                     nvAgent.SetDestination(playerTarget.position);
+                    
                     //monRb.velocity = (playerTarget.position - transform.position) * (Time.deltaTime * moveSpeed); //벽에 막히면 그대로 있음.
 
                     animn = 1; //애니메이션 변경
@@ -210,6 +218,10 @@ public class Monster : MonsterManager
             else if (animn == 4)
             {
                 _anim.CrossFade(anims.Show.name, 0.3f);
+            }
+            else if (animn == 5)
+            {
+                _anim.CrossFade(anims.Hit.name, 0.3f);
                 // 코루틴 함수를 빠져나감(종료)
                 yield break;
             }
@@ -218,6 +230,7 @@ public class Monster : MonsterManager
 
     IEnumerator targetSetting() //가까운 플레이어를 찾는 함수
     {
+        
         yield return new WaitForSeconds(0.5f); //0.5초 뒤에 몬스터는 생성되고
         players = GameObject.FindGameObjectsWithTag("Player"); //태그로 모든 플레이어를 찾음
 
@@ -243,28 +256,41 @@ public class Monster : MonsterManager
 
     private void OnTriggerStay(Collider other) //몬스터 공격범위내에 플레이어가 있을때
     {
-        if(other.gameObject.CompareTag("Player") && animn == 2 && isAttack) //태그가 플레이어이고, 공격모션을 취하고 있고, 공격중이라면
+        if (other.gameObject.CompareTag("Player") && animn == 2 && isAttack) //태그가 플레이어이고, 공격모션을 취하고 있고, 공격중이라면
         {
             //other.GetComponent<PlayerTestMove>().playerHp -= (int)monsterDamage; 
             ///if(other.GetComponent<PlayerTestMove>().playerHp <= 0)
             {
-                
+
             }
         }
     }
 
     void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.tag == "Attack")
+        if (col.gameObject.tag == "Attack")
         {
-            monsterHp -= 30;
+            monsterHp -= 10;
+            StartCoroutine(EnemyHit());
 
             if (monsterHp <= 0)
-            { 
+            {
                 life = false;
+                myAudio.PlayOneShot(deadSound);
                 EnemyDie();
             }
         }
+    }
+
+    IEnumerator EnemyHit()
+    {
+        animn = 5;
+        myAudio.PlayOneShot(hitSound);
+        Instantiate(bloodEff, transform.position, Quaternion.identity);
+        damageTxt.SetActive(true);
+        yield return new WaitForSeconds(1.0f);
+        damageTxt.SetActive(false);
+        yield return null;
     }
 
     //몬스터 사망
@@ -295,26 +321,27 @@ public class Monster : MonsterManager
         //죽는 애니메이션 시작
         animn = 3;
 
+        Instantiate(explosion, transform.position, Quaternion.identity);
         //Enemy에 추가된 모든 Collider를 비활성화(모든 충돌체는 Collider를 상속했음 따라서 다음과 같이 추출 가능)
         //foreach (Collider coll in gameObject.GetComponentsInChildren<Collider>())
         //{
         //    coll.enabled = false;
         //}
-        
+
         //4.5 초후 오브젝트 반환
         yield return new WaitForSeconds(0.5f);
         int aaa = Random.Range(1, 10);
         if (aaa > 5)
         {
             var Mons = ItemPooling.GetItem();//오브젝트풀링에서 아이템을 빌려온다.
-            Mons.transform.position = new Vector3(transform.position.x, 5, transform.position.z); //
+            Mons.transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z); //몬스터가 죽은 자리에서 스폰
         }
         StopAllCoroutines(); //객체 반환전 모든 코루틴을 정지
         EnemyPooling.ReturnObject(this); //몬스터가 죽으면 자신을 반환
 
         // 포톤 추가
         // 자신과 네트워크상의 모든 아바타를 삭제
-        
+
         //PhotonNetwork.Destroy(gameObject); 
     }
 
@@ -378,7 +405,7 @@ public class Monster : MonsterManager
         }
 
     }
-     // 마스터 클라이언트가 변경되면 호출
+    // 마스터 클라이언트가 변경되면 호출
     void OnMasterClientSwitched(PhotonPlayer newMasterClient)
     {
         if (PhotonNetwork.isMasterClient) //마스터클라이언트 일때
