@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -10,8 +11,9 @@ public class SmoothFollow : MonoBehaviour
 
     // The target we are following
     //골드를 주웠을때 사운드 출력을 위해
-    public AudioClip getGold;
-    public AudioSource GoldAudio;
+    public AudioClip getGold, hitSound;
+    public AudioSource Audio;
+    public GameObject PlayerBlood;
 
     public Transform target;
     // The distance in the x-z plane to the target
@@ -145,7 +147,20 @@ public class SmoothFollow : MonoBehaviour
     //골드를 주을때 효과음(아이템에서 출력하면 소리가 너무 짧고 작아서 안들림)
     public void GoldSound()
     {
-        GoldAudio.PlayOneShot(getGold);
+        Audio.PlayOneShot(getGold);
+    }
+
+    public void playerHit()
+    {
+        StartCoroutine(ShowBlood());
+    }
+
+    IEnumerator ShowBlood()
+    {
+        Audio.PlayOneShot(hitSound);
+        PlayerBlood.SetActive(true);
+        yield return new WaitForSeconds(1.0f);
+        PlayerBlood.SetActive(false);
     }
 }
 
