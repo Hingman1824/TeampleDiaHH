@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3E942EFC-6CE0-E141-A860-0CD4A202D323}</ProjectGuid>
+    <ProjectGuid>{ACD285CF-F2C5-52D2-7929-EF2A47457AF2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>goodcat.un-inventory.editor</AssemblyName>
@@ -267,23 +267,32 @@
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>D:/GitHub/dia/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Diablo3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>D:/GitHub/dia/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Diablo3/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="QSEditor">
-      <HintPath>D:/GitHub/dia/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Diablo3/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
     </Reference>
     <Reference Include="QSFunctions">
-      <HintPath>D:/GitHub/dia/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Diablo3/Assets/QS/Scripts/QSFunctions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>D:/GitHub/dia/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Diablo3/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -640,25 +649,25 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Diablo3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Diablo3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Diablo3/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/user/Desktop/Diablo3/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="goodcat.un-inventory.core.csproj">
-      <Project>{81F2F18F-2FEF-B24B-98A6-AA525585679D}</Project>
+      <Project>{F402F80D-D1BE-6652-A541-B07AF11196A6}</Project>
       <Name>goodcat.un-inventory.core</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.standard.csproj">
-      <Project>{7E091500-4094-15B6-6F79-738695D43AB3}</Project>
+      <Project>{834C35A6-65FC-E7BE-2733-5E8970B4FBAB}</Project>
       <Name>goodcat.un-inventory.standard</Name>
     </ProjectReference>
   </ItemGroup>
