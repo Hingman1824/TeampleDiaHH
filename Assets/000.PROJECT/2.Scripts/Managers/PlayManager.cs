@@ -33,8 +33,6 @@ public class PlayManager : MonoBehaviour
     {
         StartCoroutine(this.Loading());
         canvas = GameObject.Find("SoundCanvas").GetComponent<Canvas>();
-
-
     }
 
     // 유니티엔진에게 역할을 분담시켜 유니티엔진에 렌더링 루프와 별도로 처리되어 성능향상
