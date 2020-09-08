@@ -132,7 +132,7 @@ public class Monster : MonsterManager
             if (players.Length != 0) //플레이어가 있으면
             {
 
-                if (dist1 > 10f && dist1 < 500f) //플레이어와의 거리가 3이상이면 500이하 일 때
+                if (dist1 > 10f && dist1 < 100f) //플레이어와의 거리가 10이상이면 30이하 일 때
                 {
                     transform.LookAt(playerTarget); //플레이어를 바라보고
                     nvAgent.SetDestination(playerTarget.position);
@@ -141,11 +141,11 @@ public class Monster : MonsterManager
 
                     animn = 1; //애니메이션 변경
                 }
-                else if (dist1 < 10f) //플레이어와 거리가 3이하이면 공격애니메이션 재생
+                else if (dist1 < 10f) //플레이어와 거리가 10이하이면 공격애니메이션 재생
                 {
                     StartCoroutine(Attack());
                 }
-                else if (dist1 > 500f) //거리가 500이상이면
+                else if (dist1 > 100f) //거리가 500이상이면
                 {
                     animn = 0; //기본자세 애니메이션
                 }
@@ -266,11 +266,11 @@ public class Monster : MonsterManager
         }
     }
 
-    void OnCollisionEnter(Collision col)
+    public void OnTriggerEnter(Collider other)
     {
-        if (col.gameObject.tag == "Attack")
+        if (other.gameObject.tag == "Attack")
         {
-            monsterHp -= 10;
+            monsterHp -= 100;
             StartCoroutine(EnemyHit());
 
             if (monsterHp <= 0)
