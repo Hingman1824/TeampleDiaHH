@@ -12,6 +12,10 @@ public class MonkSkill : PlayerManager
     public bool isWaveOfLight = false;
 
     public GameObject Impact;
+    public GameObject Phoenix;
+    public GameObject pray;
+    public GameObject lazyImpact;
+
     public Transform Impactpos;
     private void Awake()
     {      
@@ -81,8 +85,28 @@ public class MonkSkill : PlayerManager
         isMantraOfEvasion = true;
         anim.SetBool("isAttack", true);
         yield return new WaitForSeconds(0.15f);
-       
-        Instantiate(Impact, Impactpos.position, Quaternion.Euler(90, 0, 0));
+
+        if (transform.eulerAngles.y > 135 && transform.eulerAngles.y < 225) //앞으로 발사
+        {
+            var FirePhoenix = Instantiate(Phoenix, Impactpos.position, Quaternion.Euler(0, 0, 0));
+            FirePhoenix.GetComponent<EffectSettings>().MoveVector = Vector3.forward;
+        }
+        else if (transform.eulerAngles.y > 225 && transform.eulerAngles.y < 315) //오른쪽으로 -80~ -110 사이
+        {
+            var FirePhoenix = Instantiate(Phoenix, Impactpos.position, Quaternion.Euler(0, -90, 0));
+            FirePhoenix.GetComponent<EffectSettings>().MoveVector = -Vector3.left;
+        }
+        else if (transform.eulerAngles.y > 45 && transform.eulerAngles.y < 135) //왼쪽으로
+        {
+            var FirePhoenix = Instantiate(Phoenix, Impactpos.position, Quaternion.Euler(0, 90, 0));
+            FirePhoenix.GetComponent<EffectSettings>().MoveVector = Vector3.left;
+        }
+
+        else if ((transform.eulerAngles.y > 0 && transform.eulerAngles.y < 45) || (transform.eulerAngles.y > 315 && transform.eulerAngles.y < 360)) //뒤로
+        {
+            var FirePhoenix = Instantiate(Phoenix, Impactpos.position, Quaternion.Euler(0, 180, 0));
+            FirePhoenix.GetComponent<EffectSettings>().MoveVector = -Vector3.forward;
+        }
 
         yield return new WaitForSeconds(0.15f);
         //Invoke("PlayerAttackAnimation", 0.5f);
@@ -107,7 +131,9 @@ public class MonkSkill : PlayerManager
     {
         isDashingStrike = true;
         anim.SetBool("isSkill2", true);
-        yield return new WaitForSeconds(0.3f);
+        pray.SetActive(true);
+        yield return new WaitForSeconds(2.0f);
+        pray.SetActive(false);
         anim.SetBool("isSkill2", false);
         isDashingStrike = false;
         yield return null;
@@ -117,9 +143,11 @@ public class MonkSkill : PlayerManager
     {
         isWaveOfLight = true;
         anim.SetBool("isSkill3", true);
-        yield return new WaitForSeconds(0.11f);
+        Instantiate(lazyImpact, new Vector3(transform.position.x, transform.position.y + 1.5f, transform.position.z), Quaternion.Euler(90, 0, 0));
+        yield return new WaitForSeconds(2f);
         anim.SetBool("isSkill3", false);
         isWaveOfLight = false;
         yield return null;
     }
+
 }

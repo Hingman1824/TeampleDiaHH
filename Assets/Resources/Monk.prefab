@@ -101,23 +101,27 @@ MonoBehaviour:
   playerRot: 10
   anim: {fileID: 0}
   smooth: {fileID: 0}
-  pm: {fileID: 0}
+  loading: {fileID: 0}
   pv: {fileID: 0}
   myRb: {fileID: 0}
   camPivot: {fileID: 6456882778921891488}
   currPos: {x: 0, y: 0, z: 0}
   currRot: {x: 0, y: 0, z: 0, w: 1}
-  respawnBtn: {fileID: 0}
   expBar: {fileID: 0}
   hpBar: {fileID: 0}
   expText: {fileID: 0}
   playerName: {fileID: 0}
+  respawnBtn: {fileID: 0}
+  respawnPoint: {fileID: 0}
   Level: 70
   isMantraOfEvasion: 0
   isCycloneStrike: 0
   isDashingStrike: 0
   isWaveOfLight: 0
   Impact: {fileID: 100002, guid: ae5ec65fc4184544f9632d832229f9d0, type: 3}
+  Phoenix: {fileID: 100000, guid: 3064a7aa84cc18c4b984e11fc8b613c5, type: 3}
+  pray: {fileID: 0}
+  lazyImpact: {fileID: 0}
   Impactpos: {fileID: 3782641281467800154}
 --- !u!114 &6456882778921891490
 MonoBehaviour:
@@ -199,7 +203,7 @@ MonoBehaviour:
     attack: {fileID: 7400000, guid: 948add160ae471c48a6049af9fe45db4, type: 2}
     skill1: {fileID: 7400000, guid: c24781cb2530ee64fa00fee0bb2adf67, type: 2}
     skill2: {fileID: 7400000, guid: 24cf3354472b0be41bc050c6d2edc37d, type: 2}
-    skill3: {fileID: 7400062, guid: 7f02c16c3050e3d4eaac8cb103001d00, type: 3}
+    skill3: {fileID: 7400164, guid: 7f02c16c3050e3d4eaac8cb103001d00, type: 3}
     hit: {fileID: 7400000, guid: c2aba9aa4ebb4ac48a43cfd84907d936, type: 2}
     die: {fileID: 7400000, guid: 02aa13ee89310fc44b3b4239e2d622db, type: 2}
   current: 1

@@ -109,7 +109,7 @@ public class EffectSettings : MonoBehaviour
     if (InstanceBehaviour == DeactivationEnum.DestroyAfterTime) Destroy(gameObject, DestroyTimeDelay);
   }
 
-    public void OnCollisionHandler(CollisionInfo e)
+  public void OnCollisionHandler(CollisionInfo e)
   {
     for (int i = 0; i < lastActiveIndex; i++)
     {
@@ -139,14 +139,12 @@ public class EffectSettings : MonoBehaviour
   public void Deactivate()
   {
     OnEffectDeactivatedHandler();
-        Destroy(gameObject);
-        gameObject.SetActive(false);
+    gameObject.SetActive(false);
   }
 
   private void SetGoActive()
   {
-        Destroy(gameObject);
-        active_key[currentActiveGo].SetActive(false);
+    active_key[currentActiveGo].SetActive(false);
     ++currentActiveGo;
     if (currentActiveGo >= lastActiveIndex) currentActiveGo = 0;
   }
