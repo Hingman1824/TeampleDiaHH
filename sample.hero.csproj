@@ -9,7 +9,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+<<<<<<< HEAD
     <ProjectGuid>{E67AFA94-4AA7-67FB-CCF9-EF39A7C2EEA3}</ProjectGuid>
+=======
+    <ProjectGuid>{6BE873D8-EB66-4578-1724-C1C98BB4ABEA}</ProjectGuid>
+>>>>>>> 391a4d514f174f7054fd824d584623589be8c3ab
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>sample.hero</AssemblyName>
@@ -276,12 +280,17 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
+<<<<<<< HEAD
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+=======
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+>>>>>>> 391a4d514f174f7054fd824d584623589be8c3ab
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
+<<<<<<< HEAD
       <HintPath>D:/DB3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
@@ -292,6 +301,18 @@
     </Reference>
     <Reference Include="QSFunctions">
       <HintPath>D:/DB3/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+=======
+      <HintPath>D:/Diablo3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>D:/Diablo3/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="QSEditor">
+      <HintPath>D:/Diablo3/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="QSFunctions">
+      <HintPath>D:/Diablo3/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+>>>>>>> 391a4d514f174f7054fd824d584623589be8c3ab
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -639,14 +660,22 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
+<<<<<<< HEAD
       <HintPath>D:/DB3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/DB3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+=======
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+>>>>>>> 391a4d514f174f7054fd824d584623589be8c3ab
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="goodcat.un-inventory.core.csproj">
+<<<<<<< HEAD
       <Project>{E732933A-D6B9-8A59-7801-4785DEBFFF5B}</Project>
       <Name>goodcat.un-inventory.core</Name>
     </ProjectReference>
@@ -660,6 +689,21 @@
     </ProjectReference>
     <ProjectReference Include="samples-environment.csproj">
       <Project>{9730CAB6-9715-4CE4-6D32-95FB60B672B5}</Project>
+=======
+      <Project>{F402F80D-D1BE-6652-A541-B07AF11196A6}</Project>
+      <Name>goodcat.un-inventory.core</Name>
+    </ProjectReference>
+    <ProjectReference Include="goodcat.un-inventory.standard.csproj">
+      <Project>{834C35A6-65FC-E7BE-2733-5E8970B4FBAB}</Project>
+      <Name>goodcat.un-inventory.standard</Name>
+    </ProjectReference>
+    <ProjectReference Include="goodcat.un-inventory.plugins.standard.csproj">
+      <Project>{304EECCA-2591-AD0C-1C29-FA03BB0A261E}</Project>
+      <Name>goodcat.un-inventory.plugins.standard</Name>
+    </ProjectReference>
+    <ProjectReference Include="samples-environment.csproj">
+      <Project>{3E64012D-4839-261E-97AB-9F4BD42A3077}</Project>
+>>>>>>> 391a4d514f174f7054fd824d584623589be8c3ab
       <Name>samples-environment</Name>
     </ProjectReference>
   </ItemGroup>

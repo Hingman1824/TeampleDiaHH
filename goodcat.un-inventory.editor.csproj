@@ -9,7 +9,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+<<<<<<< HEAD
     <ProjectGuid>{2B61AEAA-5A65-117F-BB2B-25C62F2D5F9E}</ProjectGuid>
+=======
+    <ProjectGuid>{ACD285CF-F2C5-52D2-7929-EF2A47457AF2}</ProjectGuid>
+>>>>>>> 391a4d514f174f7054fd824d584623589be8c3ab
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>goodcat.un-inventory.editor</AssemblyName>
@@ -265,12 +269,17 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Android.Extensions">
+<<<<<<< HEAD
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+=======
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+>>>>>>> 391a4d514f174f7054fd824d584623589be8c3ab
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
+<<<<<<< HEAD
       <HintPath>D:/DB3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
@@ -284,6 +293,21 @@
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/DB3/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+=======
+      <HintPath>D:/Diablo3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>D:/Diablo3/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="QSEditor">
+      <HintPath>D:/Diablo3/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="QSFunctions">
+      <HintPath>D:/Diablo3/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>D:/Diablo3/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+>>>>>>> 391a4d514f174f7054fd824d584623589be8c3ab
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -640,6 +664,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
+<<<<<<< HEAD
       <HintPath>D:/DB3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
@@ -650,15 +675,35 @@
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>D:/DB3/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+=======
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+>>>>>>> 391a4d514f174f7054fd824d584623589be8c3ab
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="goodcat.un-inventory.core.csproj">
+<<<<<<< HEAD
       <Project>{E732933A-D6B9-8A59-7801-4785DEBFFF5B}</Project>
       <Name>goodcat.un-inventory.core</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.standard.csproj">
       <Project>{811D60F8-3EA8-7B41-69EB-101216042B1E}</Project>
+=======
+      <Project>{F402F80D-D1BE-6652-A541-B07AF11196A6}</Project>
+      <Name>goodcat.un-inventory.core</Name>
+    </ProjectReference>
+    <ProjectReference Include="goodcat.un-inventory.standard.csproj">
+      <Project>{834C35A6-65FC-E7BE-2733-5E8970B4FBAB}</Project>
+>>>>>>> 391a4d514f174f7054fd824d584623589be8c3ab
       <Name>goodcat.un-inventory.standard</Name>
     </ProjectReference>
   </ItemGroup>
