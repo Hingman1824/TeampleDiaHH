@@ -80,11 +80,11 @@ public class MonkSkill : PlayerManager
     {
         isMantraOfEvasion = true;
         anim.SetBool("isAttack", true);
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.15f);
        
         Instantiate(Impact, Impactpos.position, Quaternion.Euler(90, 0, 0));
 
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.15f);
         //Invoke("PlayerAttackAnimation", 0.5f);
         anim.SetBool("isAttack", false);
         isMantraOfEvasion = false;
@@ -95,9 +95,9 @@ public class MonkSkill : PlayerManager
     {
         isCycloneStrike = true;
         anim.SetBool("isSkill1", true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.15f);
         Instantiate(Impact, Impactpos.position, Quaternion.Euler(90, 0, 0));
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.15f);
         anim.SetBool("isSkill1", false);
         isCycloneStrike = false;
         yield return null;
