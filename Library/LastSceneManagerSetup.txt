@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/000.PROJECT/1.Scenes/scSelect.unity
-=======
-- path: Assets/000.PROJECT/1.Scenes/Maps/NewTristrum.unity
->>>>>>> 391a4d514f174f7054fd824d584623589be8c3ab
   isLoaded: 1
   isActive: 1
   isSubScene: 0
