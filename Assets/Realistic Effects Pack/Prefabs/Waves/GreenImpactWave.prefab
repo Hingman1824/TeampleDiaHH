@@ -330,7 +330,7 @@ MonoBehaviour:
   MoveDistance: 20
   IsVisible: 1
   InstanceBehaviour: 0
-  DeactivateTimeDelay: 4
+  DeactivateTimeDelay: 3
   DestroyTimeDelay: 10
   LayerMask:
     serializedVersion: 2

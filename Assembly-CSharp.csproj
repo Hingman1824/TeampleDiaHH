@@ -546,6 +546,7 @@
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\MotionBlur.shader" />
     <None Include="Assets\Realistic Effects Pack\Shaders\Mobile\Distortion\DistortionCullOff.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\PrepareSunShaftsBlur.shader" />
+    <None Include="Assets\FT_MagicEffect_Vol04\Shaders\Particle Add Rim.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ShowAlphaChannel.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\GrayscaleEffect.shader" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
