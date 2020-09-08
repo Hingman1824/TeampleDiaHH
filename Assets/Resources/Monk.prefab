@@ -121,7 +121,7 @@ MonoBehaviour:
   Impact: {fileID: 100002, guid: ae5ec65fc4184544f9632d832229f9d0, type: 3}
   Phoenix: {fileID: 100000, guid: 3064a7aa84cc18c4b984e11fc8b613c5, type: 3}
   pray: {fileID: 0}
-  lazyImpact: {fileID: 0}
+  lazyImpact: {fileID: 100004, guid: 0aa33ceac60be7347a2851a6c711de8d, type: 3}
   Impactpos: {fileID: 3782641281467800154}
 --- !u!114 &6456882778921891490
 MonoBehaviour:
