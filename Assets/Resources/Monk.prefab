@@ -199,7 +199,7 @@ MonoBehaviour:
     skill1: {fileID: 7400000, guid: c24781cb2530ee64fa00fee0bb2adf67, type: 2}
     skill2: {fileID: 7400000, guid: 24cf3354472b0be41bc050c6d2edc37d, type: 2}
     skill3: {fileID: 7400062, guid: 7f02c16c3050e3d4eaac8cb103001d00, type: 3}
-    hit: {fileID: 0}
+    hit: {fileID: 7400000, guid: c2aba9aa4ebb4ac48a43cfd84907d936, type: 2}
     die: {fileID: 7400000, guid: 02aa13ee89310fc44b3b4239e2d622db, type: 2}
   current: 1
   kinds: 1

@@ -126,7 +126,7 @@ public class BarbarianSkill : PlayerManager
     {
         isWhirlWind = true;
         anim.SetBool("isSkill3", true);        
-        yield return new WaitForSeconds(0.0f);
+        yield return null;
         //anim.SetBool("isSkill3", false);
         //isSkill3 = false;
         //yield return null;
