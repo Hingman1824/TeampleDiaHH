@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/000.PROJECT/1.Scenes/scPlayUi.unity
+=======
+- path: Assets/000.PROJECT/1.Scenes/scSelect.unity
+>>>>>>> 81bcf51cec3bbc981973e3394b8f265839006e4b
   isLoaded: 1
   isActive: 1
   isSubScene: 0

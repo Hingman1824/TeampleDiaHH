@@ -10,11 +10,13 @@ public class SmoothFollow : MonoBehaviour
 {
 
     // The target we are following
-    //골드를 주웠을때 사운드 출력을 위해
-    public AudioClip getGold, hitSound;
+    [Header("사운드 관련")]
+    public AudioClip getGold; //골드획득
+    public AudioClip[] hitSound; //플레이어 히트판정시 오디오
     public AudioSource Audio;
-    public GameObject PlayerBlood;
+    public GameObject PlayerBlood; //플레이어 히트판정시 이펙트
 
+    PhotonView pv;
     public Transform target;
     // The distance in the x-z plane to the target
     [SerializeField]
@@ -36,6 +38,7 @@ public class SmoothFollow : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        pv = GetComponent<PhotonView>();
         bounder = GetComponent<CapsuleCollider>();
     }
 
@@ -157,9 +160,16 @@ public class SmoothFollow : MonoBehaviour
 
     IEnumerator ShowBlood()
     {
-        Audio.PlayOneShot(hitSound);
+        if (PhotonNetwork.player.UserId == "Monk")
+        {
+            Audio.PlayOneShot(hitSound[Random.Range(0, 2)]);
+        }
+        else if (PhotonNetwork.player.UserId == "Babarian")
+        {
+            Audio.PlayOneShot(hitSound[Random.Range(2, 4)]);
+        }
         PlayerBlood.SetActive(true);
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.7f);
         PlayerBlood.SetActive(false);
     }
 }
