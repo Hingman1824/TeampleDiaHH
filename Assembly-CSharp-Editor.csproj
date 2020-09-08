@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7A85E1E7-7453-435E-307E-5DA840843234}</ProjectGuid>
+    <ProjectGuid>{B7BA8DBB-57D5-B0BA-DBDB-63E8F6280EC8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -316,19 +316,19 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>D:/GitHub/dia/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+      <HintPath>D:/Diablo3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>D:/GitHub/dia/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>D:/Diablo3/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="QSEditor">
-      <HintPath>D:/GitHub/dia/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
+      <HintPath>D:/Diablo3/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
     </Reference>
     <Reference Include="QSFunctions">
-      <HintPath>D:/GitHub/dia/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+      <HintPath>D:/Diablo3/Assets/QS/Scripts/QSFunctions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>D:/GitHub/dia/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -685,86 +685,86 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Monetization">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/GitHub/dia/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{79E88258-1E3D-8FF6-2892-A5B80AC03354}</Project>
+      <Project>{535EFDA0-DB13-FFCF-2A92-F8EAD4C7DE96}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{840D7C5A-113A-A3D0-5872-7232E4F896FC}</Project>
+      <Project>{1BF601F2-C27F-95EC-B298-6883F3C642EB}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="sample.trade.csproj">
-      <Project>{DD75E23B-303F-98F9-9796-D9DEA68D602A}</Project>
+      <Project>{72672424-B915-BA48-68B2-E21BA8EB5102}</Project>
       <Name>sample.trade</Name>
     </ProjectReference>
     <ProjectReference Include="samples-environment.csproj">
-      <Project>{3D0AC8B0-1947-D93E-9D52-BF9E4C63FB77}</Project>
+      <Project>{3E64012D-4839-261E-97AB-9F4BD42A3077}</Project>
       <Name>samples-environment</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.standard.csproj">
-      <Project>{7E091500-4094-15B6-6F79-738695D43AB3}</Project>
+      <Project>{834C35A6-65FC-E7BE-2733-5E8970B4FBAB}</Project>
       <Name>goodcat.un-inventory.standard</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.editor.csproj">
-      <Project>{3E942EFC-6CE0-E141-A860-0CD4A202D323}</Project>
+      <Project>{ACD285CF-F2C5-52D2-7929-EF2A47457AF2}</Project>
       <Name>goodcat.un-inventory.editor</Name>
     </ProjectReference>
     <ProjectReference Include="sample.hero.csproj">
-      <Project>{71770DBB-C0AD-B8BC-E8D5-952BFD49D18C}</Project>
+      <Project>{6BE873D8-EB66-4578-1724-C1C98BB4ABEA}</Project>
       <Name>sample.hero</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.core.csproj">
-      <Project>{81F2F18F-2FEF-B24B-98A6-AA525585679D}</Project>
+      <Project>{F402F80D-D1BE-6652-A541-B07AF11196A6}</Project>
       <Name>goodcat.un-inventory.core</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.plugins.standard.csproj">
-      <Project>{78344610-FE39-82FC-C53F-CB830F2EFFD9}</Project>
+      <Project>{304EECCA-2591-AD0C-1C29-FA03BB0A261E}</Project>
       <Name>goodcat.un-inventory.plugins.standard</Name>
     </ProjectReference>
   </ItemGroup>
