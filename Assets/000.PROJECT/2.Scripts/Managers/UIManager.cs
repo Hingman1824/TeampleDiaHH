@@ -158,9 +158,9 @@ public class UIManager : MonoBehaviour
         screenW = Screen.width;
 
         //인벤이미지 크기 조절인데 어떻게 맞추는지 모르겠네
-        invenSize = new Vector2((screenW/16)*4.758f, (screenH/9)*7.458f);
+        invenSize = new Vector2((screenW/16)*4.758f, (screenH/9)*7.5f);
 
-        slotSize = Mathf.RoundToInt(screenH * 0.174f);
+        slotSize = Mathf.RoundToInt(screenH * 0.074f);
 
         uiPanel.sizeDelta = new Vector2(screenW, screenH);
 
@@ -277,8 +277,8 @@ public class UIManager : MonoBehaviour
         equipments.hat.startX = Mathf.RoundToInt((screenW / 16) * 3.1f);
         equipments.hat.startY = Mathf.RoundToInt((screenH / 9) * 7.625f);
         //상의(갑옷)
-        equipments.body.startX = Mathf.RoundToInt((screenW / 16) * 3.08f);
-        equipments.body.startY = Mathf.RoundToInt((screenH / 9) * 5.25f);
+        equipments.body.startX = Mathf.RoundToInt((screenW / 16) * 0.645f);
+        equipments.body.startY = Mathf.RoundToInt((screenH / 9) * 0.833f);
         //벨트
         equipments.belt.startX = Mathf.RoundToInt((screenW / 16) * 3.08f);
         equipments.belt.startY = Mathf.RoundToInt((screenH / 9) * 4.17f);

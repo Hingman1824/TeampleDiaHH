@@ -8,11 +8,12 @@ public class Iitem : MonoBehaviour
     //이스크립트는 아이템에 집어넣어 아이템이 떨어졌을때 세트빔이 올라가고 주울수 있게 해준다.
 
     public GameObject beamPaticle; //빔 파티클 활성화/비활성화 해주기 위해
-
+    private SmoothFollow smooth;
     private TextMeshPro mText;
 
     private void Awake()
     {
+        smooth = FindObjectOfType<SmoothFollow>();
         mText = GetComponentInChildren<TextMeshPro>();
     }
     private void Update()
@@ -31,6 +32,7 @@ public class Iitem : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player")) //아이템과 닿은 오브젝트의 태그가 플레이어일 경우
         {
+            smooth.GoldSound(); //골드 줍는 사운드 출력 호출
             //other.GetComponent<PlayerTestMove>().Item = true;
             beamPaticle.SetActive(false);
             ItemPooling.ReturnObject(this);

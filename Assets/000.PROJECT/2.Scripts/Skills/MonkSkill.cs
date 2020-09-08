@@ -11,7 +11,8 @@ public class MonkSkill : PlayerManager
     public bool isDashingStrike = false;
     public bool isWaveOfLight = false;
 
-
+    public GameObject Impact;
+    public Transform Impactpos;
     private void Awake()
     {      
 
@@ -77,17 +78,26 @@ public class MonkSkill : PlayerManager
 
     public IEnumerator MantraOfEvasion()
     {
+        isMantraOfEvasion = true;
         anim.SetBool("isAttack", true);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.15f);
+       
+        Instantiate(Impact, Impactpos.position, Quaternion.Euler(90, 0, 0));
+
+        yield return new WaitForSeconds(0.15f);
         //Invoke("PlayerAttackAnimation", 0.5f);
         anim.SetBool("isAttack", false);
+        isMantraOfEvasion = false;
+        yield return null;
     }
 
     private IEnumerator CycloneStrike()
     {
         isCycloneStrike = true;
         anim.SetBool("isSkill1", true);
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.15f);
+        Instantiate(Impact, Impactpos.position, Quaternion.Euler(90, 0, 0));
+        yield return new WaitForSeconds(0.15f);
         anim.SetBool("isSkill1", false);
         isCycloneStrike = false;
         yield return null;
@@ -97,7 +107,7 @@ public class MonkSkill : PlayerManager
     {
         isDashingStrike = true;
         anim.SetBool("isSkill2", true);
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(0.3f);
         anim.SetBool("isSkill2", false);
         isDashingStrike = false;
         yield return null;
@@ -107,7 +117,7 @@ public class MonkSkill : PlayerManager
     {
         isWaveOfLight = true;
         anim.SetBool("isSkill3", true);
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(0.11f);
         anim.SetBool("isSkill3", false);
         isWaveOfLight = false;
         yield return null;

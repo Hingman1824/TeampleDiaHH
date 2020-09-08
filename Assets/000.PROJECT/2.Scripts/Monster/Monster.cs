@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using UnityEngine;
 using Enemy;
+using UnityEngine.AI;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Anim
@@ -10,8 +12,10 @@ public class Anim
     public AnimationClip Move; //이동
     public AnimationClip Dead; //사망
     public AnimationClip Show; //첫 등장
+    public AnimationClip Hit;
 }
 [RequireComponent(typeof(AudioSource))]
+
 
 public class Monster : MonsterManager
 {
@@ -29,11 +33,14 @@ public class Monster : MonsterManager
     [Space(3)]
     [Header("몬스터 스탯")]
     [Tooltip("몬스터 체력")]
-    [Range(0, 9999)] public int monsterHp = 100;
+    public float monsterHp;
+    public float monsterCurHp;  //현재 피
+    public Image hpBar;
+
     [Tooltip("몬스터 이동속도")]
     [Range(0, 10)] public float monsterSpeed = 1f;
     [Tooltip("몬스터 공격속도")]
-    [Range(0, 10)] public float monsterAttackSpeed = 1.3f;
+    [Range(0, 10)] public float monsterAttackSpeed = 1.5f;
     [Tooltip("몬스터 대미지")]
     [Range(0, 9999)] public float monsterDamage = 10f;
     [Space(3)]
@@ -47,18 +54,26 @@ public class Monster : MonsterManager
     private Animation _anim; //자신의 애니메이션 컴포넌트
     private int animn;
 
-    private GameObject[] players; //플레이어 (배열선언 파티원들도 찾기위해)
-    private Transform playerTarget;
-    private float dist1;
+    public GameObject[] players; //플레이어 (배열선언 파티원들도 찾기위해)
+    public Transform playerTarget;
+    public float dist1;
+    public AudioClip hitSound, deadSound, Groul;
+    public GameObject bloodEff;
+    public GameObject damageTxt;
+    public GameObject explosion;
 
-    private Rigidbody monRb;
+    private NavMeshAgent nvAgent;
+    private AudioSource myAudio;
+    private PlayerManager player;
 
     public enum MODE_STATE { idle = 1, move, attack, die }; //현재 상태정보 저장
-    public enum MODE_KIND { Skeleton, Gargoyle, Arachne, Diablo};
+    public enum MODE_KIND { Skeleton, Gargoyle, Arachne, Diablo };
 
     public MODE_STATE enemyMode = MODE_STATE.idle; //Enemy의 상태 셋팅
     public MODE_KIND enemyKind;  //Enemy의 종류 셋팅
-    
+
+
+    public GameObject Box;
     //네트워크 관련 변수
 
     //PhotonView 컴포넌트를 할당할 레퍼런스 
@@ -69,13 +84,16 @@ public class Monster : MonsterManager
     Quaternion currRot = Quaternion.identity;
     int net_Aim = 1;
 
-
-
     void Awake()
     {
-        players = GameObject.FindGameObjectsWithTag("Player"); //태그로 모든 플레이어를 찾음
+        monsterHp = 100f;
+        player = FindObjectOfType<PlayerManager>();
+        damageTxt.SetActive(false);
         _anim = GetComponent<Animation>();
-        monRb = GetComponent<Rigidbody>();
+        myAudio = GetComponent<AudioSource>();
+        nvAgent = GetComponent<NavMeshAgent>();
+
+        
 
         //  네트워크 추가w
         pv = GetComponent<PhotonView>();
@@ -86,6 +104,8 @@ public class Monster : MonsterManager
         }
         currPos = transform.position;
         currRot = transform.rotation;
+
+
     }
 
     // Start is called before the first frame update
@@ -97,9 +117,10 @@ public class Monster : MonsterManager
             //일정 간격으로 주변의 가장 가까운 플레이어를 찾는 코루틴
             StartCoroutine(targetSetting()); //타겟을 찾음
 
+            myAudio.PlayOneShot(Groul);
             //애니메이션 관리
             StartCoroutine(AnimationSet());
-            //StartCoroutine(StatusSet());
+            StartCoroutine(StatusSet());
         }
         else    // 마스터 클라이언트가 아닐때 
         {
@@ -111,6 +132,12 @@ public class Monster : MonsterManager
     // Update is called once per frame
     void Update()
     {
+        //체력바
+        if(enemyKind == MODE_KIND.Diablo)
+        {
+            hpBar.fillAmount = monsterCurHp / monsterHp;
+        }
+        
         //네트워크
         if (PhotonNetwork.isMasterClient) //or pv.isMine //자신이 마스터클라이언트일때 실행
         {
@@ -121,17 +148,38 @@ public class Monster : MonsterManager
             if (players.Length != 0) //플레이어가 있으면
             {
 
-                if (dist1 > 10f && dist1 < 500f) //플레이어와의 거리가 3이상이면 500이하 일 때
+                if(10 < dist1 && dist1 < 500f) //플레이어와의 거리가 50이상이면 500이하 일 때
                 {
                     transform.LookAt(playerTarget); //플레이어를 바라보고
-                                                    //monRb.AddForce((playerTarget.position-transform.position) * moveSpeed);
-                    monRb.velocity = (playerTarget.position - transform.position) * (Time.deltaTime * moveSpeed); //벽에 막히면 그대로 있음.
-                                                                                                                  //transform.Translate(transform.forward * (Time.deltaTime * moveSpeed), Space.World); //플레이어를 향해 이동
+                    nvAgent.SetDestination(playerTarget.position);
+
+                    //monRb.velocity = (playerTarget.position - transform.position) * (Time.deltaTime * moveSpeed); //벽에 막히면 그대로 있음.
+
                     animn = 1; //애니메이션 변경
+         
+                    //보스라면
+                    if(enemyKind == MODE_KIND.Diablo)
+                    {
+                        //거리가 50이하일때
+                        if (dist1 < 50f)
+                        {
+                            //랜덤으로
+                            int ai = Random.Range(1, 5);
+
+                            //원거리공격
+                            if (ai >= 4)
+                            {
+                                StartCoroutine(BossAttack(ai));
+                            }
+                        }
+                    }
                 }
                 else if (dist1 < 10f) //플레이어와 거리가 3이하이면 공격애니메이션 재생
                 {
-                    StartCoroutine(Attack());
+                    if(enemyKind == MODE_KIND.Diablo)
+                        StartCoroutine(BossAttack());
+                    else
+                        StartCoroutine(Attack());
                 }
                 else if (dist1 > 500f) //거리가 500이상이면
                 {
@@ -158,6 +206,35 @@ public class Monster : MonsterManager
         yield return null;
     }
 
+    //보스 근접 공격
+    IEnumerator BossAttack()
+    {
+        animn = Random.Range(2,3);
+        isAttack = true;
+        yield return new WaitForSeconds(monsterAttackSpeed);
+        isAttack = false;
+        if (animn == 2)
+            Debug.Log(animn + "Left Punch");
+        else if (animn == 3)
+            Debug.Log(animn + "Right Punch");
+        yield return null;
+    }
+
+    //인수를 전달받는 공격(특정공격을 호출할때 사용)
+    IEnumerator BossAttack(int i)
+    {
+        animn = i;
+        isAttack = true;
+        yield return new WaitForSeconds(monsterAttackSpeed);
+        isAttack = false;
+        if (i == 4)
+            Debug.Log(i + "Magic Area");
+        else if (i == 5)
+            Debug.Log(i + "Jump Attack");
+
+        yield return null;
+    }
+
     IEnumerator StatusSet()
     {
         yield return new WaitForSeconds(0.2f);
@@ -166,15 +243,19 @@ public class Monster : MonsterManager
         {
             case (MODE_KIND)1: //스켈레톤
                 monsterHp = monsterHp * 1;
+                monsterCurHp = monsterHp;
                 break;
             case (MODE_KIND)2: //가고일
                 monsterHp = (int)(monsterHp * 2);
+                monsterCurHp = monsterHp;
                 break;
             case (MODE_KIND)3: //아라크네
                 monsterHp = (int)(monsterHp * 5);
+                monsterCurHp = monsterHp;
                 break;
             case (MODE_KIND)4: //디아블로
                 monsterHp = (int)(monsterHp * 10);
+                monsterCurHp = monsterHp;
                 break;
         }
     }
@@ -206,6 +287,10 @@ public class Monster : MonsterManager
             else if (animn == 4)
             {
                 _anim.CrossFade(anims.Show.name, 0.3f);
+            }
+            else if (animn == 5)
+            {
+                _anim.CrossFade(anims.Hit.name, 0.3f);
                 // 코루틴 함수를 빠져나감(종료)
                 yield break;
             }
@@ -214,6 +299,10 @@ public class Monster : MonsterManager
 
     IEnumerator targetSetting() //가까운 플레이어를 찾는 함수
     {
+        
+        yield return new WaitForSeconds(0.5f); //0.5초 뒤에 몬스터는 생성되고
+        players = GameObject.FindGameObjectsWithTag("Player"); //태그로 모든 플레이어를 찾음
+
         while (true) //반복으로 매번 가까운 플레이어를 찾아감
         {
             yield return new WaitForSeconds(0.3f);
@@ -236,28 +325,57 @@ public class Monster : MonsterManager
 
     private void OnTriggerStay(Collider other) //몬스터 공격범위내에 플레이어가 있을때
     {
-        if(other.gameObject.CompareTag("Player") && animn == 2 && isAttack) //태그가 플레이어이고, 공격모션을 취하고 있고, 공격중이라면
+        if (other.gameObject.CompareTag("Player") && animn == 2 && isAttack) //태그가 플레이어이고, 공격모션을 취하고 있고, 공격중이라면
         {
             //other.GetComponent<PlayerTestMove>().playerHp -= (int)monsterDamage; 
             ///if(other.GetComponent<PlayerTestMove>().playerHp <= 0)
             {
-                
+
             }
         }
     }
 
     void OnCollisionEnter(Collision col)
     {
-        if(col.gameObject.tag == "Attack")
+        if (col.gameObject.tag == "Attack")
         {
-            monsterHp -= 30;
+            monsterCurHp -= 100;
+            StartCoroutine(EnemyHit());
 
-            if (monsterHp <= 0)
-            { 
+            if (monsterCurHp <= 0)
+            {
                 life = false;
+                myAudio.PlayOneShot(deadSound);
                 EnemyDie();
             }
         }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Attack")
+        {
+            monsterCurHp -= 100;
+            StartCoroutine(EnemyHit());
+
+            if (monsterCurHp <= 0)
+            {
+                life = false;
+                myAudio.PlayOneShot(deadSound);
+                EnemyDie();
+            }
+        }
+    }
+
+    IEnumerator EnemyHit()
+    {
+        animn = 5;
+        myAudio.PlayOneShot(hitSound);
+        Instantiate(bloodEff, transform.position, Quaternion.identity);
+        damageTxt.SetActive(true);
+        yield return new WaitForSeconds(1.0f);
+        damageTxt.SetActive(false);
+        yield return null;
     }
 
     //몬스터 사망
@@ -283,31 +401,54 @@ public class Monster : MonsterManager
 
     IEnumerator Die()
     {
-        // Enemy의를 죽이자
-
-        //죽는 애니메이션 시작
-        animn = 3;
-
-        //Enemy에 추가된 모든 Collider를 비활성화(모든 충돌체는 Collider를 상속했음 따라서 다음과 같이 추출 가능)
-        //foreach (Collider coll in gameObject.GetComponentsInChildren<Collider>())
-        //{
-        //    coll.enabled = false;
-        //}
-        
-        //4.5 초후 오브젝트 반환
-        yield return new WaitForSeconds(0.5f);
-        int aaa = Random.Range(1, 10);
-        if (aaa > 5)
+        if (enemyKind == MODE_KIND.Diablo)
         {
-            var Mons = ItemPooling.GetItem();//오브젝트풀링에서 아이템을 빌려온다.
-            Mons.transform.position = new Vector3(transform.position.x, 5, transform.position.z); //
-        }
-        StopAllCoroutines(); //객체 반환전 모든 코루틴을 정지
-        EnemyPooling.ReturnObject(this); //몬스터가 죽으면 자신을 반환
+            // Enemy의를 죽이자
 
+            //죽는 애니메이션 시작
+            animn = 7;
+
+            Instantiate(explosion, transform.position, Quaternion.identity);
+
+            //4.5 초후 오브젝트 반환
+            yield return new WaitForSeconds(0.5f);
+
+            this.gameObject.SetActive(false);
+            Box.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); //몬스터가 죽은 자리에서 스폰
+
+            StopAllCoroutines(); //객체 반환전 모든 코루틴을 정지
+
+        }
+        else
+        {
+
+            // Enemy의를 죽이자
+
+            //죽는 애니메이션 시작
+            animn = 3;
+
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            //Enemy에 추가된 모든 Collider를 비활성화(모든 충돌체는 Collider를 상속했음 따라서 다음과 같이 추출 가능)
+            //foreach (Collider coll in gameObject.GetComponentsInChildren<Collider>())
+            //{
+            //    coll.enabled = false;
+            //}
+
+            //4.5 초후 오브젝트 반환
+            yield return new WaitForSeconds(0.5f);
+            int aaa = Random.Range(1, 10);
+            if (aaa > 5)
+            {
+                var Mons = ItemPooling.GetItem();//오브젝트풀링에서 아이템을 빌려온다.
+                Mons.transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z); //몬스터가 죽은 자리에서 스폰
+            }
+            StopAllCoroutines(); //객체 반환전 모든 코루틴을 정지
+            EnemyPooling.ReturnObject(this); //몬스터가 죽으면 자신을 반환
+
+        }
         // 포톤 추가
         // 자신과 네트워크상의 모든 아바타를 삭제
-        
+
         //PhotonNetwork.Destroy(gameObject); 
     }
 
@@ -371,7 +512,7 @@ public class Monster : MonsterManager
         }
 
     }
-     // 마스터 클라이언트가 변경되면 호출
+    // 마스터 클라이언트가 변경되면 호출
     void OnMasterClientSwitched(PhotonPlayer newMasterClient)
     {
         if (PhotonNetwork.isMasterClient) //마스터클라이언트 일때

@@ -85,7 +85,7 @@ public class NPCManager : MonoBehaviour
                 NPCUiClose();
             }
 
-            target = tempGO.transform.Find("TalkBoxPos").gameObject;
+            //target = tempGO.transform.Find("TalkBoxPos").gameObject;
         }
     }
 

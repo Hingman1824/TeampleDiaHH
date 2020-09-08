@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -25,7 +26,10 @@ public class SpawnManager : MonoBehaviour
             if (InitNum > 0 && maxGargoyle > 0)
             {
                 var Mons = EnemyPooling.GetGargoyle(); //오브젝트풀링에서 가고일몬스터를 빌려온다.
+                Mons.GetComponent<NavMeshAgent>().enabled = false;
                 Mons.transform.position = new Vector3(spawnPos.transform.position.x + Random.Range(-rand, rand), 1, spawnPos.transform.position.z + Random.Range(-rand, rand)); //빌려온 몬스터의 위치를 랜덤배치
+                Mons.GetComponent<NavMeshAgent>().enabled = true;
+
                 InitNum--;
                 maxGargoyle--;
             }
@@ -39,7 +43,10 @@ public class SpawnManager : MonoBehaviour
             if (InitNum > 0 && maxSkeleton > 0) //
             {
                 var Mons = EnemyPooling.GetSkeleton(); //오브젝트풀링에서 몬스터를 빌려온다.
-                Mons.transform.position = new Vector3(spawnPos.transform.position.x + Random.Range(-rand, rand), 1, spawnPos.transform.position.z + Random.Range(-rand, rand)); //빌려온 몬스터의 위치를 랜덤배치
+                Mons.GetComponent<NavMeshAgent>().enabled = false; //네비메쉬에이전트 끄고
+                Mons.transform.position = new Vector3(spawnPos.transform.position.x + Random.Range(-rand, rand),1, spawnPos.transform.position.z + Random.Range(-rand, rand)); //빌려온 몬스터의 위치를 랜덤배치
+                Mons.GetComponent<NavMeshAgent>().enabled = true; //재활성화
+
                 InitNum--;
                 maxSkeleton--;
             }
