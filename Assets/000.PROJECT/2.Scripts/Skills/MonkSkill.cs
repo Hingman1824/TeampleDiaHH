@@ -67,7 +67,7 @@ public class MonkSkill : PlayerManager
                 StartCoroutine(DashingStrike());
             }
 
-            if (Input.GetKey(KeyCode.F) && isWaveOfLight == false)
+            if (Input.GetKey(KeyCode.Q) && isWaveOfLight == false)
             {               
                 StartCoroutine(WaveOfLight()); 
             }

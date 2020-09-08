@@ -66,13 +66,13 @@ public class BarbarianSkill : PlayerManager
             }
             
 
-            if (Input.GetKey(KeyCode.F) && isWhirlWind == false)
+            if (Input.GetKey(KeyCode.Q) && isWhirlWind == false)
             {
                 // 어플라이루트모션을 항상켜두면 나머지 애니메이션들에도 각도상의 악 영향을 준다. 그래서 필요할 때만 켜둔다.
                 anim.applyRootMotion = true;                
                 StartCoroutine(WhirlWindOn());
             }
-            else if (Input.GetKeyUp(KeyCode.F) && isWhirlWind == true)
+            else if (Input.GetKeyUp(KeyCode.Q) && isWhirlWind == true)
             {
                 // 훨윈드가 끝나면 어플라이루트모션을 끈다.
                 anim.applyRootMotion = false;
