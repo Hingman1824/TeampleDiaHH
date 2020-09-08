@@ -12269,6 +12269,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eccfcd1fea385db428043b1e71cbf167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &961940967
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 963194228}
+    m_Modifications:
+    - target: {fileID: 7528115627490318439, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerDead
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318439, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.728
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528115629107991331, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb, type: 3}
+--- !u!1 &961940968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7528115627490318439, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+    type: 3}
+  m_PrefabInstance: {fileID: 961940967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &961940969 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7528115627490318443, guid: 44095eb5ac9bcd14ba7b8195d1ca2bdb,
+    type: 3}
+  m_PrefabInstance: {fileID: 961940967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -12353,6 +12444,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 570892077}
+  - {fileID: 961940969}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
@@ -12376,6 +12468,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 28d3854b51651e24cb3e8547352d5de8, type: 3}
   Audio: {fileID: 963194230}
   PlayerBlood: {fileID: 570892076}
+  PlayerDie: {fileID: 961940968}
   target: {fileID: 4217665883323391091, guid: 22ec5d6a9cffa5c44b7f4392a392afab, type: 3}
   distance: 10
   height: 9

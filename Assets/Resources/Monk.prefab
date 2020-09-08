@@ -107,6 +107,7 @@ MonoBehaviour:
   camPivot: {fileID: 6456882778921891488}
   currPos: {x: 0, y: 0, z: 0}
   currRot: {x: 0, y: 0, z: 0, w: 1}
+  respawnBtn: {fileID: 0}
   expBar: {fileID: 0}
   hpBar: {fileID: 0}
   expText: {fileID: 0}
@@ -214,10 +215,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.3
+  m_Radius: 0.55081105
   m_Height: 2.6
   m_Direction: 1
-  m_Center: {x: 0, y: 1.3, z: 0}
+  m_Center: {x: -0.007138014, y: 1.3, z: 0}
 --- !u!65 &8848126103986647532
 BoxCollider:
   m_ObjectHideFlags: 0

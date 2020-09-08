@@ -266,9 +266,9 @@ public class Monster : MonsterManager
         }
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void OnCollisionEnter(Collision col)
     {
-        if (other.gameObject.tag == "Attack")
+        if (col.gameObject.tag == "Attack")
         {
             monsterHp -= 100;
             StartCoroutine(EnemyHit());

@@ -24,8 +24,8 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     public float playerRot = 10;
     public Animator anim;
     public SmoothFollow smooth;
+    public LoadingScript loading;
 
-    public PhotonManager pm;
     public PhotonView pv;
     public Rigidbody myRb;
     public Transform camPivot;
@@ -33,10 +33,13 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     public Quaternion currRot = Quaternion.identity;
     //public Monster monster;
 
+    
     public Image expBar;
     public Image hpBar;
     public Text expText;
     public Text playerName;
+    public Button respawnBtn;
+    public Transform respawnPoint;
 
     public static PlayerManager instance;
 
@@ -46,20 +49,19 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     int Defense = 33;
     float Exp = 0.0f;
 
-    void Awake()
-    {
-        pm = FindObjectOfType<PhotonManager>();
-        
-    }
+
 
     private void Start()
     {
+        respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>();
+        loading = FindObjectOfType<LoadingScript>();
         expBar = GameObject.Find("ExpBar").GetComponent<Image>();
         hpBar = GameObject.Find("Hp").GetComponent<Image>();
         expText = GameObject.Find("ExpText").GetComponent<Text>();
         playerName = GameObject.Find("PlayerNickName").GetComponent<Text>();
         smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
-       // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
+        respawnBtn = GameObject.Find("RespawnBtn").GetComponent<Button>();
+        // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
 
         playerName.text = PhotonNetwork.player.NickName;
     }
@@ -100,10 +102,24 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         {
             smooth.playerHit();
             Hp -= 10;
-            //monster.monsterDamage;
             hpBar.fillAmount -= 10 * 0.01f;
-            //smooth.PlayerBlood.SetActive(false);
+
+            if (Hp <= 0)
+            {
+                anim.SetBool("isDie", true);
+                smooth.PlayerDie.SetActive(true);
+            }
         }
+    }
+
+    public void Respawn()
+    {
+        loading.Loading();
+        transform.position = respawnPoint.position;
+        anim.SetBool("isDie", false);       
+        Hp = 100;
+        hpBar.fillAmount = 1.0f;
+        smooth.PlayerDie.SetActive(false);
     }
 
     public int PlayerLevel
@@ -114,8 +130,6 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
             //throw new NotImplementedException();
         }
     }
-
-
 
     public float PlayerExp
     {
