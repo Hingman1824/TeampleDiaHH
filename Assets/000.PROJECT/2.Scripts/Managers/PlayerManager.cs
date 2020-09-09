@@ -3,6 +3,7 @@ using IPlayer;
 using System.Collections;
 using UnityEngine.UI;
 using System.Reflection;
+using UnityEditor.XR;
 
 public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAnimation, IPlayerPhoton
 {
@@ -50,14 +51,18 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     float Exp = 0.0f;
 
 
+    //플레이어 이동 체크
+    [HideInInspector]
+    public bool isPlayerMove;
+
 
     private void Start()
     {
-        respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>();
-        loading = FindObjectOfType<LoadingScript>();
-        expBar = GameObject.Find("ExpBar").GetComponent<Image>();
-        hpBar = GameObject.Find("Hp").GetComponent<Image>();
-        expText = GameObject.Find("ExpText").GetComponent<Text>();
+        respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>();       //부활장소
+        loading = FindObjectOfType<LoadingScript>();                                                //로딩창
+        expBar = GameObject.Find("ExpBar").GetComponent<Image>();                                   //경험치 바
+        hpBar = GameObject.Find("Hp").GetComponent<Image>();        //hp 바
+        expText = GameObject.Find("ExpText").GetComponent<Text>();      
         playerName = GameObject.Find("PlayerNickName").GetComponent<Text>();
         smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
         respawnBtn = GameObject.Find("RespawnBtn").GetComponent<Button>();
@@ -313,5 +318,18 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         }
     }
 
+
+    public bool PlayerMoveCheck()       // 컷씬 용 플레이어 이동확인
+    {
+        if (PlayerH != 0 || PlayerV != 0)   //플레이어가 움직이고 있으면
+        {
+            isPlayerMove = true;        
+        }
+        else if (PlayerH == 0 && PlayerV == 0)  //플레이어가 움직이지 않으면
+        {
+            isPlayerMove = false;
+        }
+        return isPlayerMove;
+    }
  
 }
