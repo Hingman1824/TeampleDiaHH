@@ -132,7 +132,7 @@ public class MonkSkill : PlayerManager
         isDashingStrike = true;
         anim.SetBool("isSkill2", true);
         pray.SetActive(true);
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
         pray.SetActive(false);
         anim.SetBool("isSkill2", false);
         isDashingStrike = false;
@@ -143,8 +143,9 @@ public class MonkSkill : PlayerManager
     {
         isWaveOfLight = true;
         anim.SetBool("isSkill3", true);
-        Instantiate(lazyImpact, new Vector3(transform.position.x, transform.position.y + 1.5f, transform.position.z), Quaternion.Euler(90, 0, 0));
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.35f);
+        Instantiate(lazyImpact, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.Euler(90, 0, 0));
+        yield return new WaitForSeconds(0.5f);
         anim.SetBool("isSkill3", false);
         isWaveOfLight = false;
         yield return null;

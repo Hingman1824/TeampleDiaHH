@@ -69,6 +69,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
 
         playerName.text = PhotonNetwork.player.NickName;
+        isPlayerMove = false;
     }
 
     // 범위 -1 ~ 1까지 플레이어 스피드는 이것과 관계없음
@@ -317,7 +318,6 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
             }
         }
     }
-
 
     public bool PlayerMoveCheck()       // 컷씬 용 플레이어 이동확인
     {

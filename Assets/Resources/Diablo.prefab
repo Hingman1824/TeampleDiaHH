@@ -1673,6 +1673,7 @@ GameObject:
   - component: {fileID: -7832056036652149721}
   - component: {fileID: 1236592461563389690}
   - component: {fileID: 8093805092985227900}
+  - component: {fileID: 5603785480045588987}
   m_Layer: 0
   m_Name: Diablo
   m_TagString: Untagged
@@ -1748,8 +1749,16 @@ Animation:
   m_GameObject: {fileID: 4181208803063083394}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
+  m_Animation: {fileID: 7400000, guid: b95f8447313ff814f956046defa5e329, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b95f8447313ff814f956046defa5e329, type: 2}
+  - {fileID: 7400000, guid: 5fe2647e281fc4f4fb30e13494489276, type: 2}
+  - {fileID: 7400000, guid: 8a759725e1a4f8745a6157d1ece3a29a, type: 2}
+  - {fileID: 7400000, guid: 9a7b1bb61fcb84049b6f98b5b34cac21, type: 2}
+  - {fileID: 7400000, guid: ad39d460cce2f6c46b005b7ce90d93d0, type: 2}
+  - {fileID: 7400000, guid: c21e1b651fd8a194b9e588c2c2bd2e8c, type: 2}
+  - {fileID: 7400000, guid: 38a2d7ed4b0b80144813cbdd393773a0, type: 2}
+  - {fileID: 7400000, guid: 04cdd42e13f3a2f4ca4670b553a3eedc, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -1761,7 +1770,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4181208803063083394}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d50b03faf995047b70c822304ca514, type: 3}
   m_Name: 
@@ -1958,6 +1967,25 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &5603785480045588987
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4181208803063083394}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 38dabbde95e541e43ab1d753479f0345, type: 3}
+  m_Controller: {fileID: 9100000, guid: 0a2ea408feb3f3f469e3a00858799b55, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4381008888381442337
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,7 +2026,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5680439325123896921}
-  - component: {fileID: 8298288712288455963}
   m_Layer: 0
   m_Name: diablo
   m_TagString: Untagged
@@ -2032,25 +2059,6 @@ Transform:
   m_Father: {fileID: 1378285939330859390}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8298288712288455963
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5016774503990770915}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 38dabbde95e541e43ab1d753479f0345, type: 3}
-  m_Controller: {fileID: 9100000, guid: 0a2ea408feb3f3f469e3a00858799b55, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5069716833707941816
 GameObject:
   m_ObjectHideFlags: 0
