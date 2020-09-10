@@ -39,9 +39,13 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     public Text playerName;
 
     public static PlayerManager instance;
+    private EquipmentManager equipmentManager;
+    public Transform weaponPos;
+    private Collider[] weaponColliders;
+    public bool colOnce;
 
     //일단 임의로 정해놓은 것
-    public int Level = 70;
+    public int Level;
     float Hp = 100;
     int Defense = 33;
     float Exp = 0.0f;
@@ -49,18 +53,24 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     void Awake()
     {
         pm = FindObjectOfType<PhotonManager>();
-        
+        instance = this;
+        equipmentManager = GameObject.Find("EquipmentManager").GetComponent<EquipmentManager>();
+        weaponColliders = weaponPos.GetComponentsInChildren<Collider>();
     }
 
     private void Start()
     {
+        WeaponOff();
+        Level = 1;
         expBar = GameObject.Find("ExpBar").GetComponent<Image>();
         hpBar = GameObject.Find("Hp").GetComponent<Image>();
         expText = GameObject.Find("ExpText").GetComponent<Text>();
         playerName = GameObject.Find("PlayerNickName").GetComponent<Text>();
         smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
-       // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
+        // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
 
+        equipmentManager.WeaponSet(0);
+        colOnce = false;
         playerName.text = PhotonNetwork.player.NickName;
     }
 
@@ -299,5 +309,25 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         }
     }
 
- 
+    private void WeaponOn()
+    {
+        foreach (var it in weaponColliders)
+        {
+            it.enabled = true;
+        }
+
+
+    }
+
+    private void WeaponOff()
+    {
+
+        foreach (var it in weaponColliders)
+        {
+            it.enabled = false;
+        }
+
+    }
+
+
 }

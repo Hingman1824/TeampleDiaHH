@@ -35,6 +35,8 @@ TagManager:
   - EquipmentMng
   - ShopItem
   - NPC
+  - NextMap
+  - ItemCreator
   layers:
   - Default
   - TransparentFX
@@ -45,8 +47,8 @@ TagManager:
   - 
   - 
   - items
-  - 
-  - 
+  - DropItems
+  - Weapon
   - 
   - 
   - 
