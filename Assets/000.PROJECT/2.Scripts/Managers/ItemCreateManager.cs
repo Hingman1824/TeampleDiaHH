@@ -3,17 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-
 public class ItemCreateManager : MonoBehaviour
 {
     //PF = Prefab
-    //public delegate void ItemCreator(Vector3 pos);
-
-    //ItemCreator itemCreator;
-
-    //public static ItemCreateManager instance;
-    //public ItemCreateManager itemCreateManager;
-
     public GameObject hpPotionPF;
     public GameObject glovePF;
     public GameObject beltPF;
@@ -22,23 +14,17 @@ public class ItemCreateManager : MonoBehaviour
     public GameObject pantsPF;
     public GameObject footPF;
     public GameObject ringPF;
-    public GameObject weapon0;
     public GameObject weapon1;
     public GameObject weapon2;
     public GameObject weapon3;
-    //public GameObject weapon5;
-
-    //void Awake()
-    //{
-    //    itemCreateManager = GameObject.FindGameObjectWithTag("ItemCretor").GetComponent<ItemCreateManager>();
-    //}
+    public GameObject weapon4;
+    public GameObject weapon5;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
             RandItemCreate(PlayerManager.instance.transform.position);
-            //itemCreator = new ItemCreator(RandItemCreate);
         }
     }
 
@@ -61,7 +47,6 @@ public class ItemCreateManager : MonoBehaviour
             dorps.isHpPotion = true;
 
             yield break;
-
         }
 
         ItemManager.Rarity tempRearity = (ItemManager.Rarity)Random.Range(0, (int)ItemManager.Rarity.ALL);
@@ -104,27 +89,27 @@ public class ItemCreateManager : MonoBehaviour
             case ItemManager.ItemKind.RHand:
                 tempKind = ItemManager.ItemKind.LHand;
                 //무기 생성
-                switch (Random.Range(0, 4))
+                switch (Random.Range(0, 5))
                 {
                     case 0:
-                        tempPF = weapon0;
-                        break;
-
-                    case 1:
                         tempPF = weapon1;
                         break;
 
-                    case 2:
+                    case 1:
                         tempPF = weapon2;
                         break;
 
-                    case 3:
+                    case 2:
                         tempPF = weapon3;
                         break;
 
-                    //case 4:
-                    //    tempPF = weapon5;
-                    //    break;
+                    case 3:
+                        tempPF = weapon4;
+                        break;
+
+                    case 4:
+                        tempPF = weapon5;
+                        break;
 
                 }
 
@@ -212,25 +197,25 @@ public class ItemCreateManager : MonoBehaviour
                 switch (item.weaponNum)
                 {
                     case 0:
-                        temp = weapon0;
-
-                        break;
-                    case 1:
                         temp = weapon1;
 
                         break;
-                    case 2:
+                    case 1:
                         temp = weapon2;
 
                         break;
-                    case 3:
+                    case 2:
                         temp = weapon3;
 
                         break;
-                    //case 4:
-                    //    temp = weapon5;
+                    case 3:
+                        temp = weapon4;
 
-                    //    break;
+                        break;
+                    case 4:
+                        temp = weapon5;
+
+                        break;
                 }
 
                 break;

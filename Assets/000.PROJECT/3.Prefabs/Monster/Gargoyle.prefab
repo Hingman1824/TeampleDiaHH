@@ -465,8 +465,7 @@ MonoBehaviour:
   Groul: {fileID: 8300000, guid: 08cb582aa107d97479d61492b48fdb59, type: 3}
   bloodEff: {fileID: 1349244721882868622, guid: 7217fc334063faa498f61f93b2220940,
     type: 3}
-  damageTxt: {fileID: 261897708276160827, guid: 25dceeb4029b3c449bb829373af7bd44,
-    type: 3}
+  damageTxt: {fileID: 6791050962721500475}
   explosion: {fileID: 1664304454892606754, guid: 726333b52aeadd74280c0fe0811f5f51,
     type: 3}
   enemyMode: 1
@@ -3554,6 +3553,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25dceeb4029b3c449bb829373af7bd44, type: 3}
+--- !u!1 &6791050962721500475 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 261897708276160827, guid: 25dceeb4029b3c449bb829373af7bd44,
+    type: 3}
+  m_PrefabInstance: {fileID: 6745506367246496768}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &816948257049227743 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6254013693887497695, guid: 25dceeb4029b3c449bb829373af7bd44,

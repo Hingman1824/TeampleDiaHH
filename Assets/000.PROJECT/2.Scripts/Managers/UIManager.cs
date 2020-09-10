@@ -70,22 +70,22 @@ public class EquipmentSpace
     // 각 각 아이템 사이즈
     public void XYSize()
     {
-        hat.sizeX = 2;
+        hat.sizeX = 1;
         hat.sizeY = 2;
-        body.sizeX = 2;
-        body.sizeY = 3;
+        body.sizeX = 1;
+        body.sizeY = 2;
         pants.sizeX = 1;
-        pants.sizeY = 1;
-        foot.sizeX = 2;
+        pants.sizeY = 2;
+        foot.sizeX = 1;
         foot.sizeY = 2;
-        glove.sizeX = 2;
+        glove.sizeX = 1;
         glove.sizeY = 2;
-        belt.sizeX = 2;
+        belt.sizeX = 1;
         belt.sizeY = 1;
-        lHand.sizeX = 2;
-        lHand.sizeY = 4;
-        rHand.sizeX = 2;
-        rHand.sizeY = 4;
+        lHand.sizeX = 1;
+        lHand.sizeY = 2;
+        rHand.sizeX = 1;
+        rHand.sizeY = 2;
         lRing.sizeX = 1;
         lRing.sizeY = 1;
         rRing.sizeX = 1;
@@ -158,8 +158,7 @@ public class UIManager : MonoBehaviour
         screenW = Screen.width;
 
         //인벤이미지 크기 조절인데 어떻게 맞추는지 모르겠네
-        //invenSize = new Vector2((screenW/16)*4.758f, (screenH/9)*7.5f); 본래 것
-        invenSize = new Vector2((screenH / 9) * 7.375f, screenH);
+        invenSize = new Vector2((screenW/16)*4.758f, (screenH/9)*7.5f);
 
         slotSize = Mathf.RoundToInt(screenH * 0.074f);
 
@@ -183,8 +182,8 @@ public class UIManager : MonoBehaviour
 
         equipments.FildSizeInit();
 
-        goldSize.sizeDelta = new Vector2(slotSize * 3.125f, slotSize * 0.75f);
-        goldSize.anchoredPosition = new Vector2(slotSize * 6.0625f, slotSize * 5.4375f);
+        goldSize.sizeDelta = new Vector2(slotSize * 1.375f, slotSize * 0.191f);
+        goldSize.anchoredPosition = new Vector2(slotSize * 1.375f, slotSize * 0.191f);
         goldSize.GetComponent<Text>().fontSize = Mathf.RoundToInt(slotSize * 0.375f);
         allUI.Add(inventory);
         allUI.Add(shopWindow);     //추후 추가 20200824전재현
@@ -278,14 +277,14 @@ public class UIManager : MonoBehaviour
         equipments.hat.startX = Mathf.RoundToInt((screenW / 16) * 3.1f);
         equipments.hat.startY = Mathf.RoundToInt((screenH / 9) * 7.625f);
         //상의(갑옷)
-        equipments.body.startX = Mathf.RoundToInt((screenW / 16) * 3.08f);
-        equipments.body.startY = Mathf.RoundToInt((screenH / 9) * 5.25f);
+        equipments.body.startX = Mathf.RoundToInt((screenW / 16) * 0.645f);
+        equipments.body.startY = Mathf.RoundToInt((screenH / 9) * 0.833f);
         //벨트
         equipments.belt.startX = Mathf.RoundToInt((screenW / 16) * 3.08f);
         equipments.belt.startY = Mathf.RoundToInt((screenH / 9) * 4.17f);
         //바지
-        equipments.pants.startX = Mathf.RoundToInt((screenW / 16) * 4.75f);
-        equipments.pants.startY = Mathf.RoundToInt((screenH / 9) * 7.625f);
+        equipments.pants.startX = Mathf.RoundToInt((screenW / 16) * 3.0f);
+        equipments.pants.startY = Mathf.RoundToInt((screenH / 9) * 5.1f);
         //신발
         equipments.foot.startX = Mathf.RoundToInt((screenW / 16) * 5.75f);
         equipments.foot.startY = Mathf.RoundToInt((screenH / 9) * 3.5f);

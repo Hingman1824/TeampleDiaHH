@@ -3,7 +3,6 @@ using IPlayer;
 using System.Collections;
 using UnityEngine.UI;
 using System.Reflection;
-using UnityEditor.XR;
 
 public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAnimation, IPlayerPhoton
 {
@@ -42,65 +41,30 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     public Button respawnBtn;
     public Transform respawnPoint;
 
-    public static PlayerManager instance;        //전재현 추가
-    private EquipmentManager equipmentManager;   //전재현 추가
-    public Transform weaponPos;                  //전재현 추가
-    private Collider[] weaponColliders;          //전재현 추가
-    public bool colOnce;                         //전재현 추가
+    public static PlayerManager instance;
 
     //일단 임의로 정해놓은 것
-    public int Level;   //전재현 임시 변경
+    public int Level = 70;
     float Hp = 100;
     int Defense = 33;
     float Exp = 0.0f;
 
-    //플레이어 이동 체크
-    [HideInInspector]
-    public bool isPlayerMove;
-
-    // 전재현 추가
-    void Awake()
-    {
-        //pm = FindObjectOfType<PhotonManager>();
-        instance = this;
-        equipmentManager = GameObject.Find("EquipmentManager").GetComponent<EquipmentManager>();
-        weaponColliders = weaponPos.GetComponentsInChildren<Collider>();
-    }
-
-    //private void Start()
-    //{
-    //    WeaponOff();
-    //    Level = 1;
-    //    respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>();       //부활장소
-    //    loading = FindObjectOfType<LoadingScript>();                                                //로딩창
-    //    expBar = GameObject.Find("ExpBar").GetComponent<Image>();
-    //    hpBar = GameObject.Find("Hp").GetComponent<Image>();
-    //    expText = GameObject.Find("ExpText").GetComponent<Text>();
-    //    playerName = GameObject.Find("PlayerNickName").GetComponent<Text>();
-    //    smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
-
-
-    
 
 
     private void Start()
     {
-        WeaponOff();  // 전재현 추가
-        Level = 1;    // 전재현 추가
-        respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>(); //부활장소
-        loading = FindObjectOfType<LoadingScript>();                                         //로딩창
-        expBar = GameObject.Find("ExpBar").GetComponent<Image>();                            //경험치 바
-        hpBar = GameObject.Find("Hp").GetComponent<Image>();        //hp 바
-        expText = GameObject.Find("ExpText").GetComponent<Text>();      
+        playerDamage = 10f;
+        respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>();
+        loading = FindObjectOfType<LoadingScript>();
+        expBar = GameObject.Find("ExpBar").GetComponent<Image>();
+        hpBar = GameObject.Find("Hp").GetComponent<Image>();
+        expText = GameObject.Find("ExpText").GetComponent<Text>();
         playerName = GameObject.Find("PlayerNickName").GetComponent<Text>();
         smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
         respawnBtn = GameObject.Find("RespawnBtn").GetComponent<Button>();
         // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
 
-        equipmentManager.WeaponSet(0);  // 전재현 추가
-        colOnce = false;  // 전재현 추가
         playerName.text = PhotonNetwork.player.NickName;
-        isPlayerMove = false;
     }
 
     // 범위 -1 ~ 1까지 플레이어 스피드는 이것과 관계없음
@@ -131,6 +95,11 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         {
             Hp = value;
         }
+    }
+
+    public void Hit()
+    {
+        Debug.Log("?");
     }
 
     public void OnCollisionEnter(Collision col)
@@ -350,34 +319,5 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         }
     }
 
-    public bool PlayerMoveCheck()       // 컷씬 용 플레이어 이동확인
-    {
-        if (PlayerH != 0 || PlayerV != 0)   //플레이어가 움직이고 있으면
-        {
-            isPlayerMove = true;        
-        }
-        else if (PlayerH == 0 && PlayerV == 0)  //플레이어가 움직이지 않으면
-        {
-            isPlayerMove = false;
-        }
-        return isPlayerMove;
-    }
-
-    // 인벤 캐릭터 무기 끼고 빼는 로직임 on off 전재현 추가
-    private void WeaponOn()
-    {
-        foreach (var it in weaponColliders)
-        {
-            it.enabled = true;
-        }
-    }
-
-    private void WeaponOff()
-    {
-        foreach (var it in weaponColliders)
-        {
-            it.enabled = false;
-        }
-    }
-
+ 
 }

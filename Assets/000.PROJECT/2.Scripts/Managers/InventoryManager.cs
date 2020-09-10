@@ -47,9 +47,8 @@ public class InventoryManager : MonoBehaviour
         itemCount = 1;
 
         //각각 아이템을 담을 그릇 + 위치마다 아이템 정보 동적할당
-        itemArrs = new ItemArr[4, 10];
-
-        for(int i = 0; i<4; i++)
+        itemArrs = new ItemArr[6, 10];
+        for(int i = 0; i<6; i++)
         {
             for(int j = 0; j < 10; j++)
             {
@@ -60,8 +59,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Start()
     {
-        invenArr = new int[4, 10];//인벤토리 크기 설정
-
+        invenArr = new int[6, 10];//인벤토리 크기 설정
         invenArr.Initialize();//초기값 설정
         GoldUpdate(); //보유자산 업데이트
     }
@@ -76,7 +74,7 @@ public class InventoryManager : MonoBehaviour
 
     void ShowArr()
     {
-        for(int i = 0; i < 4; i++)
+        for(int i = 0; i < 6; i++)
         {
             for(int j = 0; j < 10; j++)
             {
@@ -101,12 +99,11 @@ public class InventoryManager : MonoBehaviour
     {
         int _X = startX;
         int _Y = startY;
-        
         int toX = _X + xSize;
         int toY = _Y + ySize;
 
 
-        if(toX > 10 || toY > 4)//시작위치+크기값 비교 (결국은 크기를 넘는지 체크하는것 [인벤 경계]10,6) 
+        if(toX > 10 || toY > 6)//시작위치+크기값 비교 (결국은 크기를 넘는지 체크하는것 [인벤 경계]10,6) 
         {
             return false;
         }
@@ -209,7 +206,7 @@ public class InventoryManager : MonoBehaviour
     {
         for (int j = 0; j < 10; j++)
         {
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 6; i++)
             {
                 if (ArrInputCheck(j, i, xSize, ySize))
                 {
@@ -225,7 +222,7 @@ public class InventoryManager : MonoBehaviour
     {
         for (int j = 0; j < 10; j++)
         {
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 6; i++)
             {
                 if (!itemArrs[i, j].isUse)
                 {
