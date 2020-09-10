@@ -11,6 +11,8 @@ public class BarbarianSkill : PlayerManager
     public bool isFuriousCharge = false;
     public bool isWhirlWind = false;
 
+    public TrailRenderer rend;      //평타 궤적
+
     public GameObject battleRage;
     public GameObject whirlWindEff;
     //BoxCollider babaWeapon;
@@ -30,7 +32,7 @@ public class BarbarianSkill : PlayerManager
 
         //babaWeapon = GameObject.FindWithTag("BabaWeapon").GetComponent<BoxCollider>();
 
-        
+
         if (pv.isMine)
         {
             Camera.main.GetComponent<SmoothFollow>().target = camPivot;
@@ -46,11 +48,9 @@ public class BarbarianSkill : PlayerManager
     {
         if (pv.isMine)
         {
-            
             PlayerMovement();
             PlayerMoveAnimation(); //아랫줄로 수정전  
             //pv.RPC("PlayerMoveAnimation", PhotonTargets.AllBuffered, null);
-
             if (Input.GetKey(KeyCode.X) && isRend == false)
             {                
                 StartCoroutine(Rend());                
@@ -97,10 +97,12 @@ public class BarbarianSkill : PlayerManager
 
     public IEnumerator Rend()
     {
+        rend.enabled = true;        //평타궤적 활성화
         anim.SetBool("isAttack", true);
         yield return new WaitForSeconds(0.5f);
-        //Invoke("PlayerAttackAnimation", 0.5f);
         anim.SetBool("isAttack", false);
+        yield return new WaitForSeconds(0.1f);
+        rend.enabled = false;       //평타궤적 비활성화
     }
 
 
