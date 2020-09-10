@@ -45,7 +45,10 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
     public enum ItemSize
     {
         _1_1 = 1,
-        _2_1,
+        _1_2,
+        _2_2,
+        _3_2,
+        _4_2,
 
         ALL
     }
@@ -71,13 +74,13 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
     public Image itemImageBack;
 
     public int weaponNum;
+
     private int slotSize;
 
     public Transform uiPanel;
 
     [HideInInspector]
     public int xSize;
-
     [HideInInspector]
     public int ySize;
 
@@ -156,11 +159,11 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
         itemCreater = GameObject.Find("ItemCreateManager").GetComponent<ItemCreateManager>();
     }
 
-    private void Start()
+    void Start()
     {
         UiInfoTrInit();
-        uiManager = new UIManager();//instance로써 할당해야함 일단 구현안됐으니 이렇게
-        inventoryManager = new InventoryManager(); // **
+        uiManager = UIManager.instance;
+        inventoryManager = InventoryManager.instance;
 
 
         AutoSizeInit();
@@ -379,22 +382,22 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
                 itemSize = ItemSize._1_1;
                 break;
             case ItemKind.Hat:
-                itemSize = ItemSize._2_1;
+                itemSize = ItemSize._2_2;
                 break;
             case ItemKind.Body:
-                itemSize = ItemSize._2_1;
+                itemSize = ItemSize._3_2;
                 break;
             case ItemKind.Belt:
-                itemSize = ItemSize._1_1;
+                itemSize = ItemSize._1_2;
                 break;
             case ItemKind.Pants:
-                itemSize = ItemSize._2_1;
+                itemSize = ItemSize._1_1;
                 break;
             case ItemKind.Foot:
-                itemSize = ItemSize._2_1;
+                itemSize = ItemSize._2_2;
                 break;
             case ItemKind.Glove:
-                itemSize = ItemSize._2_1;
+                itemSize = ItemSize._1_1;
                 break;
             case ItemKind.LRing:
             case ItemKind.RRing:
@@ -402,7 +405,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
                 break;
             case ItemKind.LHand:
             case ItemKind.RHand:
-                itemSize = ItemSize._2_1;
+                itemSize = ItemSize._4_2;
                 break;
         }
 
@@ -417,14 +420,30 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
                 ySize = 1;
                 xSize = 1;
                 break;
-            case ItemSize._2_1:
+
+            case ItemSize._1_2:
+                ySize = 1;
+                xSize = 2;
+                break;
+
+            case ItemSize._2_2:
                 ySize = 2;
-                xSize = 1;
+                xSize = 2;
+                break;
+
+            case ItemSize._3_2:
+                ySize = 3;
+                xSize = 2;
+                break;
+
+            case ItemSize._4_2:
+                ySize = 4;
+                xSize = 2;
                 break;
 
         }
     }
-
+    
     void ImageSizeInit()
     {
         switch (itemSize)
@@ -432,8 +451,17 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
             case ItemSize._1_1:
                 itemImageSize = new Vector2(slotSize, slotSize);
                 break;
-            case ItemSize._2_1:
-                itemImageSize = new Vector2(slotSize, slotSize * 2);
+            case ItemSize._1_2:
+                itemImageSize = new Vector2(slotSize * 2, slotSize);
+                break;
+            case ItemSize._2_2:
+                itemImageSize = new Vector2(slotSize * 2, slotSize * 2);
+                break;
+            case ItemSize._3_2:
+                itemImageSize = new Vector2(slotSize * 2, slotSize * 3);
+                break;
+            case ItemSize._4_2:
+                itemImageSize = new Vector2(slotSize * 2, slotSize * 4);
                 break;
 
         }
@@ -483,6 +511,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
             inventoryManager.isItemDrag = true;
             isMouseTracking = true;
             uiInfo.SetActive(false);
+            itemImageBack.enabled = false;
             equipmentInfo.SetActive(false);
         }
     }
@@ -490,7 +519,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
     //아이템의 이미지를 리소스 폴더에 불러와 적용
     private void ItemImageSet()
     {
-        string path = "ItemImages\\";
+        string path = "ItemImgs\\";
         switch (itemKind)
         {
             case ItemKind.use:
@@ -502,7 +531,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
 
             case ItemKind.LHand:
             case ItemKind.RHand:
-                path += "weapon" + weaponNum.ToString();
+                path += "weapon"+weaponNum.ToString();
                 break;
 
             case ItemKind.Hat:
@@ -646,7 +675,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
                         return;
                     }
 
-                    if (needLevel > PlayerManager.instance.Level) return;
+                    //if (needLevel > PlayerManager.instance.Level) return;
 
                     equipmentManager.ClickEquipment(ref itemManager);
                     if (itemKind == ItemKind.LHand)
@@ -694,7 +723,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
         {
             if(shopManager.isOn && ShopOverlapCheck())
             {
-                ItemSellCheck();
+                //ItemSellCheck();
                 ItemSell(1);
             }
             else
@@ -703,7 +732,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
             }
             return false;
         }
-        if (pos.y >= downSpace + (slotSize * 6))
+        if (pos.y >= downSpace + (slotSize * 4))
         {
             //아이템 착용
             if (needLevel > PlayerManager.instance.Level)
