@@ -3,6 +3,7 @@ using IPlayer;
 using System.Collections;
 using UnityEngine.UI;
 using System.Reflection;
+using UnityEditor.XR;
 
 public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAnimation, IPlayerPhoton
 {
@@ -24,8 +25,8 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     public float playerRot = 10;
     public Animator anim;
     public SmoothFollow smooth;
+    public LoadingScript loading;
 
-    public PhotonManager pm;
     public PhotonView pv;
     public Rigidbody myRb;
     public Transform camPivot;
@@ -33,10 +34,13 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     public Quaternion currRot = Quaternion.identity;
     //public Monster monster;
 
+    
     public Image expBar;
     public Image hpBar;
     public Text expText;
     public Text playerName;
+    public Button respawnBtn;
+    public Transform respawnPoint;
 
     public static PlayerManager instance;
     private EquipmentManager equipmentManager;
@@ -50,6 +54,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     int Defense = 33;
     float Exp = 0.0f;
 
+<<<<<<< HEAD
     void Awake()
     {
         pm = FindObjectOfType<PhotonManager>();
@@ -67,11 +72,30 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         expText = GameObject.Find("ExpText").GetComponent<Text>();
         playerName = GameObject.Find("PlayerNickName").GetComponent<Text>();
         smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
+=======
+
+    //플레이어 이동 체크
+    [HideInInspector]
+    public bool isPlayerMove;
+
+
+    private void Start()
+    {
+        respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>();       //부활장소
+        loading = FindObjectOfType<LoadingScript>();                                                //로딩창
+        expBar = GameObject.Find("ExpBar").GetComponent<Image>();                                   //경험치 바
+        hpBar = GameObject.Find("Hp").GetComponent<Image>();        //hp 바
+        expText = GameObject.Find("ExpText").GetComponent<Text>();      
+        playerName = GameObject.Find("PlayerNickName").GetComponent<Text>();
+        smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
+        respawnBtn = GameObject.Find("RespawnBtn").GetComponent<Button>();
+>>>>>>> a084a2ac794c91ae51c7c4191f9646d188f74b13
         // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
 
         equipmentManager.WeaponSet(0);
         colOnce = false;
         playerName.text = PhotonNetwork.player.NickName;
+        isPlayerMove = false;
     }
 
     // 범위 -1 ~ 1까지 플레이어 스피드는 이것과 관계없음
@@ -110,10 +134,24 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         {
             smooth.playerHit();
             Hp -= 10;
-            //monster.monsterDamage;
             hpBar.fillAmount -= 10 * 0.01f;
-            //smooth.PlayerBlood.SetActive(false);
+
+            if (Hp <= 0)
+            {
+                anim.SetBool("isDie", true);
+                smooth.PlayerDie.SetActive(true);
+            }
         }
+    }
+
+    public void Respawn()
+    {
+        loading.Loading();
+        transform.position = respawnPoint.position;
+        anim.SetBool("isDie", false);       
+        Hp = 100;
+        hpBar.fillAmount = 1.0f;
+        smooth.PlayerDie.SetActive(false);
     }
 
     public int PlayerLevel
@@ -124,8 +162,6 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
             //throw new NotImplementedException();
         }
     }
-
-
 
     public float PlayerExp
     {
@@ -309,6 +345,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         }
     }
 
+<<<<<<< HEAD
     private void WeaponOn()
     {
         foreach (var it in weaponColliders)
@@ -330,4 +367,19 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     }
 
 
+=======
+    public bool PlayerMoveCheck()       // 컷씬 용 플레이어 이동확인
+    {
+        if (PlayerH != 0 || PlayerV != 0)   //플레이어가 움직이고 있으면
+        {
+            isPlayerMove = true;        
+        }
+        else if (PlayerH == 0 && PlayerV == 0)  //플레이어가 움직이지 않으면
+        {
+            isPlayerMove = false;
+        }
+        return isPlayerMove;
+    }
+ 
+>>>>>>> a084a2ac794c91ae51c7c4191f9646d188f74b13
 }

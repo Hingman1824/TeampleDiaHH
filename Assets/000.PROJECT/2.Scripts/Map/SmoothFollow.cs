@@ -15,6 +15,7 @@ public class SmoothFollow : MonoBehaviour
     public AudioClip[] hitSound; //플레이어 히트판정시 오디오
     public AudioSource Audio;
     public GameObject PlayerBlood; //플레이어 히트판정시 이펙트
+    public GameObject PlayerDie;
 
     PhotonView pv;
     public Transform target;
@@ -38,6 +39,7 @@ public class SmoothFollow : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        PlayerDie.SetActive(false);
         pv = GetComponent<PhotonView>();
         bounder = GetComponent<CapsuleCollider>();
     }
