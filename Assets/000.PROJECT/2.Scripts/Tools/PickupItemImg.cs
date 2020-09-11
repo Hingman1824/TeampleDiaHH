@@ -53,7 +53,7 @@ public class PickupItemImg : MonoBehaviour
 
             GameObject tempGO = null;
 
-            float dis = 500;
+            float dis = 250;
 
             for(int i =0; i< gameObjects.Length; i++)
             {

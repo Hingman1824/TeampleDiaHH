@@ -85,7 +85,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
 
     private void Start()
     {
-        WeaponOff();  // 전재현 추가
+        //WeaponOff();  // 전재현 추가
         Level = 1;    // 전재현 추가
         respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>(); //부활장소
         loading = FindObjectOfType<LoadingScript>();                                         //로딩창

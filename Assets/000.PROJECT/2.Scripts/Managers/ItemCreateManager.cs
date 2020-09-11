@@ -7,12 +7,6 @@ using UnityEngine.UIElements;
 public class ItemCreateManager : MonoBehaviour
 {
     //PF = Prefab
-    //public delegate void ItemCreator(Vector3 pos);
-
-    //ItemCreator itemCreator;
-
-    //public static ItemCreateManager instance;
-    //public ItemCreateManager itemCreateManager;
 
     public GameObject hpPotionPF;
     public GameObject glovePF;

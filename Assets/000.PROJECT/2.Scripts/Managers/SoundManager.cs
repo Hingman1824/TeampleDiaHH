@@ -7,8 +7,6 @@ using UnityEngine.UI; // 이 선언이 있어야 UI관련 컴포넌트를 연결
 [RequireComponent(typeof(AudioSource))]//현재 스크립트에서 넓게는 현재 게임오브젝트에서 반드시 필요로하는 컴포넌트를 Attribute로 명시하여 
                                        //해당 컴포넌트의 자동 생성 및 삭제되는 것을 막는다.
 
-
-
 public class SoundManager : MonoBehaviour
 {
     public AudioClip[] soundFiles;
@@ -22,13 +20,17 @@ public class SoundManager : MonoBehaviour
     public GameObject Sound;
     public GameObject PlaySoundBtn;
     private int tempVolume;
+
     private SFXManager sfx;
+    public static SoundManager instance;
 
     AudioSource audio; //녹색줄의 의미는 앞으로 삭제될 수 있음을 경고, 그러나 그냥써도 되고, 변수 이름만 바꿔도 된다.
 
 
     void Awake() //Start()보다 먼저 초기화함수, 레퍼런스초기화 용, 컴포넌트가  비활성화 되어도 호출된다. 단, gameObject 비활성화시는 아님.
     {
+        instance = this;
+        sfx = transform.Find("SFXManager").GetComponent<SFXManager>();
         audio = GetComponent<AudioSource>();
         // 이 오브젝트는 씬 전환시 사라지지 않음
         DontDestroyOnLoad(this.gameObject);
@@ -49,6 +51,11 @@ public class SoundManager : MonoBehaviour
     {
         tempVolume = (int)(soundVolume * 100);
         volumeTxt.text = tempVolume.ToString();
+    }
+    //SFX 볼륨설정
+    public void SetSfx(float vol, bool isMute)
+    {
+        sfx.SetSFXSound(vol, isMute);
     }
 
     // Slider 와 Toggle 컴포넌트에서 이벤트 발생시 호출해줄 함수를 선언 (public 키워드에 의해 외부접근 가능)
