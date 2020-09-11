@@ -92,7 +92,9 @@ public class Diablo : MonsterManager
         {
             StartCoroutine(this.NetAnim());  //네트워크 객체를 일정 간격으로 애니메이션을 동기화 하는 코루틴
         }
-        yield return null;
+        yield return new WaitForSeconds(1f);
+
+        Box.SetActive(false);
     }
 
     // Update is called once per frame
@@ -488,7 +490,7 @@ public class Diablo : MonsterManager
         yield return new WaitForSeconds(1.5f);
 
         this.gameObject.SetActive(false);
-        Box.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); //몬스터가 죽은 자리에서 스폰
+        Box.SetActive(true);
 
         StopAllCoroutines(); //객체 반환전 모든 코루틴을 정지
     }
