@@ -54,7 +54,7 @@ MonoBehaviour:
   isHpPotion: 0
   paricles:
   - {fileID: 1543965644257020, guid: 5ca18ff4a6325e345a762ba2c7eda4ae, type: 3}
-  - {fileID: 1462578979262772, guid: 934e0a3a9cefff64985d2b00c53d5576, type: 3}
+  - {fileID: 1462578979262772, guid: 427ee721823ba9446a2758e5bf926d6f, type: 3}
   - {fileID: 1685364315182848, guid: 19d912552f66e1b429f8d86bbe374b19, type: 3}
 --- !u!114 &908069788212526244
 MonoBehaviour:
@@ -164,6 +164,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8a92c9499064d6942829bc08801796dd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4608339172222505912, guid: 8a92c9499064d6942829bc08801796dd,
         type: 3}
