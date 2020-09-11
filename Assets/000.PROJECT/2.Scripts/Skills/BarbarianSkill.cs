@@ -10,7 +10,11 @@ public class BarbarianSkill : PlayerManager
     public bool isBattleRage = false;
     public bool isFuriousCharge = false;
     public bool isWhirlWind = false;
-   
+
+    public TrailRenderer rend;      //평타 궤적
+
+    public GameObject battleRage;
+    public GameObject whirlWindEff;
     //BoxCollider babaWeapon;
 
     private void Awake()
@@ -28,7 +32,7 @@ public class BarbarianSkill : PlayerManager
 
         //babaWeapon = GameObject.FindWithTag("BabaWeapon").GetComponent<BoxCollider>();
 
-        
+
         if (pv.isMine)
         {
             Camera.main.GetComponent<SmoothFollow>().target = camPivot;
@@ -44,11 +48,9 @@ public class BarbarianSkill : PlayerManager
     {
         if (pv.isMine)
         {
-            
             PlayerMovement();
-            //PlayerMoveAnimation(); 아랫줄로 수정전  
-            pv.RPC("PlayerMoveAnimation", PhotonTargets.AllBuffered, null);
-
+            PlayerMoveAnimation(); //아랫줄로 수정전  
+            //pv.RPC("PlayerMoveAnimation", PhotonTargets.AllBuffered, null);
             if (Input.GetKey(KeyCode.X) && isRend == false)
             {                
                 StartCoroutine(Rend());                
@@ -71,6 +73,7 @@ public class BarbarianSkill : PlayerManager
                 // 어플라이루트모션을 항상켜두면 나머지 애니메이션들에도 각도상의 악 영향을 준다. 그래서 필요할 때만 켜둔다.
                 anim.applyRootMotion = true;                
                 StartCoroutine(WhirlWindOn());
+                
             }
             else if (Input.GetKeyUp(KeyCode.Q) && isWhirlWind == true)
             {
@@ -94,19 +97,24 @@ public class BarbarianSkill : PlayerManager
 
     public IEnumerator Rend()
     {
+        rend.enabled = true;        //평타궤적 활성화
         anim.SetBool("isAttack", true);
         yield return new WaitForSeconds(0.5f);
-        //Invoke("PlayerAttackAnimation", 0.5f);
         anim.SetBool("isAttack", false);
+        yield return new WaitForSeconds(0.1f);
+        rend.enabled = false;       //평타궤적 비활성화
     }
 
 
     private IEnumerator BattleRage()
     {
         isBattleRage = true;
+        battleRage.SetActive(true);
         anim.SetBool("isSkill1", true);
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(0.5f);
         anim.SetBool("isSkill1", false);
+        yield return new WaitForSeconds(0.5f);
+        battleRage.SetActive(false);
         isBattleRage = false;
         yield return null;
     }
@@ -115,7 +123,7 @@ public class BarbarianSkill : PlayerManager
     {
         isFuriousCharge = true;
         anim.SetBool("isSkill2", true);
-        myRb.AddForce(-transform.forward * 175, ForceMode.Impulse);
+        myRb.AddForce(-transform.forward * 100, ForceMode.Impulse);
         yield return new WaitForSeconds(2.0f);
         anim.SetBool("isSkill2", false);
         isFuriousCharge = false;
@@ -125,8 +133,9 @@ public class BarbarianSkill : PlayerManager
     private IEnumerator WhirlWindOn()
     {
         isWhirlWind = true;
-        anim.SetBool("isSkill3", true);        
-        yield return null;
+        whirlWindEff.SetActive(true);
+        anim.SetBool("isSkill3", true);
+        yield return new WaitForSeconds(1.3f);
         //anim.SetBool("isSkill3", false);
         //isSkill3 = false;
         //yield return null;
@@ -134,6 +143,7 @@ public class BarbarianSkill : PlayerManager
 
     private IEnumerator WhirlWindOff()
     {
+        whirlWindEff.SetActive(false);
         anim.SetBool("isSkill3", false);
         isWhirlWind = false;        
         yield return null;
