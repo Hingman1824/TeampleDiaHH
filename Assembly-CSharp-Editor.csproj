@@ -9,7 +9,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+<<<<<<< HEAD
+    <ProjectGuid>{CEE2A27A-9DCA-F2C0-D5B5-4F1BFE2C2BD5}</ProjectGuid>
+=======
     <ProjectGuid>{754F8E56-9A8C-6A73-B474-D47BF7747B92}</ProjectGuid>
+>>>>>>> c5b31e31185fe05f79732ac91894fb0baf93216a
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -320,6 +324,21 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
+<<<<<<< HEAD
+      <HintPath>D:/GitHub/diablo/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>D:/GitHub/diablo/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="QSEditor">
+      <HintPath>D:/GitHub/diablo/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="QSFunctions">
+      <HintPath>D:/GitHub/diablo/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>D:/GitHub/diablo/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+=======
       <HintPath>C:/Users/user/Desktop/TeampleDiablo3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
@@ -339,6 +358,7 @@
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+>>>>>>> c5b31e31185fe05f79732ac91894fb0baf93216a
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -695,6 +715,51 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
+<<<<<<< HEAD
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Monetization">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Advertisements">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
       <HintPath>C:/Users/user/Desktop/TeampleDiablo3/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
@@ -738,10 +803,46 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/user/Desktop/TeampleDiablo3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+>>>>>>> c5b31e31185fe05f79732ac91894fb0baf93216a
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+<<<<<<< HEAD
+      <Project>{BAD42535-6BB6-4672-FF73-0D414134CCD7}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{C3813713-E3BC-63B4-A3B0-3E9FF18C4221}</Project>
+      <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="sample.trade.csproj">
+      <Project>{775155F1-E40F-5FE9-A457-637DD2D222DB}</Project>
+      <Name>sample.trade</Name>
+    </ProjectReference>
+    <ProjectReference Include="samples-environment.csproj">
+      <Project>{AF5403C9-9955-4B65-23B9-8BCE01521A5F}</Project>
+      <Name>samples-environment</Name>
+    </ProjectReference>
+    <ProjectReference Include="goodcat.un-inventory.standard.csproj">
+      <Project>{C1D5FD72-F102-BF14-4616-EA9A27493CC7}</Project>
+      <Name>goodcat.un-inventory.standard</Name>
+    </ProjectReference>
+    <ProjectReference Include="goodcat.un-inventory.editor.csproj">
+      <Project>{2607A89A-7035-1BB0-919D-0B84377823E0}</Project>
+      <Name>goodcat.un-inventory.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="sample.hero.csproj">
+      <Project>{A814691A-D194-D4F6-362F-82EEF01D718C}</Project>
+      <Name>sample.hero</Name>
+    </ProjectReference>
+    <ProjectReference Include="goodcat.un-inventory.core.csproj">
+      <Project>{FE701873-5488-6703-7428-4D5A7933C00C}</Project>
+      <Name>goodcat.un-inventory.core</Name>
+    </ProjectReference>
+    <ProjectReference Include="goodcat.un-inventory.plugins.standard.csproj">
+      <Project>{5B6351F1-7703-340B-ADCC-1FDC0CC1B269}</Project>
+=======
       <Project>{65C2DFC6-185D-739F-A53E-26497247AA08}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
@@ -775,6 +876,7 @@
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.plugins.standard.csproj">
       <Project>{34C8F320-7EC8-D70E-91AA-6AC6FDBC0B17}</Project>
+>>>>>>> c5b31e31185fe05f79732ac91894fb0baf93216a
       <Name>goodcat.un-inventory.plugins.standard</Name>
     </ProjectReference>
   </ItemGroup>
