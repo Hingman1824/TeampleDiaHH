@@ -1,7 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/000.PROJECT/3.Prefabs/Particles/RarityParticleLegendary.prefab.meta
+guid: 2ac73cb7c7646d948b59d20c5637d433
+PrefabImporter:
+=======
 guid: dbb7669d082a82c489d96fa950a3f72b
 folderAsset: yes
 DefaultImporter:
+>>>>>>> 6710f01b4a57cf58c38392c3ab7559e6824592f2:Assets/000.PROJECT/3.Prefabs/Particles.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

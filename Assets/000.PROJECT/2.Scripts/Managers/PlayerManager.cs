@@ -374,10 +374,10 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
 
     private void WeaponOff()
     {
-        foreach (var it in weaponColliders)
-        {
-            it.enabled = false;
-        }
+        //foreach (var it in weaponColliders)
+        //{
+        //    it.enabled = false;
+        //}
     }
 
 }
