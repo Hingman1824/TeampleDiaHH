@@ -373,7 +373,7 @@ public class Monster : MonsterManager
         myAudio.PlayOneShot(hitSound);
         Instantiate(bloodEff, transform.position, Quaternion.identity);
         damageTxt.SetActive(true);
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(1.0f);
         damageTxt.SetActive(false);
         yield return null;
     }

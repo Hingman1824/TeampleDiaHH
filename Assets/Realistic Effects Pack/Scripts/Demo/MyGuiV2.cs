@@ -1,7 +1,6 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
-
 public class MyGuiV2 : MonoBehaviour
 {
   public enum GuiStat { Ball, Bottom, Middle, Top}
