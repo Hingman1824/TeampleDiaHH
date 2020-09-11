@@ -70,6 +70,8 @@ MonoBehaviour:
   playerName: {fileID: 0}
   respawnBtn: {fileID: 0}
   respawnPoint: {fileID: 0}
+  weaponPos: {fileID: 0}
+  colOnce: 0
   Level: 70
   isPlayerMove: 0
   isRend: 0
@@ -502,18 +504,6 @@ PrefabInstance:
     - target: {fileID: 400002, guid: af7da5f99a37f50469e44db5c895b8b1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800000, guid: af7da5f99a37f50469e44db5c895b8b1, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800002, guid: af7da5f99a37f50469e44db5c895b8b1, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800004, guid: af7da5f99a37f50469e44db5c895b8b1, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af7da5f99a37f50469e44db5c895b8b1, type: 3}
