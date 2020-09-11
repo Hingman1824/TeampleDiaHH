@@ -36,7 +36,7 @@ TagManager:
   - ShopItem
   - NPC
   - NextMap
-  - Effect
+  - ItemCreator
   layers:
   - Default
   - TransparentFX
@@ -47,8 +47,8 @@ TagManager:
   - 
   - 
   - items
-  - 
-  - 
+  - DropItems
+  - Weapon
   - 
   - 
   - 

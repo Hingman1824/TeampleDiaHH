@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class EffectSettings : MonoBehaviour
 {
-  public enum EffectTypeEnum
+    /*  EffectType이 Projectile면 DeactivateTimeDelay초 후 게임오브젝트 제거
+     *  EffectType이 Other면 DeactivateTimeDelay초 후 게임오브젝트 비활성화*/
+    public enum EffectTypeEnum
   {
     Projectile,
     AOE,
@@ -109,7 +111,7 @@ public class EffectSettings : MonoBehaviour
     if (InstanceBehaviour == DeactivationEnum.DestroyAfterTime) Destroy(gameObject, DestroyTimeDelay);
   }
 
-    public void OnCollisionHandler(CollisionInfo e)
+  public void OnCollisionHandler(CollisionInfo e)
   {
     for (int i = 0; i < lastActiveIndex; i++)
     {
@@ -136,17 +138,16 @@ public class EffectSettings : MonoBehaviour
       handler(this, EventArgs.Empty);
   }
 
-  public void Deactivate()
-  {
-    OnEffectDeactivatedHandler();
-        Destroy(gameObject);
-        gameObject.SetActive(false);
-  }
+    public void Deactivate()
+    {
+        OnEffectDeactivatedHandler();
+        if (EffectType == EffectTypeEnum.Projectile) Destroy(gameObject);
+        else if (EffectType == EffectTypeEnum.Other) gameObject.SetActive(false);
+    }
 
   private void SetGoActive()
   {
-        Destroy(gameObject);
-        active_key[currentActiveGo].SetActive(false);
+    active_key[currentActiveGo].SetActive(false);
     ++currentActiveGo;
     if (currentActiveGo >= lastActiveIndex) currentActiveGo = 0;
   }
