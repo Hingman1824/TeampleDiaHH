@@ -2,6 +2,8 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
+    <CscToolPath>C:\Program Files\Unity\Hub\Editor\2019.4.5f1\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1BF601F2-C27F-95EC-B298-6883F3C642EB}</ProjectGuid>
+    <ProjectGuid>{C32C487F-75B6-4FF7-E307-5DA808DF4553}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,9 +53,6 @@
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2019.4.5f1</UnityVersion>
   </PropertyGroup>
-  <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2019.4.5f1\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -382,6 +381,15 @@
     <Compile Include="Assets\PhotonChatApi\ChatState.cs" />
     <Compile Include="Assets\PhotonChatApi\ChatUserStatus.cs" />
     <Compile Include="Assets\PhotonChatApi\IChatClientListener.cs" />
+    <Compile Include="Assets\PyroParticles\Demo\DemoScript.cs" />
+    <Compile Include="Assets\PyroParticles\Demo\DemoScriptEditor.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\FireBaseScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\FireCollisionForwardScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\FireConstantBaseScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\FireLightScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\FireProjectileScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\MeteorSwarmScript.cs" />
+    <Compile Include="Assets\PyroParticles\Prefab\Script\SingleLineAttribute.cs" />
     <Compile Include="Assets\Realistic Effects Pack\Scripts\Demo\MyGuiV2.cs" />
     <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Balls\AddMaterialOnHit.cs" />
     <Compile Include="Assets\Realistic Effects Pack\Scripts\Prefabs\Balls\AnimatorBehaviour.cs" />
@@ -485,6 +493,7 @@
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SunShaftsComposite.shader" />
     <None Include="Assets\000.PROJECT\3.Prefabs\Monk\MonkRendering.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ConvertDepth.shader" />
+    <None Include="Assets\PyroParticles\Prefab\Materials\AdditiveTintable.shader" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\TAA.cginc" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\TwirlEffect.shader" />
@@ -530,6 +539,7 @@
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+    <None Include="Assets\PyroParticles\Readme.txt" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\FXAA.shader" />
     <None Include="Assets\AddAssets\MAP_Medieval Environment\Medieval Environment\Shaders\Desaturate\DesaturateEffect.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
@@ -779,13 +789,19 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>D:/Diablo3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>D:/Diablo3/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="QSFunctions">
-      <HintPath>D:/Diablo3/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -1142,76 +1158,76 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Monetization">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/user/Documents/TeampleDiaHH/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{535EFDA0-DB13-FFCF-2A92-F8EAD4C7DE96}</Project>
+      <Project>{ED56E6FB-785E-3480-17A0-33BBE60B0AC5}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="sample.trade.csproj">
-      <Project>{72672424-B915-BA48-68B2-E21BA8EB5102}</Project>
+      <Project>{7C3D96C1-2F32-98D2-159C-3F90FE87A571}</Project>
       <Name>sample.trade</Name>
     </ProjectReference>
     <ProjectReference Include="samples-environment.csproj">
-      <Project>{3E64012D-4839-261E-97AB-9F4BD42A3077}</Project>
+      <Project>{B84678A5-F782-CA71-5EF7-78D55693E11D}</Project>
       <Name>samples-environment</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.standard.csproj">
-      <Project>{834C35A6-65FC-E7BE-2733-5E8970B4FBAB}</Project>
+      <Project>{89F5427B-2D7A-1DD5-6BF8-A3A1818F7723}</Project>
       <Name>goodcat.un-inventory.standard</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.editor.csproj">
-      <Project>{ACD285CF-F2C5-52D2-7929-EF2A47457AF2}</Project>
+      <Project>{18B4557B-1209-E427-01F7-861E9241E57A}</Project>
       <Name>goodcat.un-inventory.editor</Name>
     </ProjectReference>
     <ProjectReference Include="sample.hero.csproj">
-      <Project>{6BE873D8-EB66-4578-1724-C1C98BB4ABEA}</Project>
+      <Project>{926175AF-C4BB-5D2E-6ED9-91F946301F11}</Project>
       <Name>sample.hero</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.core.csproj">
-      <Project>{F402F80D-D1BE-6652-A541-B07AF11196A6}</Project>
+      <Project>{B5C5CF2C-9A10-C5FA-9DEA-2335D12A954B}</Project>
       <Name>goodcat.un-inventory.core</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.plugins.standard.csproj">
-      <Project>{304EECCA-2591-AD0C-1C29-FA03BB0A261E}</Project>
+      <Project>{F267C6AE-1DCE-A03B-6260-E46EC1DF386C}</Project>
       <Name>goodcat.un-inventory.plugins.standard</Name>
     </ProjectReference>
   </ItemGroup>

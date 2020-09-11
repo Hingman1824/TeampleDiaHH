@@ -92,7 +92,9 @@ public class Diablo : MonsterManager
         {
             StartCoroutine(this.NetAnim());  //네트워크 객체를 일정 간격으로 애니메이션을 동기화 하는 코루틴
         }
-        yield return null;
+        yield return new WaitForSeconds(1f);
+
+        Box.SetActive(false);
     }
 
     // Update is called once per frame
@@ -105,9 +107,9 @@ public class Diablo : MonsterManager
         {
             if (!life) //죽었을 때
             {
-                EnemyDie();
+                //EnemyDie();
             }
-            if (players.Length != 0) //플레이어가 있으면
+            else if (players.Length != 0) //플레이어가 있으면
             {
                 if (100 <= dist1 && dist1 < 500f) //플레이어와의 거리가 50이상이면 500이하 일 때
                 {
@@ -392,32 +394,38 @@ public class Diablo : MonsterManager
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Attack")
+        if(life == true)
         {
-            monsterCurHp -= 100;
-            StartCoroutine(EnemyHit());
-
-            if (monsterCurHp <= 0)
+            if (col.gameObject.tag == "Attack")
             {
-                life = false;
-                myAudio.PlayOneShot(deadSound);
-                EnemyDie();
+                monsterCurHp -= 100;
+                StartCoroutine(EnemyHit());
+
+                if (monsterCurHp <= 0)
+                {
+                    life = false;
+                    myAudio.PlayOneShot(deadSound);
+                    EnemyDie();
+                }
             }
         }
     }
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Attack")
+        if (life == true)
         {
-            monsterCurHp -= 100;
-            StartCoroutine(EnemyHit());
-
-            if (monsterCurHp <= 0)
+            if (col.gameObject.tag == "Attack")
             {
-                life = false;
-                myAudio.PlayOneShot(deadSound);
-                EnemyDie();
+                monsterCurHp -= 100;
+                StartCoroutine(EnemyHit());
+
+                if (monsterCurHp <= 0)
+                {
+                    life = false;
+                    myAudio.PlayOneShot(deadSound);
+                    EnemyDie();
+                }
             }
         }
     }
@@ -440,6 +448,9 @@ public class Diablo : MonsterManager
     //몬스터 사망
     public void EnemyDie()
     {
+        this.GetComponent<CapsuleCollider>().enabled = false;
+        this.GetComponent<NavMeshAgent>().enabled = false;
+
         if (life == false)
         {
             for (int i = 0; i < players.Length; i++)
@@ -450,7 +461,7 @@ public class Diablo : MonsterManager
             }
         }
         //StartCoroutine(this.Die());
-        life = true;
+        //life = true;
         // 포톤 추가
         if (pv.isMine)//마스터 클라이언트만 실행
         {
@@ -463,19 +474,28 @@ public class Diablo : MonsterManager
         // Enemy의를 죽이자
 
         //죽는 애니메이션 시작
+        
+        animator.SetBool("Move", false);
+        animator.SetBool("Left Punch", false);
+        animator.SetBool("Right Punch", false);
+        animator.SetBool("Magic Area", false);
+        animator.SetBool("Jump Attack", false);
+        animator.SetBool("Hit", false);
+        animator.SetBool("Die", true);
         animn = 7;
 
         Instantiate(explosion, transform.position, Quaternion.identity);
 
         //4.5 초후 오브젝트 반환
-        yield return new WaitForSeconds(4.5f);
+        yield return new WaitForSeconds(1.5f);
 
         this.gameObject.SetActive(false);
-        Box.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); //몬스터가 죽은 자리에서 스폰
+        Box.SetActive(true);
 
         StopAllCoroutines(); //객체 반환전 모든 코루틴을 정지
     }
 
+    //점프어택시 이벤트 호출
     IEnumerator JumpAttackEvent()
     {
         //GameObject clone = JumpAttackEffect;
@@ -491,6 +511,7 @@ public class Diablo : MonsterManager
         Destroy(GameObject.FindGameObjectWithTag("Effect"));
     }
 
+    //스킬공격시 이벤트 호출
     IEnumerator MagicAreaEvent()
     {
         Instantiate(MagicAreaEffect, this.transform);
@@ -498,6 +519,7 @@ public class Diablo : MonsterManager
         Destroy(GameObject.FindGameObjectWithTag("Effect"));
     }
 
+    //카메라 무빙, (카메라 스크립트가 카메라를 쥐고있어서 못함 -> 카메라 스크립트에 이 함수를 추가해서 사용하는 방식으로 전환)
     void CameraShake()
     {
         float x = Random.Range(-1, 1);
