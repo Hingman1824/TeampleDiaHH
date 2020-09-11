@@ -44,7 +44,7 @@ public class DropItem : MonoBehaviour
             if (itemKind == ItemManager.ItemKind.use) return;
 
             ShowParticle(); // 아이템 드랍 이펙트가 나오게하고
-            //PlaySfx();  // 아이템 드랍 사운드 재생
+            PlaySfx();  // 아이템 드랍 사운드 재생
         }
     }
     //움직이지 않는 벽 : Collider
@@ -190,33 +190,33 @@ public class DropItem : MonoBehaviour
             case ItemManager.ItemKind.LHand:
             case ItemManager.ItemKind.RHand:
 
-                ySize = 2;
-                xSize = 1;
+                ySize = 4;
+                xSize = 2;
                 break;
 
             case ItemManager.ItemKind.Hat:
                 ySize = 2;
-                xSize = 1;
+                xSize = 2;
                 break;
 
             case ItemManager.ItemKind.Body:
-                ySize = 2;
-                xSize = 1;
+                ySize = 3;
+                xSize = 2;
                 break;
 
             case ItemManager.ItemKind.Belt:
                 ySize = 1;
-                xSize = 1;
+                xSize = 2;
                 break;
 
             case ItemManager.ItemKind.Pants:
-                ySize = 2;
+                ySize = 1;
                 xSize = 1;
                 break;
 
             case ItemManager.ItemKind.Foot:
                 ySize = 2;
-                xSize = 1;
+                xSize = 2;
                 break;
 
             case ItemManager.ItemKind.LRing:
@@ -228,7 +228,7 @@ public class DropItem : MonoBehaviour
 
             case ItemManager.ItemKind.Glove:
                 ySize = 2;
-                xSize = 1;
+                xSize = 2;
                 break;
 
         }
