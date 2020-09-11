@@ -35,6 +35,8 @@ TagManager:
   - EquipmentMng
   - ShopItem
   - NPC
+  - NextMap
+  - Effect
   layers:
   - Default
   - TransparentFX

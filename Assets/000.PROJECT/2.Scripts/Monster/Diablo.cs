@@ -36,6 +36,10 @@ public class Diablo : MonsterManager
     private AudioSource myAudio;
     private PlayerManager player;
 
+    private GameObject Camera;
+    public GameObject JumpAttackEffect;
+    public GameObject MagicAreaEffect;
+
     public GameObject Box;
     //네트워크 관련 변수
 
@@ -57,6 +61,8 @@ public class Diablo : MonsterManager
         animator = GetComponent<Animator>();
         myAudio = GetComponent<AudioSource>();
         nvAgent = GetComponent<NavMeshAgent>();
+
+        Camera = GameObject.FindGameObjectWithTag("MainCamera");
 
         //  네트워크 추가w
         pv = GetComponent<PhotonView>();
@@ -462,12 +468,43 @@ public class Diablo : MonsterManager
         Instantiate(explosion, transform.position, Quaternion.identity);
 
         //4.5 초후 오브젝트 반환
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(4.5f);
 
         this.gameObject.SetActive(false);
         Box.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z); //몬스터가 죽은 자리에서 스폰
 
         StopAllCoroutines(); //객체 반환전 모든 코루틴을 정지
+    }
+
+    IEnumerator JumpAttackEvent()
+    {
+        //GameObject clone = JumpAttackEffect;
+        CameraShake();
+        Instantiate(JumpAttackEffect, this.transform);
+        yield return new WaitForSeconds(0.3f);
+        CameraShake();
+        yield return new WaitForSeconds(0.3f);
+        CameraShake();
+        yield return new WaitForSeconds(0.3f);
+        CameraShake();
+        yield return new WaitForSeconds(0.3f);
+        Destroy(GameObject.FindGameObjectWithTag("Effect"));
+    }
+
+    IEnumerator MagicAreaEvent()
+    {
+        Instantiate(MagicAreaEffect, this.transform);
+        yield return new WaitForSeconds(1.5f);
+        Destroy(GameObject.FindGameObjectWithTag("Effect"));
+    }
+
+    void CameraShake()
+    {
+        float x = Random.Range(-1, 1);
+        float y = Random.Range(-1, 1);
+        float z = Random.Range(-1, 1);
+        Vector3 shakePosition = new Vector3(x, y, z);
+        Camera.transform.position = shakePosition;
     }
 
     // 마스터 클라이언트가 아닐때 애니메이션 상태를 동기화 하는 로직

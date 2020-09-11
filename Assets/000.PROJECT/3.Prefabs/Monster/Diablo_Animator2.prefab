@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2429558118976591948}
   - component: {fileID: 1966091436800314710}
   m_Layer: 0
-  m_Name: Diablo_Animator
+  m_Name: Diablo_Animator2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -136,6 +136,10 @@ MonoBehaviour:
     type: 3}
   damageTxt: {fileID: 5365680606140470207}
   explosion: {fileID: 1664304454892606754, guid: a428c91747abce24ea2d3a50dfb22146,
+    type: 3}
+  JumpAttackEffect: {fileID: 8833493740934268454, guid: 491102c42635030489834edc5551fa63,
+    type: 3}
+  MagicAreaEffect: {fileID: 7703655934319040002, guid: dc80d567ae30234449804d7bef4a7c63,
     type: 3}
   Box: {fileID: 0}
 --- !u!114 &3711897156330443638
