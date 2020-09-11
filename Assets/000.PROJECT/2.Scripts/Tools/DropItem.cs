@@ -44,7 +44,7 @@ public class DropItem : MonoBehaviour
             if (itemKind == ItemManager.ItemKind.use) return;
 
             ShowParticle(); // 아이템 드랍 이펙트가 나오게하고
-            PlaySfx();  // 아이템 드랍 사운드 재생
+            //PlaySfx();  // 아이템 드랍 사운드 재생
         }
     }
     //움직이지 않는 벽 : Collider
