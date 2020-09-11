@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6BE873D8-EB66-4578-1724-C1C98BB4ABEA}</ProjectGuid>
+    <ProjectGuid>{320D0961-6F84-81FD-601B-8162BF374697}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>sample.hero</AssemblyName>
@@ -278,20 +278,29 @@
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>D:/Diablo3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+      <HintPath>C:/Unity/sibal/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>D:/Diablo3/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Unity/sibal/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="QSEditor">
-      <HintPath>D:/Diablo3/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
+      <HintPath>C:/Unity/sibal/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
     </Reference>
     <Reference Include="QSFunctions">
-      <HintPath>D:/Diablo3/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+      <HintPath>C:/Unity/sibal/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -639,27 +648,27 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Unity/sibal/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Diablo3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Unity/sibal/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="goodcat.un-inventory.core.csproj">
-      <Project>{F402F80D-D1BE-6652-A541-B07AF11196A6}</Project>
+      <Project>{70D478A0-7245-6B01-55A4-1A424DC77FFA}</Project>
       <Name>goodcat.un-inventory.core</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.standard.csproj">
-      <Project>{834C35A6-65FC-E7BE-2733-5E8970B4FBAB}</Project>
+      <Project>{14340D81-10B6-7450-9A6A-3384955FDF46}</Project>
       <Name>goodcat.un-inventory.standard</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.plugins.standard.csproj">
-      <Project>{304EECCA-2591-AD0C-1C29-FA03BB0A261E}</Project>
+      <Project>{F2CBA7AC-E876-D481-1F80-89805486760A}</Project>
       <Name>goodcat.un-inventory.plugins.standard</Name>
     </ProjectReference>
     <ProjectReference Include="samples-environment.csproj">
-      <Project>{3E64012D-4839-261E-97AB-9F4BD42A3077}</Project>
+      <Project>{AD4CA27B-C60A-1785-D57E-61C45D1A4EB8}</Project>
       <Name>samples-environment</Name>
     </ProjectReference>
   </ItemGroup>
