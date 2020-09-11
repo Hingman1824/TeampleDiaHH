@@ -9,7 +9,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+<<<<<<< HEAD
     <ProjectGuid>{FE701873-5488-6703-7428-4D5A7933C00C}</ProjectGuid>
+=======
+    <ProjectGuid>{7EC60180-ED8B-4404-5204-9A4E413D6A9E}</ProjectGuid>
+>>>>>>> c5b31e31185fe05f79732ac91894fb0baf93216a
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>goodcat.un-inventory.core</AssemblyName>
@@ -345,10 +349,14 @@
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
+<<<<<<< HEAD
       <HintPath>D:/GitHub/diablo/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
@@ -359,6 +367,24 @@
     </Reference>
     <Reference Include="QSFunctions">
       <HintPath>D:/GitHub/diablo/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+=======
+      <HintPath>C:/Users/user/Desktop/TeampleDiablo3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>C:/Users/user/Desktop/TeampleDiablo3/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="QSEditor">
+      <HintPath>C:/Users/user/Desktop/TeampleDiablo3/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="QSFunctions">
+      <HintPath>C:/Users/user/Desktop/TeampleDiablo3/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
+>>>>>>> c5b31e31185fe05f79732ac91894fb0baf93216a
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -706,10 +732,17 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
+<<<<<<< HEAD
       <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/GitHub/diablo/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+=======
+      <HintPath>C:/Users/user/Desktop/TeampleDiablo3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Users/user/Desktop/TeampleDiablo3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+>>>>>>> c5b31e31185fe05f79732ac91894fb0baf93216a
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

@@ -39,7 +39,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510474349715846}
-  m_Mesh: {fileID: 4300000, guid: 21f1ea1e6ec11464ebe4752368072665, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 1ce2876b1f04c494ebcb51fb3b9144de, type: 3}
 --- !u!23 &23645772557402462
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -166,5 +166,5 @@ MonoBehaviour:
   isHpPotion: 0
   paricles:
   - {fileID: 1543965644257020, guid: 5ca18ff4a6325e345a762ba2c7eda4ae, type: 3}
-  - {fileID: 1462578979262772, guid: 934e0a3a9cefff64985d2b00c53d5576, type: 3}
+  - {fileID: 1462578979262772, guid: 427ee721823ba9446a2758e5bf926d6f, type: 3}
   - {fileID: 1685364315182848, guid: 19d912552f66e1b429f8d86bbe374b19, type: 3}
