@@ -928,6 +928,8 @@ MonoBehaviour:
   soundFiles:
   - {fileID: 8300000, guid: 47c4834677929af4d98d686bb8d7e67b, type: 3}
   - {fileID: 8300000, guid: 261646b856b57704b891ae2a216a9445, type: 3}
+  - {fileID: 8300000, guid: 502ab61b6ff265d408592a73bb3b5d53, type: 3}
+  - {fileID: 8300000, guid: e1e2391ada0fda04495183862589b2c1, type: 3}
   volumeTxt: {fileID: 1514116457}
   soundVolume: 1
   isSoundMute: 0

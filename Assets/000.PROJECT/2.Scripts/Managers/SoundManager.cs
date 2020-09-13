@@ -24,7 +24,7 @@ public class SoundManager : MonoBehaviour
     private SFXManager sfx;
     public static SoundManager instance;
 
-    AudioSource audio; //녹색줄의 의미는 앞으로 삭제될 수 있음을 경고, 그러나 그냥써도 되고, 변수 이름만 바꿔도 된다.
+    public AudioSource audio; //녹색줄의 의미는 앞으로 삭제될 수 있음을 경고, 그러나 그냥써도 되고, 변수 이름만 바꿔도 된다.
 
 
     void Awake() //Start()보다 먼저 초기화함수, 레퍼런스초기화 용, 컴포넌트가  비활성화 되어도 호출된다. 단, gameObject 비활성화시는 아님.
