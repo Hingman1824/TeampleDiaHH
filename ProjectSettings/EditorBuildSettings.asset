@@ -23,16 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/000.PROJECT/1.Scenes/Maps/NewTristrum.unity
     guid: 5b0561c2e8a6cd64aa40dbee9a6ab6d0
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/000.PROJECT/1.Scenes/Maps/SilverTop.unity
-    guid: 4498a7f7cfac7cb448443530e2fd1459
-  - enabled: 1
-    path: Assets/000.PROJECT/1.Scenes/Maps/Diablo 2Phase.unity
-    guid: dfd045ca3a8d87e4faec07f85dfa7b54
-  - enabled: 1
-    path: Assets/000.PROJECT/1.Scenes/Maps/Crystal CorridorLast.unity
-    guid: 56669778e7c2a614dad21a291fffd94e
-  - enabled: 1
-    path: Assets/000.PROJECT/1.Scenes/Maps/Crystal Corridor.unity
-    guid: c86a30440a2902a4eb9be26c41ff8694
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

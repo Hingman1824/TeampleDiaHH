@@ -149,6 +149,22 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         }
     }
 
+    public void OnTriggerEnter(Collider col)
+    {
+        if (col.gameObject.tag == "Enemy")
+        {
+            smooth.playerHit();
+            Hp -= 10;
+            hpBar.fillAmount -= 10 * 0.01f;
+
+            if (Hp <= 0)
+            {
+                anim.SetBool("isDie", true);
+                smooth.PlayerDie.SetActive(true);
+            }
+        }
+    }
+
     public void Respawn()
     {
         loading.Loading();

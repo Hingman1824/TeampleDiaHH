@@ -41,7 +41,7 @@ public class MapPortalMove : MonoBehaviour
         {
             movePopUpCanvas.SetActive(true);    //선택창 띄우기
             currentMap = nextMap;       //현재 맵에 다음맵 대입
-
+            mapName.mapNum = mapNum;
 
             StartCoroutine(TransPosition(other));   //이동
         }
