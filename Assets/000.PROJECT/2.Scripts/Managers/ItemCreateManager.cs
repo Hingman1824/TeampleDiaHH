@@ -32,7 +32,7 @@ public class ItemCreateManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
-            RandItemCreate(MonkSkill.instance.transform.position);
+            RandItemCreate(MonkSkill._instance.transform.position);
             //itemCreator = new ItemCreator(RandItemCreate);
         }
     }
@@ -61,7 +61,7 @@ public class ItemCreateManager : MonoBehaviour
 
         ItemManager.Rarity tempRearity = (ItemManager.Rarity)Random.Range(0, (int)ItemManager.Rarity.ALL);
         GameObject tempPF = null;
-        int tempLevel = MonkSkill.instance.Level;
+        int tempLevel = MonkSkill._instance.Level;
         string tempName = null;
         float amplify = 0;
         //레벨은 현제 레벨보다 크거나 작거나 같도록 해야함
@@ -198,7 +198,7 @@ public class ItemCreateManager : MonoBehaviour
                 {
                     temp = hpPotionPF;
                 }
-                Instantiate(temp, MonkSkill.instance.transform.position,Quaternion.identity);
+                Instantiate(temp, MonkSkill._instance.transform.position,Quaternion.identity);
 
                 yield break;
 
@@ -261,7 +261,7 @@ public class ItemCreateManager : MonoBehaviour
                 
         }
 
-        DropItem drop = Instantiate(temp, MonkSkill.instance.transform.position, Quaternion.identity).GetComponent<DropItem>();
+        DropItem drop = Instantiate(temp, MonkSkill._instance.transform.position, Quaternion.identity).GetComponent<DropItem>();
 
         drop.itemName = item.itemName;
         drop.damage = item.damage;

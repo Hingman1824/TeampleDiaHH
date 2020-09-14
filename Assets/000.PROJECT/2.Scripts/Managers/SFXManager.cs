@@ -42,7 +42,7 @@ public class SFXManager : MonoBehaviour
         _audioSource.clip = clip;
         _audioSource.volume = audio.volume;
         _audioSource.Play();
-        Destroy(_obj, clip.length + 0.1f);
+        Destroy(_obj, clip.length + 0.2f);
 
         yield return null;
     }
@@ -60,7 +60,7 @@ public class SFXManager : MonoBehaviour
         _audioSource.minDistance = 5f;
         _audioSource.maxDistance = 15f;
         _audioSource.Play();
-        Destroy(_obj, clip.length + 0.1f);
+        Destroy(_obj, clip.length + 0.2f);
 
         yield return null;
     }
