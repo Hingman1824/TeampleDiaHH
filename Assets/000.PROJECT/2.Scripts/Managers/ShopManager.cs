@@ -36,7 +36,7 @@ public class ShopManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public RectTransform[] sellItems;
 
-    //private AcceptedManager acceptedManager; 아직 구현안됨
+    private AcceptedManager acceptedManager; //아직 구현안됨
 
     private GameObject spawnItem;
 
@@ -44,14 +44,14 @@ public class ShopManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public InventoryManager invMng;
 
-    //private NPCManager npc;
+    private NPCManager npc;
 
     void Awake()
     {
         uiTr = GetComponent<RectTransform>();
-        //npc = GameObject.Find("NPCManager").GetComponent<NPCManager>();
+        npc = GameObject.Find("NPCManager").GetComponent<NPCManager>();
         isOn = true;
-        //acceptedManager = GameObject.Find("AcceptedManager").GetComponent<AcceptedManager>();
+        acceptedManager = GameObject.Find("AcceptedManager").GetComponent<AcceptedManager>();
         invMng = GameObject.Find("InventoryManager").GetComponent<InventoryManager>();
     }
 
@@ -89,7 +89,7 @@ public class ShopManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         screenH = UIManager.instance.screenH;
         screenW = UIManager.instance.screenW;
 
-        //SellItemsInit();
+        SellItemsInit();
 
         uiTr.anchoredPosition = new Vector2(screenW / 5f, screenH / -3f);
         uiTr.sizeDelta = new Vector2(slotSize * 5, slotSize * 6);
@@ -257,20 +257,20 @@ public class ShopManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     void ItemBuyCheck()
     {
-        //acceptedManager.ShowBuyConfirm();
-        //AcceptedManager.positive += ItemBuy;
-        //AcceptedManager.negative += NegativeItemBuy;
+        acceptedManager.ShowBuyConfirm();
+        AcceptedManager.positive += ItemBuy;
+        AcceptedManager.negative += NegativeItemBuy;
     }
 
     void NegativeItemBuy()
     {
-        //AcceptedManager.positive -= ItemBuy;
-        //AcceptedManager.negative -= NegativeItemBuy;
+        AcceptedManager.positive -= ItemBuy;
+        AcceptedManager.negative -= NegativeItemBuy;
     }
 
     void ItemBuy()
     {
-        //AcceptManager.positive -= ItemBuy;
+        AcceptedManager.positive -= ItemBuy;
 
         if(invMng.myGold <= 500)
         {
@@ -308,7 +308,7 @@ public class ShopManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         isDraging = false;
         isOn = false;
         isMouseOver = false;
-        //npc.isShopOpen = false;
+        npc.isShopOpen = false;
     }
 
 }

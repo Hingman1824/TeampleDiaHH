@@ -41,7 +41,7 @@ public class NPCManager : MonoBehaviour
         if(isShow && !isShopOpen)
         {
             pos = cam.WorldToScreenPoint(target.transform.position);
-            pos.y += 10f;
+            pos.y += 3f;
             img.rectTransform.anchoredPosition = pos;
             if (Input.GetKeyUp(KeyCode.F))
             {

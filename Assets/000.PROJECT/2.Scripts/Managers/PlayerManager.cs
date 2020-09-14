@@ -43,10 +43,10 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     public Transform respawnPoint;
 
     public static PlayerManager instance;        //전재현 추가
-    //private EquipmentManager equipmentManager;   //전재현 추가
-    //public Transform weaponPos;                  //전재현 추가
-    //private Collider[] weaponColliders;          //전재현 추가
-    //public bool colOnce;                         //전재현 추가
+    private EquipmentManager equipmentManager;   //전재현 추가
+    public Transform weaponPos;                  //전재현 추가
+    private Collider[] weaponColliders;          //전재현 추가
+    public bool colOnce;                         //전재현 추가
 
     //일단 임의로 정해놓은 것
     public int Level;   //전재현 임시 변경
@@ -63,8 +63,8 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     {
         //pm = FindObjectOfType<PhotonManager>();
         instance = this;
-        //equipmentManager = GameObject.Find("EquipmentManager").GetComponent<EquipmentManager>();
-        //weaponColliders = weaponPos.GetComponentsInChildren<Collider>();
+        equipmentManager = GameObject.Find("EquipmentManager").GetComponent<EquipmentManager>();
+        weaponColliders = weaponPos.GetComponentsInChildren<Collider>();
     }
 
     //private void Start()
@@ -80,13 +80,13 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     //    smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
 
 
-    
+
 
 
     private void Start()
     {
         //WeaponOff();  // 전재현 추가
-        //Level = 1;    // 전재현 추가
+        Level = 1;    // 전재현 추가
         respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>(); //부활장소
         loading = FindObjectOfType<LoadingScript>();                                         //로딩창
         expBar = GameObject.Find("ExpBar").GetComponent<Image>();                            //경험치 바
@@ -94,13 +94,14 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         expText = GameObject.Find("ExpText").GetComponent<Text>();      
         playerName = GameObject.Find("PlayerNickName").GetComponent<Text>();
         smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
-        respawnBtn = GameObject.Find("RespawnBtn").GetComponent<Button>();
+        
         // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
 
-        //equipmentManager.WeaponSet(0);  // 전재현 추가
-        //colOnce = false;  // 전재현 추가
+        equipmentManager.WeaponSet(0);  // 전재현 추가
+        colOnce = false;  // 전재현 추가
         playerName.text = PhotonNetwork.player.NickName;
         isPlayerMove = false;
+        respawnBtn = GameObject.Find("RespawnBtn").GetComponent<Button>();
     }
 
     // 범위 -1 ~ 1까지 플레이어 스피드는 이것과 관계없음
@@ -363,7 +364,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         return isPlayerMove;
     }
 
-    // 인벤 캐릭터 무기 끼고 빼는 로직임 on off 전재현 추가
+    //인벤 캐릭터 무기 끼고 빼는 로직임 on off 전재현 추가
     //private void WeaponOn()
     //{
     //    foreach (var it in weaponColliders)

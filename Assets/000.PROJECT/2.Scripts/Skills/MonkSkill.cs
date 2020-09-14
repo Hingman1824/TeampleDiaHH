@@ -16,18 +16,20 @@ public class MonkSkill : PlayerManager
     public GameObject pray;
     public GameObject lazyImpact;
 
-    public static MonkSkill instance;
-    private EquipmentManager equipmentManager;
-    public Transform weaponPos;
-    private Collider[] weaponColliders;
-    public bool colOnce;
+    public static MonkSkill _instance;
+    //private EquipmentManager equipmentManager;
+    //public Transform weaponPos;
+    //private Collider[] weaponColliders;
+    //public bool colOnce;
 
     public Transform Impactpos;
+
     private void Awake()
     {
-        instance = this;
-        equipmentManager = GameObject.Find("EquipmentManager").GetComponent<EquipmentManager>();
-        weaponColliders = weaponPos.GetComponentsInChildren<Collider>();
+        _instance = this;
+        //equipmentManager = GameObject.Find("EquipmentManager").GetComponent<EquipmentManager>();
+        //weaponColliders = weaponPos.GetComponentsInChildren<Collider>();
+
         myRb = GetComponent<Rigidbody>();
         
         pv = GetComponent<PhotonView>();
@@ -53,12 +55,13 @@ public class MonkSkill : PlayerManager
         currRot = this.transform.rotation;
     }
 
-    private void Start()
-    {
-        WeaponOff();
-        equipmentManager.WeaponSet(0);
-        colOnce = false;
-    }
+    //private void Start()
+    //{
+    //    //WeaponOff();
+    //    //equipmentManager.WeaponSet(0);
+    //    //colOnce = false;
+    //}
+
     void Update()
     {
         if (pv.isMine)
@@ -166,20 +169,20 @@ public class MonkSkill : PlayerManager
         yield return null;
     }
 
-    private void WeaponOn()
-    {
-        foreach (var it in weaponColliders)
-        {
-            it.enabled = true;
-        }
-    }
+    //private void WeaponOn()
+    //{
+    //    foreach (var it in weaponColliders)
+    //    {
+    //        it.enabled = true;
+    //    }
+    //}
 
-    private void WeaponOff()
-    {
-        foreach (var it in weaponColliders)
-        {
-            it.enabled = false;
-        }
-    }
+    //private void WeaponOff()
+    //{
+    //    foreach (var it in weaponColliders)
+    //    {
+    //        it.enabled = false;
+    //    }
+    //}
 
 }

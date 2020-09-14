@@ -156,7 +156,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
         acceptedManager = GameObject.Find("AcceptedManager").GetComponent<AcceptedManager>();
         itemImage = transform.GetChild(0).GetComponent<Image>();
         itemImageBack = GetComponent<Image>();
-        itemCreater = GameObject.FindGameObjectWithTag("ItemCreator").GetComponent<ItemCreateManager>();
+        itemCreater = GameObject.Find("ItemCreateManager").GetComponent<ItemCreateManager>();
     }
 
     void Start()
@@ -397,7 +397,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
                 itemSize = ItemSize._2_2;
                 break;
             case ItemKind.Glove:
-                itemSize = ItemSize._1_1;
+                itemSize = ItemSize._2_2;
                 break;
             case ItemKind.LRing:
             case ItemKind.RRing:
@@ -735,7 +735,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
         if (pos.y >= downSpace + (slotSize * 4))
         {
             //아이템 착용
-            if (needLevel > PlayerManager.instance.Level)
+            if (needLevel > MonkSkill.instance.Level)
                 return false;
 
             equipmentManager.DropEquipment(Mathf.RoundToInt(pos.x), Mathf.RoundToInt(pos.y), xSize, ySize, ref itemManager);
