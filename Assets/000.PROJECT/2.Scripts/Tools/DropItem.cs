@@ -45,8 +45,15 @@ public class DropItem : MonoBehaviour
 
             ShowParticle(); // 아이템 드랍 이펙트가 나오게하고
             PlaySfx();  // 아이템 드랍 사운드 재생
+            
         }
+
+        //if (col.gameObject.CompareTag("Player"))
+        //{
+        //    ItemPooling.ReturnObject(this);
+        //}
     }
+
     //움직이지 않는 벽 : Collider
 
     //움직이지 않는 감지 지역 : Collider(IsTrigger)
