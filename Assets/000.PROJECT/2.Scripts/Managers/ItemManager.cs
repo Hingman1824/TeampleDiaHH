@@ -156,7 +156,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
         acceptedManager = GameObject.Find("AcceptedManager").GetComponent<AcceptedManager>();
         itemImage = transform.GetChild(0).GetComponent<Image>();
         itemImageBack = GetComponent<Image>();
-        itemCreater = GameObject.Find("ItemCreateManager").GetComponent<ItemCreateManager>();
+        itemCreater = GameObject.FindGameObjectWithTag("ItemCreator").GetComponent<ItemCreateManager>();
     }
 
     void Start()

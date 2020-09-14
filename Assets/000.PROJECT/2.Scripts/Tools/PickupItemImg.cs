@@ -37,7 +37,7 @@ public class PickupItemImg : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.F))
             {
                 target.GetComponent<DropItem>().GetItem();
-                isShow = false;
+                isShow = true;
             }
         }
     }
@@ -53,7 +53,7 @@ public class PickupItemImg : MonoBehaviour
 
             GameObject tempGO = null;
 
-            float dis = 250;
+            float dis = 150;
 
             for(int i =0; i< gameObjects.Length; i++)
             {
@@ -65,7 +65,7 @@ public class PickupItemImg : MonoBehaviour
                     tempGO = gameObjects[i];
                 }
             }
-            if(dis <= 3)
+            if(dis <= 2)
             {
                 ItemPickUpUiOpen();
             }
