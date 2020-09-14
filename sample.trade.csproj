@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7C3D96C1-2F32-98D2-159C-3F90FE87A571}</ProjectGuid>
+    <ProjectGuid>{7728326F-E649-DC3C-93E2-A2DAB9E8170E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>sample.trade</AssemblyName>
@@ -276,16 +276,16 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>C:/Users/seoul it/Downloads/TeampleDiaHH/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+      <HintPath>C:/Users/seoul it/Desktop/ProjectDiablo3/Assets/Plugins/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>C:/Users/seoul it/Downloads/TeampleDiaHH/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+      <HintPath>C:/Users/seoul it/Desktop/ProjectDiablo3/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="QSEditor">
-      <HintPath>C:/Users/seoul it/Downloads/TeampleDiaHH/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
+      <HintPath>C:/Users/seoul it/Desktop/ProjectDiablo3/Assets/QS/Editor/Plugin/QSEditor.dll</HintPath>
     </Reference>
     <Reference Include="QSFunctions">
-      <HintPath>C:/Users/seoul it/Downloads/TeampleDiaHH/Assets/QS/Scripts/QSFunctions.dll</HintPath>
+      <HintPath>C:/Users/seoul it/Desktop/ProjectDiablo3/Assets/QS/Scripts/QSFunctions.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -639,27 +639,27 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/seoul it/Downloads/TeampleDiaHH/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/seoul it/Desktop/ProjectDiablo3/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/seoul it/Downloads/TeampleDiaHH/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/seoul it/Desktop/ProjectDiablo3/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="goodcat.un-inventory.core.csproj">
-      <Project>{B5C5CF2C-9A10-C5FA-9DEA-2335D12A954B}</Project>
+      <Project>{22C8352C-A67B-8993-6EE6-89AD23C30D11}</Project>
       <Name>goodcat.un-inventory.core</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.standard.csproj">
-      <Project>{89F5427B-2D7A-1DD5-6BF8-A3A1818F7723}</Project>
+      <Project>{9A2E7960-7DCE-5093-FB9B-BE0053D273CF}</Project>
       <Name>goodcat.un-inventory.standard</Name>
     </ProjectReference>
     <ProjectReference Include="goodcat.un-inventory.plugins.standard.csproj">
-      <Project>{F267C6AE-1DCE-A03B-6260-E46EC1DF386C}</Project>
+      <Project>{270694BB-D279-3DDC-936A-8051A4D0DBD0}</Project>
       <Name>goodcat.un-inventory.plugins.standard</Name>
     </ProjectReference>
     <ProjectReference Include="samples-environment.csproj">
-      <Project>{B84678A5-F782-CA71-5EF7-78D55693E11D}</Project>
+      <Project>{52111839-C030-3B87-4053-6AF16AFD41C7}</Project>
       <Name>samples-environment</Name>
     </ProjectReference>
   </ItemGroup>

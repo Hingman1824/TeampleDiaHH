@@ -38,7 +38,6 @@ TagManager:
   - NextMap
   - ItemCreator
   - Effect
-  - text
   layers:
   - Default
   - TransparentFX
@@ -51,7 +50,7 @@ TagManager:
   - items
   - DropItems
   - Weapon
-  - Diablo
+  - Player
   - 
   - 
   - 

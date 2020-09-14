@@ -32,12 +32,12 @@ public class PickupItemImg : MonoBehaviour
         if (isShow)
         {
             pos = cam.WorldToScreenPoint(target.transform.position);
-            pos.y += 50f;
+            pos.y += 9f;
             img.rectTransform.anchoredPosition = pos;
             if (Input.GetKeyUp(KeyCode.F))
             {
                 target.GetComponent<DropItem>().GetItem();
-                isShow = false;
+                isShow = true;
             }
         }
     }
@@ -53,7 +53,7 @@ public class PickupItemImg : MonoBehaviour
 
             GameObject tempGO = null;
 
-            float dis = 250;
+            float dis = 500;
 
             for(int i =0; i< gameObjects.Length; i++)
             {
@@ -65,7 +65,7 @@ public class PickupItemImg : MonoBehaviour
                     tempGO = gameObjects[i];
                 }
             }
-            if(dis <= 3)
+            if(dis <= 10)
             {
                 ItemPickUpUiOpen();
             }

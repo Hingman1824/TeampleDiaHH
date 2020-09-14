@@ -80,12 +80,12 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     //    smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
 
 
-    
+
 
 
     private void Start()
     {
-        WeaponOff();  // 전재현 추가
+        //WeaponOff();  // 전재현 추가
         Level = 1;    // 전재현 추가
         respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>(); //부활장소
         loading = FindObjectOfType<LoadingScript>();                                         //로딩창
@@ -94,13 +94,14 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         expText = GameObject.Find("ExpText").GetComponent<Text>();      
         playerName = GameObject.Find("PlayerNickName").GetComponent<Text>();
         smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
-        respawnBtn = GameObject.Find("RespawnBtn").GetComponent<Button>();
+        
         // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
 
         equipmentManager.WeaponSet(0);  // 전재현 추가
         colOnce = false;  // 전재현 추가
         playerName.text = PhotonNetwork.player.NickName;
         isPlayerMove = false;
+        respawnBtn = GameObject.Find("RespawnBtn").GetComponent<Button>();
     }
 
     // 범위 -1 ~ 1까지 플레이어 스피드는 이것과 관계없음
@@ -379,21 +380,21 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         return isPlayerMove;
     }
 
-    // 인벤 캐릭터 무기 끼고 빼는 로직임 on off 전재현 추가
-    private void WeaponOn()
-    {
-        foreach (var it in weaponColliders)
-        {
-            it.enabled = true;
-        }
-    }
+    //인벤 캐릭터 무기 끼고 빼는 로직임 on off 전재현 추가
+    //private void WeaponOn()
+    //{
+    //    foreach (var it in weaponColliders)
+    //    {
+    //        it.enabled = true;
+    //    }
+    //}
 
-    private void WeaponOff()
-    {
-        //foreach (var it in weaponColliders)
-        //{
-        //    it.enabled = false;
-        //}
-    }
+    //private void WeaponOff()
+    //{
+    //    foreach (var it in weaponColliders)
+    //    {
+    //        it.enabled = false;
+    //    }
+    //}
 
 }
