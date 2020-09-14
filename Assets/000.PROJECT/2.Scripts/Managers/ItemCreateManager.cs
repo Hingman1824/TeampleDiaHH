@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 public class ItemCreateManager : MonoBehaviour
 {
     //PF = Prefab
+    //public static ItemCreateManager instance;
 
     public GameObject hpPotionPF;
     public GameObject glovePF;
@@ -31,12 +32,12 @@ public class ItemCreateManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
-            RandItemCreate(PlayerManager.instance.transform.position);
+            RandItemCreate(MonkSkill.instance.transform.position);
             //itemCreator = new ItemCreator(RandItemCreate);
         }
     }
-
     // 해당 위치에 랜덤한 아이템 생성
+
     public void RandItemCreate(Vector3 pos)
     {
         StartCoroutine(RandItem(pos));
@@ -60,7 +61,7 @@ public class ItemCreateManager : MonoBehaviour
 
         ItemManager.Rarity tempRearity = (ItemManager.Rarity)Random.Range(0, (int)ItemManager.Rarity.ALL);
         GameObject tempPF = null;
-        int tempLevel = PlayerManager.instance.Level;
+        int tempLevel = MonkSkill.instance.Level;
         string tempName = null;
         float amplify = 0;
         //레벨은 현제 레벨보다 크거나 작거나 같도록 해야함
@@ -197,7 +198,7 @@ public class ItemCreateManager : MonoBehaviour
                 {
                     temp = hpPotionPF;
                 }
-                Instantiate(temp, PlayerManager.instance.transform.position,Quaternion.identity);
+                Instantiate(temp, MonkSkill.instance.transform.position,Quaternion.identity);
 
                 yield break;
 
@@ -260,7 +261,7 @@ public class ItemCreateManager : MonoBehaviour
                 
         }
 
-        DropItem drop = Instantiate(temp, PlayerManager.instance.transform.position, Quaternion.identity).GetComponent<DropItem>();
+        DropItem drop = Instantiate(temp, MonkSkill.instance.transform.position, Quaternion.identity).GetComponent<DropItem>();
 
         drop.itemName = item.itemName;
         drop.damage = item.damage;

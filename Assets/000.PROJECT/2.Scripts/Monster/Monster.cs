@@ -440,7 +440,9 @@ public class Monster : MonsterManager
             if (aaa > 5)
             {
                 var Mons = ItemPooling.GetItem();//오브젝트풀링에서 아이템을 빌려온다.
+                //var _Mons = ItemPooling.GetItem2();
                 Mons.transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z); //몬스터가 죽은 자리에서 스폰
+                //_Mons.transform.position = new Vector3(transform.position.x, 0.8f, transform.position.z);
             }
             StopAllCoroutines(); //객체 반환전 모든 코루틴을 정지
             EnemyPooling.ReturnObject(this); //몬스터가 죽으면 자신을 반환
