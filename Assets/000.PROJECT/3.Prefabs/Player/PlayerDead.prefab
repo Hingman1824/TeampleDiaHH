@@ -444,6 +444,7 @@ GameObject:
   - component: {fileID: 7528115629200605947}
   - component: {fileID: 7528115629200605946}
   - component: {fileID: 8818043595159238472}
+  - component: {fileID: 3779270765375274659}
   m_Layer: 5
   m_Name: RespawnBtn
   m_TagString: Untagged
@@ -563,6 +564,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3779270765375274659}
+        m_MethodName: OnClickAcceptBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8818043595159238472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,5 +585,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50e22d72b16f4af40b3f896764054bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3779270765375274659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528115629200605944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a11b0d55910a7f4aae3c7bbcf2710c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

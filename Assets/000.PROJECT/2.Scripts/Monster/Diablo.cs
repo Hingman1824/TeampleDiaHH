@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public class Diablo : MonsterManager
 {
+    private SmoothFollow smoothFollow;
+
+    public GameObject playerTransform;
+
     [Tooltip("몬스터 체력")]
     public float monsterHp;
     public float monsterCurHp;  //현재 피
@@ -20,6 +24,8 @@ public class Diablo : MonsterManager
     public bool isAttack = false;
     public bool move = false;
     public bool life = true;
+
+    public bool hit = false;
 
     private Animator animator; //자신의 애니메이터 컴포넌트
     private int animn;
@@ -36,11 +42,10 @@ public class Diablo : MonsterManager
     private AudioSource myAudio;
     private PlayerManager player;
 
-    private GameObject Camera;
     public GameObject JumpAttackEffect;
     public GameObject MagicAreaEffect;
 
-    public GameObject Box;
+    //public GameObject Box;
     //네트워크 관련 변수
 
     //PhotonView 컴포넌트를 할당할 레퍼런스 
@@ -51,8 +56,29 @@ public class Diablo : MonsterManager
     Quaternion currRot = Quaternion.identity;
     int net_Aim = 1;
 
+
+    public enum KIND { Diablo1, Diablo2, Diablo3 };
+
+    public GameObject spawn2;
+    public GameObject spawn3;
+
+    public int num;
+
+    [SerializeField]
+    KIND kind;
+
+
+    public Transform magic;
+
+
+    private MoveChoice MapMove;
     void Awake()
     {
+        MapMove = GameObject.Find("AcceptBtn").GetComponent<MoveChoice>();
+        num = 0;
+
+        smoothFollow = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
+
         monsterHp = 3000f;
         monsterCurHp = monsterHp;
 
@@ -61,8 +87,6 @@ public class Diablo : MonsterManager
         animator = GetComponent<Animator>();
         myAudio = GetComponent<AudioSource>();
         nvAgent = GetComponent<NavMeshAgent>();
-
-        Camera = GameObject.FindGameObjectWithTag("MainCamera");
 
         //  네트워크 추가w
         pv = GetComponent<PhotonView>();
@@ -73,6 +97,9 @@ public class Diablo : MonsterManager
         }
         currPos = transform.position;
         currRot = transform.rotation;
+
+
+        
     }
 
     // Start is called before the first frame update
@@ -94,7 +121,7 @@ public class Diablo : MonsterManager
         }
         yield return new WaitForSeconds(1f);
 
-        Box.SetActive(false);
+        //Box.SetActive(false);
     }
 
     // Update is called once per frame
@@ -102,8 +129,35 @@ public class Diablo : MonsterManager
     {
         hpBar.fillAmount = monsterCurHp / monsterHp;
         
-        //네트워크
-        if (PhotonNetwork.isMasterClient) //or pv.isMine //자신이 마스터클라이언트일때 실행
+        if(kind == KIND.Diablo1)
+        {
+            if (monsterCurHp <= 1500)
+            {
+                if(num == 0)
+                {
+                    player.transform.position = spawn2.transform.position;
+                    num = 1;
+
+                    MapMove.MapMove2();
+                }
+            }
+        }
+        if (kind == KIND.Diablo2)
+        {
+            if (monsterCurHp <= 100)
+            {
+                if(num == 0)
+                {
+                    player.transform.position = spawn3.transform.position;
+                    num = 1;
+
+                    MapMove.MapMove3();
+                }
+            }
+        }
+
+            //네트워크
+            if (PhotonNetwork.isMasterClient) //or pv.isMine //자신이 마스터클라이언트일때 실행
         {
             if (!life) //죽었을 때
             {
@@ -150,6 +204,13 @@ public class Diablo : MonsterManager
                     animator.SetBool("Jump Attack", false);
                     animator.SetBool("Hit", false);
                     animator.SetBool("Die", false);
+                    if(this.transform.position.y >=1)
+                    {
+                        Vector3 pos = this.transform.position;
+                        pos.y = 0;
+                        this.transform.position = pos;
+                    }
+
                     move = false;
                 }
             }
@@ -256,8 +317,17 @@ public class Diablo : MonsterManager
                 animator.SetBool("Right Punch", false);
                 animator.SetBool("Magic Area", true);
                 animator.SetBool("Jump Attack", false);
-                yield return new WaitForSeconds(monsterAttackSpeed);
+
+                yield return new WaitForSeconds(1.15f);
+                var Effect = Instantiate(MagicAreaEffect, magic);
+
+                Effect.transform.SetParent(this.transform.parent);
+
+                yield return new WaitForSeconds(0.3f);
                 animator.SetBool("Magic Area", false);
+
+                yield return new WaitForSeconds(2f);
+                Destroy(GameObject.FindGameObjectWithTag("Effect"));
             }
             if (i == 5)
             {
@@ -265,7 +335,30 @@ public class Diablo : MonsterManager
                 animator.SetBool("Right Punch", false);
                 animator.SetBool("Magic Area", false);
                 animator.SetBool("Jump Attack", true);
-                yield return new WaitForSeconds(monsterAttackSpeed);
+
+                yield return new WaitForSeconds(1.5f);
+
+                Transform tra = this.transform;
+                Vector3 pos1 = this.transform.position;
+                pos1.y += 1;
+                tra.position = pos1;
+
+                
+                var Effect = Instantiate(JumpAttackEffect, tra) as GameObject;
+
+                Effect.transform.parent = this.transform.parent.transform;
+                yield return new WaitForSeconds(0.3f);
+
+                //Destroy(GameObject.FindGameObjectWithTag("Effect"));
+
+                if (this.transform.position.y >= 1)
+                {
+                    Vector3 pos2 = this.transform.position;
+                    pos2.y = 0;
+                    this.transform.position = pos2;
+                }
+
+                yield return new WaitForSeconds(0.2f);
                 animator.SetBool("Jump Attack", false);
             }
 
@@ -398,14 +491,18 @@ public class Diablo : MonsterManager
         {
             if (col.gameObject.tag == "Attack")
             {
-                monsterCurHp -= 100;
-                StartCoroutine(EnemyHit());
-
-                if (monsterCurHp <= 0)
+                if (hit == false)
                 {
-                    life = false;
-                    myAudio.PlayOneShot(deadSound);
-                    EnemyDie();
+                    hit = true;
+                    monsterCurHp -= 100;
+                    StartCoroutine(EnemyHit());
+
+                    if (monsterCurHp <= 0)
+                    {
+                        life = false;
+                        myAudio.PlayOneShot(deadSound);
+                        EnemyDie();
+                    }
                 }
             }
         }
@@ -417,14 +514,18 @@ public class Diablo : MonsterManager
         {
             if (col.gameObject.tag == "Attack")
             {
-                monsterCurHp -= 100;
-                StartCoroutine(EnemyHit());
-
-                if (monsterCurHp <= 0)
+                if (hit == false)
                 {
-                    life = false;
-                    myAudio.PlayOneShot(deadSound);
-                    EnemyDie();
+                    hit = true;
+                    monsterCurHp -= 100;
+                    StartCoroutine(EnemyHit());
+
+                    if (monsterCurHp <= 0)
+                    {
+                        life = false;
+                        myAudio.PlayOneShot(deadSound);
+                        EnemyDie();
+                    }
                 }
             }
         }
@@ -438,7 +539,9 @@ public class Diablo : MonsterManager
         myAudio.PlayOneShot(hitSound);
         Instantiate(bloodEff, transform.position, Quaternion.identity);
         damageTxt.SetActive(true);
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(0.5f);
+        hit = false;
+        yield return new WaitForSeconds(1.5f);
         animator.SetBool("Hit", false);
         damageTxt.SetActive(false);
         move = false;
@@ -490,44 +593,43 @@ public class Diablo : MonsterManager
         yield return new WaitForSeconds(1.5f);
 
         this.gameObject.SetActive(false);
-        Box.SetActive(true);
+        //Box.SetActive(true);
 
         StopAllCoroutines(); //객체 반환전 모든 코루틴을 정지
     }
 
     //점프어택시 이벤트 호출
-    IEnumerator JumpAttackEvent()
-    {
-        //GameObject clone = JumpAttackEffect;
-        CameraShake();
-        Instantiate(JumpAttackEffect, this.transform);
-        yield return new WaitForSeconds(0.3f);
-        CameraShake();
-        yield return new WaitForSeconds(0.3f);
-        CameraShake();
-        yield return new WaitForSeconds(0.3f);
-        CameraShake();
-        yield return new WaitForSeconds(0.3f);
-        Destroy(GameObject.FindGameObjectWithTag("Effect"));
-    }
+    //IEnumerator JumpAttackEvent()
+    //{
+    //    Transform tra = this.transform;
+    //    Vector3 pos = this.transform.position;
+    //    pos.y = 0;
+    //    tra.position = pos;
+    //    //GameObject clone = JumpAttackEffect;
+    //    smoothFollow.CameraShake();
+    //    Instantiate(JumpAttackEffect, tra);
+    //    yield return new WaitForSeconds(0.1f);
+    //    smoothFollow.CameraShake();
+    //    yield return new WaitForSeconds(0.1f);
+    //    smoothFollow.CameraShake();
+    //    yield return new WaitForSeconds(0.1f);
+    //    smoothFollow.CameraShake();
+    //    yield return new WaitForSeconds(0.1f);
+    //    //Destroy(GameObject.FindGameObjectWithTag("Effect"));
+    //}
 
-    //스킬공격시 이벤트 호출
-    IEnumerator MagicAreaEvent()
-    {
-        Instantiate(MagicAreaEffect, this.transform);
-        yield return new WaitForSeconds(1.5f);
-        Destroy(GameObject.FindGameObjectWithTag("Effect"));
-    }
+    ////스킬공격시 이벤트 호출
+    //IEnumerator MagicAreaEvent()
+    //{
+    //    Instantiate(MagicAreaEffect, this.transform);
+    //    yield return new WaitForSeconds(1.5f);
+    //    Destroy(GameObject.FindGameObjectWithTag("Effect"));
+    //}
+
+
 
     //카메라 무빙, (카메라 스크립트가 카메라를 쥐고있어서 못함 -> 카메라 스크립트에 이 함수를 추가해서 사용하는 방식으로 전환)
-    void CameraShake()
-    {
-        float x = Random.Range(-1, 1);
-        float y = Random.Range(-1, 1);
-        float z = Random.Range(-1, 1);
-        Vector3 shakePosition = new Vector3(x, y, z);
-        Camera.transform.position = shakePosition;
-    }
+
 
     // 마스터 클라이언트가 아닐때 애니메이션 상태를 동기화 하는 로직
     // RPC 로도 애니메이션 동기화 가능~!

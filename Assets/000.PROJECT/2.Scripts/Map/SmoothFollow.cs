@@ -174,6 +174,15 @@ public class SmoothFollow : MonoBehaviour
         yield return new WaitForSeconds(0.7f);
         PlayerBlood.SetActive(false);
     }
+
+    public void CameraShake()
+    {
+        float x = Random.Range(-1, 1);
+        float y = Random.Range(-1, 1);
+        float z = Random.Range(-1, 1);
+        Vector3 shakePosition = new Vector3(x, y, z);
+        this.transform.position = shakePosition;
+    }
 }
 
 /*
