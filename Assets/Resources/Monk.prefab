@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b5d36c283ccc745adc8443ac1fb5d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHp: 100
+  playerHp: 1000
   playerSpeed: 8
   playerAttackSpeed: 3
   playerDamage: 100
@@ -175,6 +175,8 @@ MonoBehaviour:
   playerName: {fileID: 0}
   respawnBtn: {fileID: 0}
   respawnPoint: {fileID: 0}
+  weaponPos: {fileID: 3988674722011710681}
+  colOnce: 0
   Level: 70
   isPlayerMove: 0
   isMantraOfEvasion: 0
@@ -185,8 +187,6 @@ MonoBehaviour:
   Phoenix: {fileID: 100000, guid: 3064a7aa84cc18c4b984e11fc8b613c5, type: 3}
   pray: {fileID: 1412380008082437831}
   lazyImpact: {fileID: 100000, guid: f96c593d1f35dd449bb5ddc4d73ced72, type: 3}
-  weaponPos: {fileID: 3988674722011710681}
-  colOnce: 0
   Impactpos: {fileID: 3782641281467800154}
 --- !u!114 &6456882778921891490
 MonoBehaviour:

@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25b90e8f999cf7141858a922f8d64089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHp: 100
+  playerHp: 1000
   playerSpeed: 5
   playerAttackSpeed: 3
   playerDamage: 10
@@ -119,7 +119,8 @@ MonoBehaviour:
   isRot: 0
   playerRot: 10
   anim: {fileID: 0}
-  pm: {fileID: 0}
+  smooth: {fileID: 0}
+  loading: {fileID: 0}
   pv: {fileID: 0}
   myRb: {fileID: 0}
   camPivot: {fileID: 677526448199803544}
@@ -129,6 +130,12 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   expText: {fileID: 0}
   playerName: {fileID: 0}
+  respawnBtn: {fileID: 0}
+  respawnPoint: {fileID: 0}
+  weaponPos: {fileID: 0}
+  colOnce: 0
+  Level: 0
+  isPlayerMove: 0
   isMagicMissile: 0
   isExplosionBlast: 0
   isTeleport: 0

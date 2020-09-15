@@ -10,7 +10,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     [Space(3)]
     [Header("플레이어 스탯")]
     [Tooltip("플레이어 체력")]
-    [Range(0, 9999)] public int playerHp = 100;
+    [Range(0, 9999)] public int playerHp = 1000;
     [Tooltip("플레이어 이동속도")]
     [Range(0, 10)] public float playerSpeed;
     [Tooltip("플레이어 공격속도")]
@@ -50,7 +50,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
 
     //일단 임의로 정해놓은 것
     public int Level;   //전재현 임시 변경
-    float Hp = 100;
+    float Hp = 1000;
     int Defense = 33;
     float Exp = 0.0f;
 
@@ -171,9 +171,10 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         loading.Loading();
         transform.position = respawnPoint.position;
         anim.SetBool("isDie", false);       
-        Hp = 100;
+        Hp = 1000;
         hpBar.fillAmount = 1.0f;
         smooth.PlayerDie.SetActive(false);
+        MiniMapCamera.mapNum = 0;   //재영추가
     }
 
     public int PlayerLevel

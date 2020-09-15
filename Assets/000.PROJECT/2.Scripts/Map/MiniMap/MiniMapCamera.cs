@@ -14,7 +14,8 @@ public class MiniMapCamera : MonoBehaviour
     public GameObject MinimapB; //큰 미니맵
     public GameObject Alpha; //마커 안에 있는 알파값
 
-    public int mapNum =0; //현재위치를 알려주는 변수 0=마을, 1 = 1페, 2 = 2페, 3 = 3페, 4=은빛탑
+    [SerializeField]
+    static public int mapNum =0; //현재위치를 알려주는 변수 0=마을, 1 = 1페, 2 = 2페, 3 = 3페, 4=은빛탑
 
     private SoundManager playBgm;
     private int bgmNum = 0; //현재 재생중인 브금정보를 알려주기위해
@@ -41,30 +42,46 @@ public class MiniMapCamera : MonoBehaviour
             if (mapNum == 0)
             {
                 Alpha.transform.localScale = new Vector3(3f, 3f, 3f);
-                if (!playBgm.audio.isPlaying || bgmNum != 1) //재생이 멈췄거나 마을브금이 아니라면
+                if (/*!playBgm.audio.isPlaying ||*/ bgmNum != 1) //재생이 멈췄거나 마을브금이 아니라면
                 {
-                    playBgm.PlayBackground(3); //마을브금을 재생
+                    playBgm.PlayBackground(1); //마을브금을 재생
                     bgmNum = 1;
                 }
             }
             else if (mapNum == 1)
             {
                 Alpha.transform.localScale = new Vector3(3f, 3f, 3f);  //1페
-                if (!playBgm.audio.isPlaying || bgmNum != 2)
+                if (/*!playBgm.audio.isPlaying ||*/ bgmNum != 3)
                 {
-                    playBgm.PlayBackground(4);
-                    bgmNum = 2;
+                    playBgm.PlayBackground(3);
+                    bgmNum = 3;
                 }
             }
-            else if (mapNum == 2) Alpha.transform.localScale = new Vector3(5f, 5f, 5f);  //2패
-            else if (mapNum == 3) Alpha.transform.localScale = new Vector3(5f, 5f, 5f);  //3페
-            else if (mapNum == 4)
-            { 
-                Alpha.transform.localScale = new Vector3(5f, 5f, 5f);  //은빛탑
-                if (!playBgm.audio.isPlaying || bgmNum != 1) //재생이 멈췄거나 마을브금이 아니라면
+            else if (mapNum == 2)
+            {
+                Alpha.transform.localScale = new Vector3(5f, 5f, 5f);  //2패
+                if (/*!playBgm.audio.isPlaying ||*/ bgmNum != 4)
                 {
-                    playBgm.PlayBackground(3); //마을브금을 재생
-                    bgmNum = 1;
+                    playBgm.PlayBackground(4);
+                    bgmNum = 4;
+                }
+            }
+            else if (mapNum == 3)
+            {
+                Alpha.transform.localScale = new Vector3(5f, 5f, 5f);  //3페
+                if (/*!playBgm.audio.isPlaying ||*/ bgmNum != 3)
+                {
+                    playBgm.PlayBackground(3);
+                    bgmNum = 3;
+                }
+            }
+            else if (mapNum == 4)
+            {
+                Alpha.transform.localScale = new Vector3(5f, 5f, 5f);  //은빛탑
+                if (/*!playBgm.audio.isPlaying ||*/ bgmNum != 2) //재생이 멈췄거나 마을브금이 아니라면
+                {
+                    playBgm.PlayBackground(2); //마을브금을 재생
+                    bgmNum = 2;
                 }
             }
 

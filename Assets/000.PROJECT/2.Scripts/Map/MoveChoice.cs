@@ -31,8 +31,9 @@ public class MoveChoice : MonoBehaviour
     {
         if (portal.currentMap.name == "SilverTop")
         {
-            portal.mapNum = 4;
-            /*portal.*/mapText.text = "은빛 탑";
+            //portal.mapNum = 4;
+            MiniMapCamera.mapNum = 4;
+            mapText.text = "은빛 탑";
             /*portal.*/midCam.transform.position = new Vector3(-1001.8f, -10f, 1013f);
             /*portal.*/zeroCam.transform.position = new Vector3(-1001.8f, -10f, 1013f);
             portal.movePopUpCanvas.SetActive(false);        //선택창 비활성
@@ -40,7 +41,8 @@ public class MoveChoice : MonoBehaviour
         }
         else if (portal.currentMap.name == "FirstCrystal")
         {
-            portal.mapNum = 1;
+            //portal.mapNum = 1;
+            MiniMapCamera.mapNum = 1;
             /*portal.*/mapText.text = "수정회랑";
             /*portal.*/midCam.transform.position = new Vector3(0f, -45f, 1045f); //마커 알파값 = 3,3
             /*portal.*/zeroCam.transform.position = new Vector3(0f, -45f, 1045f);
@@ -50,7 +52,8 @@ public class MoveChoice : MonoBehaviour
         else if (portal.currentMap.name == "Tristrum")
         {
             /*portal.*/mapText.text = "신트리스트럼";
-            portal.mapNum = 0;
+            //portal.mapNum = 0;
+            MiniMapCamera.mapNum = 0;
             portal.movePopUpCanvas.SetActive(false);
             loading.Loading();
         }
@@ -80,13 +83,15 @@ public class MoveChoice : MonoBehaviour
     public void OnClickDieBtn()
     {
             /*portal.*/mapText.text = "신트리스트럼";
-            portal.mapNum = 0;
+            //portal.mapNum = 0;
+            MiniMapCamera.mapNum = 0;
             portal.movePopUpCanvas.SetActive(false);
             loading.Loading();
     }
     public void MapMove2()
     {
-        portal.mapNum = 2;
+        //portal.mapNum = 2;
+        MiniMapCamera.mapNum = 2;
         /*portal.*/mapText.text = "공포의 영역";
         //보스 2페이즈 미니맵 카메라 포지션
         /*portal.*/midCam.transform.position = new Vector3(1000f, -70f, 1000f); //마커 알파값 = 5,5
@@ -96,7 +101,8 @@ public class MoveChoice : MonoBehaviour
     }
     public void MapMove3()
     {
-        portal.mapNum = 3;
+        //portal.mapNum = 3;
+        MiniMapCamera.mapNum = 3;
         /*portal.*/mapText.text = "수정회랑";
         //보스 3페이즈 미니맵 카메라 포지션
         /*portal.*/midCam.transform.position = new Vector3(2000f, -30f, 1000f);

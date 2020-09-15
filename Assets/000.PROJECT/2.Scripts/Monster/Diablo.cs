@@ -136,8 +136,7 @@ public class Diablo : MonsterManager
                 if(num == 0)
                 {
                     player.transform.position = spawn2.transform.position;
-                    num = 1;
-
+                    this.monsterCurHp = 3000;
                     MapMove.MapMove2();
                 }
             }
@@ -149,9 +148,12 @@ public class Diablo : MonsterManager
                 if(num == 0)
                 {
                     player.transform.position = spawn3.transform.position;
-                    num = 1;
+                    //
 
+                    this.monsterCurHp = 3000;
+                    life = true;
                     MapMove.MapMove3();
+                    this.enabled = true;
                 }
             }
         }
