@@ -926,10 +926,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundFiles:
-  - {fileID: 8300000, guid: 47c4834677929af4d98d686bb8d7e67b, type: 3}
-  - {fileID: 8300000, guid: 261646b856b57704b891ae2a216a9445, type: 3}
-  - {fileID: 8300000, guid: 502ab61b6ff265d408592a73bb3b5d53, type: 3}
-  - {fileID: 8300000, guid: e1e2391ada0fda04495183862589b2c1, type: 3}
+  - {fileID: 8300000, guid: 6ae7649edbb2f174db453bb328d921d0, type: 3}
+  - {fileID: 8300000, guid: 0f3415ad7d0d41047a78f80a6981e936, type: 3}
+  - {fileID: 8300000, guid: 4216c8d477ced354dbe32ed7b4451019, type: 3}
+  - {fileID: 8300000, guid: b9729d237441c2542b36a335f780c359, type: 3}
   volumeTxt: {fileID: 1514116457}
   soundVolume: 1
   isSoundMute: 0

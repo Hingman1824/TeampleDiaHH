@@ -565,7 +565,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 3779270765375274659}
-        m_MethodName: OnClickAcceptBtn
+        m_MethodName: OnClickDieBtn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -599,3 +599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a11b0d55910a7f4aae3c7bbcf2710c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mapText: {fileID: 0}
+  midCam: {fileID: 0}
+  zeroCam: {fileID: 0}

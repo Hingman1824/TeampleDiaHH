@@ -129,6 +129,7 @@ MonoBehaviour:
   isAttack: 0
   move: 0
   life: 1
+  hit: 0
   players: []
   playerTarget: {fileID: 0}
   dist1: 0
@@ -141,7 +142,7 @@ MonoBehaviour:
   explosion: {fileID: 1664304454892606754, guid: a428c91747abce24ea2d3a50dfb22146,
     type: 3}
   JumpAttackEffect: {fileID: 131164, guid: 3c5f4e32698bdb04eaed647f60310510, type: 3}
-  MagicAreaEffect: {fileID: 163286, guid: ce47c31b86c1892479c3f29caa39ef07, type: 3}
+  MagicAreaEffect: {fileID: 121802, guid: 8f18e1d8c46c51f429429815455062fc, type: 3}
   spawn2: {fileID: 0}
   spawn3: {fileID: 0}
   num: 0
