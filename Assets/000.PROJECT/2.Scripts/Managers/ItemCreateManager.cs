@@ -147,7 +147,7 @@ public class ItemCreateManager : MonoBehaviour
                 break;
 
             case ItemManager.ItemKind.Foot:
-                tempPF = pantsPF;
+                tempPF = footPF;
                 tempName += "신발";
                 break;
 
@@ -163,7 +163,7 @@ public class ItemCreateManager : MonoBehaviour
                 
         }
 
-        DropItem drop = Instantiate(tempPF, pos + (Vector3.up * 2f), Quaternion.identity).GetComponent<DropItem>();
+        DropItem drop = Instantiate(tempPF, pos + (Vector3.up * 2.0f), Quaternion.identity).GetComponent<DropItem>();
         drop.needLevel = tempLevel;
         drop.rarity = tempRearity;
         if(tempKind == ItemManager.ItemKind.LHand)

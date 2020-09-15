@@ -461,7 +461,6 @@
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\GlobalFog.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\VortexEffect.shader" />
-    <None Include="Assets\000.PROJECT\3.Prefabs\ITEM_Swords\EpicSwords\Info.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\NoiseAndGrain.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\DLAA.shader" />
@@ -489,7 +488,6 @@
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\SSAOShader.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\Blend.shader" />
-    <None Include="Assets\000.PROJECT\3.Prefabs\ITEM_Swords\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\AddAssets\ANI_Mecanim HeroMale 90 Animations\Mecanim HeroMale 90 Animations\AnimationFrameTable\Hero_Male_1_0.txt" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
@@ -503,7 +501,7 @@
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\Resources\TreeCreator\TreeCreatorBark.shader" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
-    <None Include="Assets\000.PROJECT\3.Prefabs\ITEM_Swords 1\EpicSwords\Info.txt" />
+    <None Include="Assets\000.PROJECT\3.Prefabs\ITEM_Swords\EpicSwords\Info.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\CameraMotionBlur.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\ScreenSpaceAmbientObscurance.shader" />
@@ -547,7 +545,6 @@
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\FXAA.shader" />
     <None Include="Assets\AddAssets\MAP_Medieval Environment\Medieval Environment\Shaders\Desaturate\DesaturateEffect.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\000.PROJECT\3.Prefabs\ITEM_Swords 1\EnergySwords\ESinfo.txt" />
     <None Include="Assets\000.PROJECT\3.Prefabs\ITEM_Swords\EnergySwords\ESinfo.txt" />
     <None Include="Assets\DownLoadAsset\Flooded_Grounds\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
@@ -610,7 +607,7 @@
     <None Include="Assets\000.PROJECT\9.Shader\FowShader.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
     <None Include="Assets\Realistic Effects Pack\Shaders\Distortion\DistortionCullOff.shader" />
-    <None Include="Assets\000.PROJECT\3.Prefabs\ITEM_Swords 1\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+    <None Include="Assets\000.PROJECT\3.Prefabs\ITEM_Swords\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
     <None Include="Assets\000.PROJECT\8.Anim\RPG Character Animation Pack FREE\Elements\ImageEffects\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
