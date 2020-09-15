@@ -4846,6 +4846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextEffect: {fileID: 168262, guid: 062893e7007e39441aea009115b6cefa, type: 3}
+  boxCollider: {fileID: 6131365848145309480}
 --- !u!1 &188146
 GameObject:
   m_ObjectHideFlags: 0
@@ -9495,5 +9496,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1.5, z: 5}
-  m_Center: {x: 0, y: 0, z: 3}
+  m_Size: {x: 1.5, y: 1.5, z: 3}
+  m_Center: {x: 0, y: 0, z: 1.5}
