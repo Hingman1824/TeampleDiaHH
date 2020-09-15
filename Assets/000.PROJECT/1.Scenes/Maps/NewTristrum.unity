@@ -10192,7 +10192,7 @@ GameObject:
   - component: {fileID: 521034436}
   m_Layer: 0
   m_Name: ItemCreateManager
-  m_TagString: ItemCreator
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10217,9 +10217,9 @@ MonoBehaviour:
   pantsPF: {fileID: 1699313418065728, guid: 178ece3c4a5787e47bfb66d4b74d1536, type: 3}
   footPF: {fileID: 1088731472345890, guid: beaac258e5cd86d4eade774a2b61d936, type: 3}
   ringPF: {fileID: 1111891923673946, guid: 37666df8b79d4f047bf6a61b8b9509a6, type: 3}
-  weapon0: {fileID: 1166741516868230, guid: bdcc7312cfe239343b93491eff4683b7, type: 3}
-  weapon1: {fileID: 1969689076824594, guid: c6aab4d51d78faa4fad6eb82111dbaf5, type: 3}
-  weapon2: {fileID: 1479245278783782, guid: df6b0f4f8eb4fa24f98da8a39a239e76, type: 3}
+  weapon0: {fileID: 1045265497724914530, guid: e17e5c419ec957a4f99eb27b6c86b854, type: 3}
+  weapon1: {fileID: 3201211081231764605, guid: 298f9331df6fd2040b57545c795e011b, type: 3}
+  weapon2: {fileID: 921274694175642895, guid: bc315feb6f370f048ab96c271cd5fc73, type: 3}
   weapon3: {fileID: 997730179225560877, guid: d5087985893473f43acdabf565835ea8, type: 3}
 --- !u!4 &521034437
 Transform:
@@ -13818,9 +13818,9 @@ MonoBehaviour:
   pants: {fileID: 6559957712485760205}
   hat: {fileID: 6559957713076894699}
   weapons:
-  - {fileID: 1166741516868230, guid: bdcc7312cfe239343b93491eff4683b7, type: 3}
-  - {fileID: 1969689076824594, guid: c6aab4d51d78faa4fad6eb82111dbaf5, type: 3}
-  - {fileID: 1479245278783782, guid: df6b0f4f8eb4fa24f98da8a39a239e76, type: 3}
+  - {fileID: 1045265497724914530, guid: e17e5c419ec957a4f99eb27b6c86b854, type: 3}
+  - {fileID: 3201211081231764605, guid: 298f9331df6fd2040b57545c795e011b, type: 3}
+  - {fileID: 921274694175642895, guid: bc315feb6f370f048ab96c271cd5fc73, type: 3}
   - {fileID: 997730179225560877, guid: d5087985893473f43acdabf565835ea8, type: 3}
 --- !u!4 &1244382639
 Transform:
@@ -23162,7 +23162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6509804}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -23214,7 +23214,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 891.7, y: 695}
-  m_SizeDelta: {x: 40, y: 40}
+  m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!1 &3229634997608901544
 GameObject:
@@ -23293,7 +23293,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3229634997800646985
 GameObject:
@@ -27146,7 +27146,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -597, y: -304}
+  m_AnchoredPosition: {x: -597, y: -60}
   m_SizeDelta: {x: 240, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6559957712459974487
@@ -28286,7 +28286,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -597, y: -314}
+  m_AnchoredPosition: {x: -597, y: -229}
   m_SizeDelta: {x: 240, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6559957713622034397

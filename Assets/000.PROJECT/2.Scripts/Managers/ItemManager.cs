@@ -118,6 +118,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
     bool isMouseOver;
 
     public GameObject uiInfo;
+
     private Text uiName;
     private Text uiRarity;
     private Text uiNeedLevel;
@@ -147,7 +148,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
         rectTr = GetComponent<RectTransform>();
         equipmentManager = GameObject.FindGameObjectWithTag("EquipmentMng").GetComponent<EquipmentManager>();
 
-        soundManager = GameObject.FindObjectOfType<SoundManager>();
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         isMouseTracking = false;
         itemManager = this;
         inventoryTr = uiPanel.Find("InvenImg").transform;
@@ -495,9 +496,8 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
         if (isMouseTracking && inventoryManager.isItemDrag)
         {
             if (!ItemDropGrid())
-            {
                 return;
-            }
+            
             InputArr();
             inventoryManager.isItemDrag = false;
             isMouseTracking = false;
@@ -560,7 +560,7 @@ public class ItemManager : MonoBehaviour, IPointerClickHandler,
 
             case ItemKind.LRing:
             case ItemKind.RRing:
-                path += "lRing" + Random.Range(0, 4).ToString();
+                path += "ring" + Random.Range(0, 4).ToString();
                 break;
         }
         itemImage.sprite = Resources.Load<Sprite>(path);

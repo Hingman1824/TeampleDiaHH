@@ -32,7 +32,7 @@ public class PickupItemImg : MonoBehaviour
         if (isShow)
         {
             pos = cam.WorldToScreenPoint(target.transform.position);
-            pos.y += 9f;
+            pos.y += 12f;
             img.rectTransform.anchoredPosition = pos;
             if (Input.GetKeyUp(KeyCode.F))
             {

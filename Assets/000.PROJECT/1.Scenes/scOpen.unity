@@ -937,6 +937,7 @@ MonoBehaviour:
   tg: {fileID: 819057443}
   Sound: {fileID: 1812935502}
   PlaySoundBtn: {fileID: 410297208}
+  audio: {fileID: 0}
 --- !u!82 &603727216
 AudioSource:
   m_ObjectHideFlags: 0
@@ -947,7 +948,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 47c4834677929af4d98d686bb8d7e67b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 323497ce6eba0a04da75463177f65f4e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

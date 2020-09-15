@@ -97,7 +97,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         
         // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
 
-        equipmentManager.WeaponSet(0);  // 전재현 추가
+        //equipmentManager.WeaponSet(0);  // 전재현 추가
         colOnce = false;  // 전재현 추가
         playerName.text = PhotonNetwork.player.NickName;
         isPlayerMove = false;
