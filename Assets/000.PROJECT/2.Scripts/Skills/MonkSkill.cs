@@ -31,25 +31,25 @@ public class MonkSkill : PlayerManager
         //weaponColliders = weaponPos.GetComponentsInChildren<Collider>();
 
         myRb = GetComponent<Rigidbody>();
-        
+
         pv = GetComponent<PhotonView>();
-        
+
         pv.ObservedComponents[0] = this;
-        
+
         pv.synchronization = ViewSynchronization.UnreliableOnChange;
-        
+
         anim = gameObject.GetComponentInChildren<Animator>();
 
-        
 
-        
+
+
         if (pv.isMine)
         {
             Camera.main.GetComponent<SmoothFollow>().target = camPivot;
         }
         else
-        {            
-            myRb.isKinematic = true; 
+        {
+            myRb.isKinematic = true;
         }
         currPos = this.transform.position;
         currRot = this.transform.rotation;
@@ -66,8 +66,8 @@ public class MonkSkill : PlayerManager
     {
         if (pv.isMine)
         {
-            
             PlayerMovement();
+            PlayerMovementJoyStick();
             PlayerMoveAnimation();
 
             if (Input.GetKey(KeyCode.X) && isMantraOfEvasion == false)
@@ -76,18 +76,18 @@ public class MonkSkill : PlayerManager
             }
 
             if (Input.GetKey(KeyCode.E) && isCycloneStrike == false)
-            {               
+            {
                 StartCoroutine(CycloneStrike());
-            }       
-            
+            }
+
             if (Input.GetKey(KeyCode.R) && isDashingStrike == false)
             {
                 StartCoroutine(DashingStrike());
             }
 
             if (Input.GetKey(KeyCode.Q) && isWaveOfLight == false)
-            {               
-                StartCoroutine(WaveOfLight()); 
+            {
+                StartCoroutine(WaveOfLight());
             }
 
         }
@@ -133,42 +133,66 @@ public class MonkSkill : PlayerManager
         yield return null;
     }
 
-    private IEnumerator CycloneStrike()
+
+    public IEnumerator CycloneStrike()
     {
-        isCycloneStrike = true;
-        anim.SetBool("isSkill1", true);
-        yield return new WaitForSeconds(0.15f);
-        Instantiate(Impact, Impactpos.position, Quaternion.Euler(90, 0, 0));
-        yield return new WaitForSeconds(0.15f);
-        anim.SetBool("isSkill1", false);
-        isCycloneStrike = false;
-        yield return null;
+        if (isUseESkill == false)
+        {
+            isUseESkill = true;
+            isCycloneStrike = true;
+            anim.SetBool("isSkill1", true);
+
+
+            yield return new WaitForSeconds(0.15f);
+            Instantiate(Impact, Impactpos.position, Quaternion.Euler(90, 0, 0));
+
+            StartCoroutine(CooltimeSkill2(5.0f));
+            yield return new WaitForSeconds(0.15f);
+
+            anim.SetBool("isSkill1", false);
+            isCycloneStrike = false;
+            yield return null;
+        }
     }
 
-    private IEnumerator DashingStrike()
+    public IEnumerator DashingStrike()
     {
-        isDashingStrike = true;
-        anim.SetBool("isSkill2", true);
-        pray.SetActive(true);
-        yield return new WaitForSeconds(1.0f);
-        pray.SetActive(false);
-        anim.SetBool("isSkill2", false);
-        isDashingStrike = false;
-        yield return null;
+        if (isUseRSkill == false)
+        {
+            isUseRSkill = true;
+            isDashingStrike = true;
+            anim.SetBool("isSkill2", true);
+
+            pray.SetActive(true);
+            StartCoroutine(CooltimeSkill1(5.0f));
+            yield return new WaitForSeconds(1.0f);
+            pray.SetActive(false);
+
+            anim.SetBool("isSkill2", false);
+            isDashingStrike = false;
+            yield return null;
+        }
     }
 
-    private IEnumerator WaveOfLight()
+    public IEnumerator WaveOfLight()
     {
-        isWaveOfLight = true;
-        anim.SetBool("isSkill3", true);
-        yield return new WaitForSeconds(0.35f);
-        Instantiate(lazyImpact, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.Euler(90, 0, 0));
-        yield return new WaitForSeconds(0.5f);
-        anim.SetBool("isSkill3", false);
-        isWaveOfLight = false;
-        yield return null;
-    }
+        if (isUseQSkill == false)
+        {
+            isUseQSkill = true;
+            isWaveOfLight = true;
+            anim.SetBool("isSkill3", true);
 
+            yield return new WaitForSeconds(0.35f);
+            Instantiate(lazyImpact, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.Euler(90, 0, 0));
+
+            StartCoroutine(CooltimeSkill3(5.0f));
+            yield return new WaitForSeconds(0.5f);
+
+            anim.SetBool("isSkill3", false);
+            isWaveOfLight = false;
+            yield return null;
+        }
+    }
     //private void WeaponOn()
     //{
     //    foreach (var it in weaponColliders)

@@ -357,7 +357,16 @@ public class UIManager : MonoBehaviour
         //왼쪽 반지
         equipments.lRing.item.sizeDelta = new Vector2(equipments.lRing.sizeX * slotSize, equipments.lRing.sizeY * slotSize);
         //오른쪽 반지
-        equipments.rRing.item.sizeDelta = new Vector2(equipments.rRing.sizeX * slotSize, equipments.rRing.sizeY * slotSize);
-        
+        equipments.rRing.item.sizeDelta = new Vector2(equipments.rRing.sizeX * slotSize, equipments.rRing.sizeY * slotSize);        
+    }
+
+    public void OnClickInven()
+    {
+        inventory.SetActive(true);
+    }
+
+    public void OnExitInven()
+    {
+        inventory.SetActive(false);
     }
 }

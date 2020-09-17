@@ -3,14 +3,14 @@ using IPlayer;
 using System.Collections;
 using UnityEngine.UI;
 using System.Reflection;
-using UnityEditor.XR;
+//using UnityEditor.XR;
 
 public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAnimation, IPlayerPhoton
 {
     [Space(3)]
     [Header("플레이어 스탯")]
     [Tooltip("플레이어 체력")]
-    [Range(0, 9999)] public int playerHp = 1000;
+    [Range(0, 9999)] public int playerHp = 100;
     [Tooltip("플레이어 이동속도")]
     [Range(0, 10)] public float playerSpeed;
     [Tooltip("플레이어 공격속도")]
@@ -19,7 +19,13 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     [Range(0, 9999)] public float playerDamage = 10f;
     [Space(3)]
     [Header("플레이어 상태")]
-    
+
+    [SerializeField]
+    public UltimateJoystick Joystick;
+
+    public bool isUseQSkill = false;
+    public bool isUseESkill = false;
+    public bool isUseRSkill = false;
     public bool isHit = false;
     public bool isRot = false;
     public float playerRot = 10;
@@ -34,7 +40,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     public Quaternion currRot = Quaternion.identity;
     //public Monster monster;
 
-    
+    public GameObject[] CoolTime;
     public Image expBar;
     public Image hpBar;
     public Text expText;
@@ -48,9 +54,12 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     private Collider[] weaponColliders;          //전재현 추가
     public bool colOnce;                         //전재현 추가
 
+    //조이스틱 
+    public float v;
+    public float h;
     //일단 임의로 정해놓은 것
     public int Level;   //전재현 임시 변경
-    float Hp = 1000;
+    float Hp = 100;
     int Defense = 33;
     float Exp = 0.0f;
 
@@ -85,23 +94,34 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
 
     private void Start()
     {
+        Joystick = GameObject.Find("Joystick").GetComponent<UltimateJoystick>();
         //WeaponOff();  // 전재현 추가
         Level = 1;    // 전재현 추가
         respawnPoint = GameObject.FindGameObjectWithTag("Respawn").GetComponent<Transform>(); //부활장소
         loading = FindObjectOfType<LoadingScript>();                                         //로딩창
         expBar = GameObject.Find("ExpBar").GetComponent<Image>();                            //경험치 바
         hpBar = GameObject.Find("Hp").GetComponent<Image>();        //hp 바
-        expText = GameObject.Find("ExpText").GetComponent<Text>();      
+        expText = GameObject.Find("ExpText").GetComponent<Text>();
         playerName = GameObject.Find("PlayerNickName").GetComponent<Text>();
         smooth = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<SmoothFollow>();
-        
-        // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
 
-        //equipmentManager.WeaponSet(0);  // 전재현 추가
+        // monster = GameObject.FindGameObjectWithTag("Enemy").GetComponent<Monster>();
+        CoolTime = GameObject.FindGameObjectsWithTag("skill");
+
+        for (int i = 0; i < 3; i++)
+        {
+            CoolTime[i].GetComponent<Image>().color = new Color(41f / 255f, 9f / 255f, 9f / 255f, 0f / 255f);
+        }
+
+        equipmentManager.WeaponSet(0);  // 전재현 추가
         colOnce = false;  // 전재현 추가
         playerName.text = PhotonNetwork.player.NickName;
         isPlayerMove = false;
+
+
+
         respawnBtn = GameObject.Find("RespawnBtn").GetComponent<Button>();
+
     }
 
     // 범위 -1 ~ 1까지 플레이어 스피드는 이것과 관계없음
@@ -119,6 +139,7 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
 
         set => Input.GetAxis("Vertical");
     }
+
 
     public float PlayerLife
     {
@@ -150,31 +171,14 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         }
     }
 
-    public void OnTriggerEnter(Collider col)
-    {
-        if (col.gameObject.tag == "Enemy")
-        {
-            smooth.playerHit();
-            Hp -= 10;
-            hpBar.fillAmount -= 10 * 0.01f;
-
-            if (Hp <= 0)
-            {
-                anim.SetBool("isDie", true);
-                smooth.PlayerDie.SetActive(true);
-            }
-        }
-    }
-
     public void Respawn()
     {
         loading.Loading();
         transform.position = respawnPoint.position;
-        anim.SetBool("isDie", false);       
-        Hp = 1000;
+        anim.SetBool("isDie", false);
+        Hp = 100;
         hpBar.fillAmount = 1.0f;
         smooth.PlayerDie.SetActive(false);
-        MiniMapCamera.mapNum = 0;   //재영추가
     }
 
     public int PlayerLevel
@@ -272,25 +276,25 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
     [PunRPC]
     public void PlayerMoveAnimation()
     {
-        if (PlayerH != 0 || PlayerV != 0)
+        if ((PlayerH != 0 || PlayerV != 0) || (v != 0 || h != 0))
         {
             anim.SetBool("isAttack", false);
-            if (PlayerH != 0 && PlayerV == 0)
+            if ((PlayerH != 0 && PlayerV == 0) || (v == 0 || h != 0))
             {
                 anim.SetFloat("Speed", 1f);
 
             }
-            else if (PlayerH == 0 && PlayerV != 0)
+            else if ((PlayerH == 0 && PlayerV != 0) || (v != 0 || h == 0))
             {
                 anim.SetFloat("Speed", 1f);
 
             }
-            else if (PlayerH != 0 && PlayerV != 0)
+            else if ((PlayerH != 0 && PlayerV != 0) || (v != 0 || h != 0))
             {
                 anim.SetFloat("Speed", 1f);
             }
         }
-        else if (PlayerH == 0 && PlayerV == 0)
+        else if ((PlayerH == 0 && PlayerV == 0) || (v == 0 || h == 0))
         {
             anim.SetFloat("Speed", 0);
         }
@@ -367,12 +371,23 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
             }
         }
     }
+    public void PlayerMovementJoyStick()
+    {
+        v = UltimateJoystick.GetVerticalAxis("AAA");
+        h = UltimateJoystick.GetHorizontalAxis("AAA");
+        Vector3 translate = (new Vector3(h, 0, v) * Time.deltaTime) * playerSpeed;
+        transform.Translate(translate, Space.World);
+        if (h != 0 || v != 0)
+        {
+            transform.rotation = Quaternion.Euler(0f, Mathf.Atan2(-h, -v) * Mathf.Rad2Deg, 0f);
+        }
+    }
 
     public bool PlayerMoveCheck()       // 컷씬 용 플레이어 이동확인
     {
         if (PlayerH != 0 || PlayerV != 0)   //플레이어가 움직이고 있으면
         {
-            isPlayerMove = true;        
+            isPlayerMove = true;
         }
         else if (PlayerH == 0 && PlayerV == 0)  //플레이어가 움직이지 않으면
         {
@@ -380,6 +395,59 @@ public class PlayerManager : MonoBehaviour, IPlayerMove, IPlayerStats, IPlayerAn
         }
         return isPlayerMove;
     }
+
+    public IEnumerator CooltimeSkill1(float a)
+    {
+        isUseRSkill = true;
+        CoolTime[0].GetComponent<Image>().color = new Color(41f / 255f, 9f / 255f, 9f / 255f, 206f / 255f);
+        CoolTime[0].GetComponent<Image>().fillAmount = 1.0f;
+        float temp = 0.0f;
+
+        while (temp < a)
+        {
+            temp += Time.deltaTime;
+            CoolTime[0].GetComponent<Image>().fillAmount = (1.0f - (temp / a));
+
+            yield return new WaitForFixedUpdate();
+        }
+        isUseRSkill = false;
+    }
+
+    public IEnumerator CooltimeSkill2(float b)
+    {
+        isUseESkill = true;
+        CoolTime[1].GetComponent<Image>().color = new Color(41f / 255f, 9f / 255f, 9f / 255f, 206f / 255f);
+        CoolTime[1].GetComponent<Image>().fillAmount = 1.0f;
+
+        float temp = 0.0f;
+
+        while (temp < b)
+        {
+            temp += Time.deltaTime;
+            CoolTime[1].GetComponent<Image>().fillAmount = (1.0f - (temp / b));
+
+            yield return new WaitForFixedUpdate();
+        }
+        isUseESkill = false;
+    }
+
+    public IEnumerator CooltimeSkill3(float c)
+    {
+        isUseQSkill = true;
+        CoolTime[2].GetComponent<Image>().color = new Color(41f / 255f, 9f / 255f, 9f / 255f, 206f / 255f);
+        CoolTime[2].GetComponent<Image>().fillAmount = 1.0f;
+        float temp = 0.0f;
+
+        while (temp < c)
+        {
+            temp += Time.deltaTime;
+            CoolTime[2].GetComponent<Image>().fillAmount = (1.0f - (temp / c));
+
+            yield return new WaitForFixedUpdate();
+        }
+        isUseQSkill = false;
+    }
+
 
     //인벤 캐릭터 무기 끼고 빼는 로직임 on off 전재현 추가
     //private void WeaponOn()
