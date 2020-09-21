@@ -167,13 +167,12 @@ public class Diablo : MonsterManager
             }
             else if (players.Length != 0) //플레이어가 있으면
             {
-                if (100 <= dist1 && dist1 < 500f) //플레이어와의 거리가 50이상이면 500이하 일 때
+                if (300 <= dist1 && dist1 < 1000f) //플레이어와의 거리가 50이상이면 500이하 일 때
                 {
-                    if (move == false)
-                        MoveToPlayer();
+                    MoveToPlayer();
                 }
                 //거리가 50이하일때
-                else if (10 <= dist1 && dist1 < 100f) 
+                else if (50 <= dist1 && dist1 < 300f) 
                 {
                     //랜덤으로
                     int ai = Random.Range(2, 7);
@@ -186,17 +185,16 @@ public class Diablo : MonsterManager
                     }
                     else
                     {
-                        if (move == false)
-                            MoveToPlayer();
+                        MoveToPlayer();
                     }
 
                 }
-                else if (dist1 < 10f) //플레이어와 거리가 3이하이면 공격애니메이션 재생
+                else if (dist1 < 50f) //플레이어와 거리가 3이하이면 공격애니메이션 재생
                 {
                     if (isAttack == false)
                         StartCoroutine(BossAttack());
                 }
-                else if (dist1 > 500f) //거리가 500이상이면
+                else if (dist1 > 1000f) //거리가 1000이상이면
                 {
                     animn = 0; //기본자세 애니메이션
                     animator.SetBool("Move", false);
@@ -213,7 +211,7 @@ public class Diablo : MonsterManager
                         this.transform.position = pos;
                     }
 
-                    move = false;
+                    //move = false;
                 }
             }
         }
@@ -230,8 +228,8 @@ public class Diablo : MonsterManager
     //플레이어에게 접근
     void MoveToPlayer()
     {
-        if (move == false)
-        {
+        //if (move == false)
+        //{
             transform.LookAt(playerTarget); //플레이어를 바라보고
             nvAgent.SetDestination(playerTarget.position);
 
@@ -239,8 +237,12 @@ public class Diablo : MonsterManager
 
             animn = 1; //애니메이션 변경
             animator.SetBool("Move", true);
-            move = true;
-        }
+            //move = true;
+        //}
+        //else
+        //{
+        //    move = false;
+        //}
     }
 
     //보스 근접 공격
@@ -280,7 +282,7 @@ public class Diablo : MonsterManager
                 yield return null;
             }
             isAttack = false;
-            move = false;
+            //move = false;
         }       
     }
 
@@ -368,7 +370,7 @@ public class Diablo : MonsterManager
 
             isAttack = false;
 
-            move = false;
+            //move = false;
             yield return null;
         }
             
@@ -546,7 +548,7 @@ public class Diablo : MonsterManager
         yield return new WaitForSeconds(1.5f);
         animator.SetBool("Hit", false);
         damageTxt.SetActive(false);
-        move = false;
+        //move = false;
         yield return null;
     }
 
